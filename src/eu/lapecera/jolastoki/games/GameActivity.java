@@ -134,6 +134,11 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	private void updateTime () {
 		if (!isTimeStopped()) {
 			long time = (Long) this.timeView.getTag();
+			if (time <= 0) {
+				//TODO Mostrar mensaje de fin de juego por timeout.
+				this.OnGameOver();
+				return;
+			}
 			time = time - 1000;
 			this.timeView.setText(format.format(new Date(time)));
 			this.timeView.setTag(time);

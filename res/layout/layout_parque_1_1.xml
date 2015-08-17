@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background_front"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parque_1_1_fondo">
+
+    <TextView
+        style="@style/normalText"
+        android:layout_width="@dimen/parque_cartel_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="125dp"
+        android:padding="@dimen/parque_cartel_padding"
+        android:background="@drawable/parque_1_1_cartel"
+        android:gravity="center"
+        android:text="@string/parque_1_1_question" >
+    </TextView>
+    
+    <ImageButton
+        android:id="@+id/parque_1_1_bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_toLeftOf="@+id/parque_1_1_bt2"
+        android:src="@drawable/parque_1_1_bt1"
+        android:background="@android:color/transparent"/>
+    
+    <ImageButton
+        android:id="@+id/parque_1_1_bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/parque_1_1_bt2"
+        android:background="@android:color/transparent"/>
+    
+    <ImageButton 
+        android:id="@+id/parque_1_1_bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/parque_1_1_bt2"
+        android:src="@drawable/parque_1_1_bt3"
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>

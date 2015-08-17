@@ -13,7 +13,9 @@ public enum GameArea {
 																				QuizGameViewConfig.MERCADO_2_1, 
 																				QuizGameViewConfig.MERCADO_3_1}),
 	CHARCA		(R.drawable.cabecera_juegos_ico_charca, new GameViewConfig[]{}),
-	PARQUE		(R.drawable.cabecera_juegos_ico_parque, new GameViewConfig[]{}),
+	PARQUE		(R.drawable.cabecera_juegos_ico_parque, new GameViewConfig[]{QuizGameViewConfig.PARQUE_1_1, 
+																				QuizGameViewConfig.PARQUE_2_1, 
+																				QuizGameViewConfig.PARQUE_3_1}),
 	COLEGIO		(R.drawable.cabecera_juegos_ico_colegio, new GameViewConfig[]{});
 
 	private int icon;

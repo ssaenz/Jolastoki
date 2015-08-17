@@ -11,23 +11,30 @@
     <string name="area_color_title">Juego de colorear</string>
     
     
-    <string name ="mercado_1_1_title">Selecciona la respuesta correcta</string>
-    <string name ="mercado_1_1_question">ZEIN JANARIK DITU PROTEINAK?</string>
-    <string name ="mercado_1_1_answer_1">DILISTAK</string>
-    <string name ="mercado_1_1_answer_2">OGIA</string>
-    <string name ="mercado_1_1_answer_3">XERRA</string>
-    <string name ="mercado_1_1_answer_4">SAGARRA</string>
+    <string name="mercado_1_1_title">Selecciona la respuesta correcta</string>
+    <string name="mercado_1_1_question">ZEIN JANARIK DITU PROTEINAK?</string>
+    <string name="mercado_1_1_answer_1">DILISTAK</string>
+    <string name="mercado_1_1_answer_2">OGIA</string>
+    <string name="mercado_1_1_answer_3">XERRA</string>
+    <string name="mercado_1_1_answer_4">SAGARRA</string>
     
-    <string name ="mercado_2_1_question">ZEIN DA LANDARE-JATORRIA DUEN JANARIA?</string>
-    <string name ="mercado_2_1_answer_1">NATILLAK</string>
-    <string name ="mercado_2_1_answer_2">DROKETAK</string>
-    <string name ="mercado_2_1_answer_3">OLIOA</string>
-    <string name ="mercado_2_1_answer_4">GAZTA</string>
+    <string name="mercado_2_1_question">ZEIN DA LANDARE-JATORRIA DUEN JANARIA?</string>
+    <string name="mercado_2_1_answer_1">NATILLAK</string>
+    <string name="mercado_2_1_answer_2">DROKETAK</string>
+    <string name="mercado_2_1_answer_3">OLIOA</string>
+    <string name="mercado_2_1_answer_4">GAZTA</string>
     
-    <string name ="mercado_3_1_question">ZEIN JANARI DA ESNEKIA?</string>
-    <string name ="mercado_3_1_answer_1">TXOKOLATEA</string>
-    <string name ="mercado_3_1_answer_2">YOGURTA</string>
-    <string name ="mercado_3_1_answer_3">PATEA</string>
-    <string name ="mercado_3_1_answer_4">TXORIZOA</string>
+    <string name="mercado_3_1_question">ZEIN JANARI DA ESNEKIA?</string>
+    <string name="mercado_3_1_answer_1">TXOKOLATEA</string>
+    <string name="mercado_3_1_answer_2">YOGURTA</string>
+    <string name="mercado_3_1_answer_3">PATEA</string>
+    <string name="mercado_3_1_answer_4">TXORIZOA</string>
+    
+    <string name="parque_1_1_question">ASMA EZAZU ZER LETRAK \nBIDAIATZEN DUEN, BETI, \nAUTOBUSEZ, BIZIKLETAZ, \nITSASOAN BARRENA ONTZIAN ETA \nUNIBERTSOAN ZEHAN KOHETEAN</string>
+    <string name="parque_1_1_title">ASMAKIZUNAK</string>
+    
+    <string name="parque_2_1_question">KALEAN BIZI NAIZ. ETA OSO ARGALA NAIZ. HIRU KOLORE DITUT BEGIETAN: HORIA, GORRIA ETA BERDEA.</string>
+    
+    <string name="parque_3_1_question">ANIMALIA ORNODUNA GIZAKIAREN ALGUNA ASKOTAN EHIZTARIA ETA ITSUEN LAGUNGARRIA.</string>
 
 </resources>

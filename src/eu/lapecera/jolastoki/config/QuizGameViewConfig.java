@@ -10,7 +10,10 @@ import eu.lapecera.jolastoki.games.quiz.QuizGameView;
 public enum QuizGameViewConfig implements GameViewConfig {
 	MERCADO_1_1 (GameLevel.ONE, R.layout.layout_mercado_1_1, R.string.mercado_1_1_title, new int[]{R.id.mercado_1_1_answer_1, R.id.mercado_1_1_answer_2, R.id.mercado_1_1_answer_3, R.id.mercado_1_1_answer_4}, -1, new int[]{}, new int[]{R.id.mercado_1_1_answer_3}, 120000),
 	MERCADO_2_1 (GameLevel.TWO, R.layout.layout_mercado_2_1, R.string.mercado_1_1_title, new int[]{R.id.mercado_1_1_answer_1, R.id.mercado_1_1_answer_2, R.id.mercado_1_1_answer_3, R.id.mercado_1_1_answer_4}, -1, new int[]{}, new int[]{R.id.mercado_1_1_answer_3}, 120000),
-	MERCADO_3_1 (GameLevel.THREE, R.layout.layout_mercado_2_1, R.string.mercado_1_1_title, new int[]{R.id.mercado_1_1_answer_1, R.id.mercado_1_1_answer_2, R.id.mercado_1_1_answer_3, R.id.mercado_1_1_answer_4}, -1, new int[]{}, new int[]{R.id.mercado_1_1_answer_3}, 120000);
+	MERCADO_3_1 (GameLevel.THREE, R.layout.layout_mercado_2_1, R.string.mercado_1_1_title, new int[]{R.id.mercado_1_1_answer_1, R.id.mercado_1_1_answer_2, R.id.mercado_1_1_answer_3, R.id.mercado_1_1_answer_4}, -1, new int[]{}, new int[]{R.id.mercado_1_1_answer_3}, 120000),
+	PARQUE_1_1 (GameLevel.ONE, R.layout.layout_parque_1_1, R.string.parque_1_1_title, new int[]{R.id.parque_1_1_bt1, R.id.parque_1_1_bt2, R.id.parque_1_1_bt3}, -1, new int[]{}, new int[]{R.id.parque_1_1_bt1}, 120000),
+	PARQUE_2_1 (GameLevel.TWO, R.layout.layout_mercado_2_1, R.string.parque_1_1_title, new int[]{R.id.parque_2_1_bt1, R.id.parque_2_1_bt2, R.id.parque_2_1_bt3, R.id.parque_2_1_bt4}, -1, new int[]{}, new int[]{R.id.parque_2_1_bt2}, 120000),
+	PARQUE_3_1 (GameLevel.THREE, R.layout.layout_mercado_2_1, R.string.parque_1_1_title, new int[]{R.id.parque_3_1_bt1, R.id.parque_3_1_bt2, R.id.parque_3_1_bt3, R.id.parque_3_1_bt4, R.id.parque_3_1_bt5}, -1, new int[]{}, new int[]{R.id.parque_3_1_bt3}, 120000);
 
 	private GameLevel level;
 	

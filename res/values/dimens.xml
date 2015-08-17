@@ -47,5 +47,8 @@
     
     <dimen name="activity_area_icon_colegio_margin_top">140dp</dimen>
     <dimen name="activity_area_icon_colegio_margin_left">350dp</dimen>
-
+    
+    <dimen name="parque_cartel_width">400dp</dimen>
+    <dimen name="parque_cartel_padding">20dp</dimen>
+    
 </resources>
