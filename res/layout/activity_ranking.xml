@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@drawable/portada_fondo_general"
+    tools:context="eu.lapecera.jolastoki.games.RankingActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <eu.lapecera.jolastoki.widget.TypographyTextView
+            android:id="@+id/ranking_title"
+            style="@style/normalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:background="@drawable/cabecera_portada"
+            android:text="Ranking" />
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/ranking_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="6"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:background="@drawable/fondo_borde_naranja_redondeado" >
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center"
+                android:background="@drawable/cabecera_naranja_redondeada_arriba"
+                android:text="Las 10 mejores puntuaciones" />
+
+            <ListView
+                android:id="@+id/ranking_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/dotted"
+                android:dividerHeight="5dp"
+                android:drawingCacheQuality="low"
+                android:layerType="software"
+                android:paddingBottom="20dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="20dp" >
+            </ListView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/go_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/top_icon_margin"
+        android:layout_marginTop="@dimen/top_icon_margin"
+        android:background="@drawable/portada_bt_atras" />
+
+    <ImageView
+        android:id="@+id/game_icon"
+        android:layout_width="@dimen/game_icon_small"
+        android:layout_height="@dimen/game_icon_small"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/top_icon_margin"
+        android:background="@drawable/game_icon_background_blue"
+        android:padding="@dimen/game_icon_small_padding"
+        android:src="@drawable/cabecera_juegos_ico_charca" />
+
+</RelativeLayout>

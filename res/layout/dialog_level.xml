@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/portada_caja_niveles"
+    android:orientation="vertical" >
+
+    <eu.lapecera.jolastoki.widget.TypographyTextView
+        style="@style/bigText"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="AUKERATU MAILA" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <eu.lapecera.jolastoki.widget.TypographyButton
+            android:id="@+id/level_one_btn"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/portada_bt_nivel"
+            android:text="1" />
+
+        <eu.lapecera.jolastoki.widget.TypographyButton
+            android:id="@+id/level_two_btn"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/portada_bt_nivel"
+            android:text="2" />
+
+        <eu.lapecera.jolastoki.widget.TypographyButton
+            android:id="@+id/level_three_btn"
+            style="@style/bigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/portada_bt_nivel"
+            android:text="3" />
+    </LinearLayout>
+
+</LinearLayout>

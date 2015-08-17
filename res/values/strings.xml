@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jolastoki</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="area_pairs_title">Juego de las parejas</string>
+    <string name="area_quiz_title">Juego de preguntas</string>
+    <string name="area_drag_drop_title">Juego de colocar</string>
+    <string name="area_color_title">Juego de colorear</string>
+    
+    
+    <string name ="mercado_1_1_title">Selecciona la respuesta correcta</string>
+    <string name ="mercado_1_1_question">ZEIN JANARIK DITU PROTEINAK?</string>
+    <string name ="mercado_1_1_answer_1">DILISTAK</string>
+    <string name ="mercado_1_1_answer_2">OGIA</string>
+    <string name ="mercado_1_1_answer_3">XERRA</string>
+    <string name ="mercado_1_1_answer_4">SAGARRA</string>
+    
+    <string name ="mercado_2_1_question">ZEIN DA LANDARE-JATORRIA DUEN JANARIA?</string>
+    <string name ="mercado_2_1_answer_1">NATILLAK</string>
+    <string name ="mercado_2_1_answer_2">DROKETAK</string>
+    <string name ="mercado_2_1_answer_3">OLIOA</string>
+    <string name ="mercado_2_1_answer_4">GAZTA</string>
+    
+    <string name ="mercado_3_1_question">ZEIN JANARI DA ESNEKIA?</string>
+    <string name ="mercado_3_1_answer_1">TXOKOLATEA</string>
+    <string name ="mercado_3_1_answer_2">YOGURTA</string>
+    <string name ="mercado_3_1_answer_3">PATEA</string>
+    <string name ="mercado_3_1_answer_4">TXORIZOA</string>
+
+</resources>

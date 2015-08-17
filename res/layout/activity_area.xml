@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/portada_fondo_general"
+    android:orientation="horizontal"
+    tools:context="eu.lapecera.jolastoki.AreaActivity" >
+
+    <eu.lapecera.jolastoki.widget.TypographyTextView
+        style="@style/bigText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cabecera_portada"
+        android:gravity="center"
+        android:text="AUKERATU MAILA" />
+
+    <Button
+        android:id="@+id/go_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/top_icon_margin"
+        android:layout_marginTop="@dimen/top_icon_margin"
+        android:background="@drawable/portada_bt_atras" />
+
+    <Button
+        android:id="@+id/instructions_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/top_icon_margin"
+        android:layout_marginTop="@dimen/top_icon_margin"
+        android:background="@drawable/portada_bt_instrucciones" />
+
+    <Button
+        android:id="@+id/mercado_area_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_area_icon_mercado_margin_left"
+        android:layout_marginTop="@dimen/activity_area_icon_mercado_margin_top"
+        android:background="@drawable/portada_ico_mercado" />
+
+    <Button
+        android:id="@+id/charca_area_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_area_icon_charca_margin_left"
+        android:layout_marginTop="@dimen/activity_area_icon_charca_margin_top"
+        android:background="@drawable/portada_ico_charca" />
+
+    <Button
+        android:id="@+id/parque_area_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_area_icon_parque_margin_left"
+        android:layout_marginTop="@dimen/activity_area_icon_parque_margin_top"
+        android:background="@drawable/portada_ico_parque" />
+
+    <Button
+        android:id="@+id/colegio_area_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_area_icon_colegio_margin_left"
+        android:layout_marginTop="@dimen/activity_area_icon_colegio_margin_top"
+        android:background="@drawable/portada_ico_colegio" />
+
+</RelativeLayout>
