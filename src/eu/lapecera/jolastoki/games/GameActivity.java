@@ -5,18 +5,29 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.DialogInterface.OnDismissListener;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import eu.lapecera.jolastoki.R;
 import eu.lapecera.jolastoki.common.BaseActivity;
 import eu.lapecera.jolastoki.common.Constants;
+import eu.lapecera.jolastoki.common.ScoreAdapter;
 import eu.lapecera.jolastoki.config.GameViewConfig;
+import eu.lapecera.jolastoki.database.DatabaseHandler;
 import eu.lapecera.jolastoki.domain.GameArea;
 import eu.lapecera.jolastoki.domain.GameLevel;
+import eu.lapecera.jolastoki.domain.Score;
 import eu.lapecera.jolastoki.games.quiz.OnGameOverListener;
 import eu.lapecera.jolastoki.widget.GameNumber;
 
@@ -96,7 +107,7 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 		if (currentGame < games.size()) {
 			loadNextGame();
 		} else {
-			goToRanking();
+			goToGameOverActivity();
 		}
 	}
 
@@ -135,8 +146,7 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 		if (!isTimeStopped()) {
 			long time = (Long) this.timeView.getTag();
 			if (time <= 0) {
-				//TODO Mostrar mensaje de fin de juego por timeout.
-				this.OnGameOver();
+				showTimeoutDialog();
 				return;
 			}
 			time = time - 1000;
@@ -145,9 +155,27 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 			timeChanger.postDelayed(timeUpdater, 1000);
 		}
 	}
+	
+	private void showTimeoutDialog() {
+		final Dialog dialog = new Dialog(this);
+		dialog.setContentView(R.layout.dialog_timeout);
+		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+		Button accept = (Button) dialog.findViewById(R.id.accept);
 
-	private void goToRanking() {
-		Intent i = new Intent(GameActivity.this, RankingActivity.class);
+		accept.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				GameActivity.this.OnGameOver();
+				dialog.dismiss();
+			}
+		});
+
+		dialog.show();
+	}
+	
+	private void goToGameOverActivity () {
+		Intent i = new Intent(GameActivity.this, GameOverActivity.class);
 		i.putExtra(Constants.AREA_KEY, GameActivity.this.area);
 		i.putExtra(Constants.LEVEL_KEY, GameActivity.this.level);
 		i.putExtra(Constants.SCORE_KEY, GameActivity.this.score);

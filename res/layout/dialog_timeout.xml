@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_white_90_rounded" 
+    android:padding="@dimen/dialog_timeout_padding"
+    android:gravity="center">
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	style="@style/normalText"
+       	android:text="@string/dialog_timout_message"/>
+    
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/ranking_bt_aceptar" />
+    
+
+</LinearLayout>

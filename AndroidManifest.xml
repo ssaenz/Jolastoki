@@ -43,6 +43,11 @@
             android:label="@string/app_name"
  			android:screenOrientation="landscape" >
         </activity>
+        <activity
+            android:name="eu.lapecera.jolastoki.games.GameOverActivity"
+            android:label="@string/app_name"
+ 			android:screenOrientation="landscape" >
+        </activity>
     </application>
 
 </manifest>

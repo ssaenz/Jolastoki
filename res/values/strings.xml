@@ -35,6 +35,10 @@
     
     <string name="parque_2_1_question">KALEAN BIZI NAIZ. ETA OSO ARGALA NAIZ. HIRU KOLORE DITUT BEGIETAN: HORIA, GORRIA ETA BERDEA.</string>
     
-    <string name="parque_3_1_question">ANIMALIA ORNODUNA GIZAKIAREN ALGUNA ASKOTAN EHIZTARIA ETA ITSUEN LAGUNGARRIA.</string>
+    <string name="parque_3_1_question">ANIMALIA ORNODUNA GIZAKIAREN LAGUNA ASKOTAN EHIZTARIA ETA ITSUEN LAGUNGARRIA.</string>
 
+    <string name="motivacion_text">OSO ONDO!!!\nLORTU DUZU!!!</string>
+    
+    <string name="dialog_timout_message">DENBORA AGORTU DA</string>
+    
 </resources>

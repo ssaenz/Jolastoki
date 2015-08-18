@@ -38,10 +38,8 @@ public class QuizGameView extends GameView {
 
 		LayoutInflater.from(getContext()).inflate(super.getLayout(), this);
 		for (int id : this.answers) {
-			Button buton = (Button) this.findViewById(id);
-			System.out.println(buton.getClass().getName());
-			System.out.println(buton.getText());
-			buton.setOnClickListener(new AudibleOnClickListener(QuizGameView.this.getContext(), R.raw.seleccion) {
+			View view = (View) this.findViewById(id);
+			view.setOnClickListener(new AudibleOnClickListener(QuizGameView.this.getContext(), R.raw.seleccion) {
 
 				@Override
 				public void onAudibleClick(View v) {
