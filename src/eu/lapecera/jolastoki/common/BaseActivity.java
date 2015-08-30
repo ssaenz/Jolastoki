@@ -15,13 +15,13 @@ public class BaseActivity extends Activity {
 	@Override
 	protected void onPause() {
 		super.onPause();
-//		MusicManager.pause();
+		MusicManager.pause();
 	}
 	
 	@Override
 	protected void onResume() {
 		super.onResume();
-//		MusicManager.start(this, R.raw.musica_fondo);
+		MusicManager.start(this, R.raw.musica_fondo);
 	}
 
 }

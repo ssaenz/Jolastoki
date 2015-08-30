@@ -33,6 +33,7 @@
             android:id="@+id/game_number"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
             android:layout_marginRight="@dimen/game_icon_small"
             android:layout_weight="1" />
     </LinearLayout>

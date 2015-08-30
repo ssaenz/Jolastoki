@@ -51,6 +51,9 @@
     <dimen name="parque_cartel_width">400dp</dimen>
     <dimen name="parque_cartel_padding">20dp</dimen>
     
+    <dimen name="parque_cartelito_margin_right">20dp</dimen>
+    <dimen name="parque_cartelito_padding_top">40dp</dimen>
+    
     <dimen name="dialog_timeout_padding">20dp</dimen>
     
 </resources>

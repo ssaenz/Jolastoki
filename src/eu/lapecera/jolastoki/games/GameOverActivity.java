@@ -1,6 +1,7 @@
 package eu.lapecera.jolastoki.games;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import eu.lapecera.jolastoki.R;
 import eu.lapecera.jolastoki.common.BaseActivity;
@@ -34,6 +35,9 @@ public class GameOverActivity extends BaseActivity {
 				goToRanking();
 			}
 		});
+		MediaPlayer mp = MediaPlayer.create(this, R.raw.motivacion);
+		mp.setLooping(false);
+		mp.start();
 	}
 
 

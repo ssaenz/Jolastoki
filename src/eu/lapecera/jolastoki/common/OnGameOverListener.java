@@ -1,4 +1,4 @@
-package eu.lapecera.jolastoki.games.quiz;
+package eu.lapecera.jolastoki.common;
 
 public interface OnGameOverListener {
 	public void OnGameOver ();

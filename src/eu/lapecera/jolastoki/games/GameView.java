@@ -2,9 +2,10 @@ package eu.lapecera.jolastoki.games;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.LayoutInflater;
 import android.widget.RelativeLayout;
+import eu.lapecera.jolastoki.common.OnGameOverListener;
 import eu.lapecera.jolastoki.config.GameViewConfig;
-import eu.lapecera.jolastoki.games.quiz.OnGameOverListener;
 
 public abstract class GameView extends RelativeLayout {
 	
@@ -19,6 +20,7 @@ public abstract class GameView extends RelativeLayout {
 		this.time = config.getTime();
 		this.layout = config.getLayout();
 		this.title = config.getTitle();
+		LayoutInflater.from(getContext()).inflate(getLayout(), this);
 		onCreateView(config);
 	}
 	

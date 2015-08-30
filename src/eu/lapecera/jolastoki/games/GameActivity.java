@@ -6,29 +6,23 @@ import java.util.Date;
 import java.util.List;
 
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.DialogInterface.OnDismissListener;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import eu.lapecera.jolastoki.R;
 import eu.lapecera.jolastoki.common.BaseActivity;
 import eu.lapecera.jolastoki.common.Constants;
-import eu.lapecera.jolastoki.common.ScoreAdapter;
+import eu.lapecera.jolastoki.common.OnGameOverListener;
 import eu.lapecera.jolastoki.config.GameViewConfig;
-import eu.lapecera.jolastoki.database.DatabaseHandler;
 import eu.lapecera.jolastoki.domain.GameArea;
 import eu.lapecera.jolastoki.domain.GameLevel;
-import eu.lapecera.jolastoki.domain.Score;
-import eu.lapecera.jolastoki.games.quiz.OnGameOverListener;
 import eu.lapecera.jolastoki.widget.GameNumber;
 
 public class GameActivity extends BaseActivity implements OnGameOverListener {
@@ -123,6 +117,11 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	private synchronized boolean isTimeStopped() {
 		return this.timeStopped;
 	}
+	
+	private synchronized void playTime() {
+		this.timeStopped = false;
+		timeChanger.postDelayed(timeUpdater, 1000);
+	}
 
 	private void calculateTotalScore () {
 		long timeRest = (Long) this.timeView.getTag();
@@ -140,6 +139,7 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 		this.timeView.setTag(gameTime);
 		this.gameTitle.setText(game.getTitle());
 		this.gameNumber.setGameNumber(currentGame);
+		playTime();
 	}
 
 	private void updateTime () {

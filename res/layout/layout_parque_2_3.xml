@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background_front"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parque_1_1_fondo"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="@dimen/parque_cartel_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="115dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/parque_cartel_padding" />
+
+    <ImageButton
+        android:id="@+id/parque_2_3_bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_toLeftOf="@+id/parque_2_3_bt2"
+        android:background="@android:color/transparent"
+        android:src="@drawable/parque_2_3_bt1" />
+
+    <ImageButton
+        android:id="@+id/parque_2_3_bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_toLeftOf="@+id/parque_2_3_bt3"
+        android:background="@android:color/transparent"
+        android:src="@drawable/parque_2_3_bt2" />
+
+    <ImageButton
+        android:id="@+id/parque_2_3_bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/parque_2_3_bt3" />
+
+    <ImageButton
+        android:id="@+id/parque_2_3_bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/parque_2_3_bt3"
+        android:background="@android:color/transparent"
+        android:src="@drawable/parque_2_3_bt4" />
+
+    <ImageButton
+        android:id="@+id/parque_2_3_bt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/parque_2_3_bt4"
+        android:background="@android:color/transparent"
+        android:src="@drawable/parque_2_3_bt5" />
+
+</RelativeLayout>

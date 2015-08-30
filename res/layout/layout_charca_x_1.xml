@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/charca_1_fondo"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/charca_1_elementos" 
+        android:paddingTop="50dp">
+
+        <eu.lapecera.jolastoki.widget.TypographyButton
+            android:id="@+id/charca_bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/charca_bt" />
+
+        <eu.lapecera.jolastoki.widget.TypographyButton
+            android:id="@+id/charca_bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/charca_bt1"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/charca_bt" />
+
+        <eu.lapecera.jolastoki.widget.TypographyButton
+            android:id="@+id/charca_bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/charca_bt2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/charca_bt" />
+
+        <eu.lapecera.jolastoki.widget.TypographyButton
+            android:id="@+id/charca_bt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/charca_bt" />
+
+        <eu.lapecera.jolastoki.widget.TypographyButton
+            android:id="@+id/charca_bt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/charca_bt4"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/charca_bt" />
+
+        <eu.lapecera.jolastoki.widget.TypographyButton
+            android:id="@+id/charca_bt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/charca_bt5"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/charca_bt" />
+    </RelativeLayout>
+
+</LinearLayout>
