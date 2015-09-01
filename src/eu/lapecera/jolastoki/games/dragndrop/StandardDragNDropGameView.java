@@ -5,11 +5,11 @@ import java.util.Map;
 import java.util.Set;
 
 import android.content.Context;
-import android.media.MediaPlayer;
 import android.view.View;
 import eu.lapecera.jolastoki.R;
-import eu.lapecera.jolastoki.config.DragNDropGameViewConfig;
 import eu.lapecera.jolastoki.config.GameViewConfig;
+import eu.lapecera.jolastoki.config.StandardDragNDropGameViewConfig;
+import eu.lapecera.jolastoki.util.MusicManager;
 
 public class StandardDragNDropGameView extends DragNDropGameView {
 
@@ -25,7 +25,7 @@ public class StandardDragNDropGameView extends DragNDropGameView {
 	@Override
 	protected void onCreateView(GameViewConfig config) {
 		super.onCreateView(config);
-		targetMap = ((DragNDropGameViewConfig)config).getTargets();
+		targetMap = ((StandardDragNDropGameViewConfig)config).getTargets();
 		Collection<Integer> figures = targetMap.values();
 		Set<Integer> targets = targetMap.keySet();
 
@@ -45,20 +45,14 @@ public class StandardDragNDropGameView extends DragNDropGameView {
 		if (targetMap.containsKey(v.getId()) && targetMap.get(v.getId()) == getDraggingView().getId()) {
 			getDraggingView().setVisibility(View.INVISIBLE);
 			v.setBackgroundDrawable(getDraggingView().getBackground());
-			MediaPlayer mp = MediaPlayer.create(getContext(), R.raw.acierto);
-			mp.setLooping(false);
-			mp.start();
+			MusicManager.playSingle(getContext(), R.raw.acierto);
 			numMatches ++;
 			if (numMatches == targetMap.size()) {
-				if (getGameOverListener() != null) {
-					getGameOverListener().OnGameOver();
-				}
+				endGame();
 			}
 		} else {
 			if (targetMap.containsKey(v.getId())) {
-				MediaPlayer mp = MediaPlayer.create(getContext(), R.raw.fallo);
-				mp.setLooping(false);
-				mp.start();
+				MusicManager.playSingle(getContext(), R.raw.fallo);
 			}
 			moveBack(getDroppedX(), getDraggingView().getX(), getDroppedY(), getDraggingView().getY());
 		}

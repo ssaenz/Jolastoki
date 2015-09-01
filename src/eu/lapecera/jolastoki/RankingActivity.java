@@ -1,4 +1,4 @@
-package eu.lapecera.jolastoki.games;
+package eu.lapecera.jolastoki;
 
 import java.util.List;
 
@@ -15,7 +15,6 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import eu.lapecera.jolastoki.AreaActivity;
 import eu.lapecera.jolastoki.R;
 import eu.lapecera.jolastoki.common.BaseActivity;
 import eu.lapecera.jolastoki.common.Constants;
@@ -44,6 +43,9 @@ public class RankingActivity extends BaseActivity implements OnClickListener {
 		level = (GameLevel) extras.get(Constants.LEVEL_KEY);
 		area = (GameArea) extras.get(Constants.AREA_KEY);
 		score = (Integer) extras.get(Constants.SCORE_KEY);
+		
+		TextView levelView = (TextView) findViewById(R.id.header_icon_level);
+		levelView.setText(Integer.toString(level.ordinal() + 1));
 
 		scoreList = (ListView) findViewById(R.id.ranking_list);
 		

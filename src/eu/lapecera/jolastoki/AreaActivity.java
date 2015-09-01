@@ -7,13 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 import eu.lapecera.jolastoki.common.AudibleOnClickListener;
 import eu.lapecera.jolastoki.common.BaseActivity;
 import eu.lapecera.jolastoki.common.Constants;
 import eu.lapecera.jolastoki.domain.GameArea;
 import eu.lapecera.jolastoki.domain.GameLevel;
-import eu.lapecera.jolastoki.games.GameActivity;
 
 public class AreaActivity extends BaseActivity {
 
@@ -27,26 +27,26 @@ public class AreaActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_area);
 
-		Button btn = (Button) findViewById(R.id.mercado_area_btn);
+		ImageButton btn = (ImageButton) findViewById(R.id.mercado_area_btn);
 		btn.setOnClickListener(clickListener);
 		btn.setTag(GameArea.MERCADO);
 
-		btn = (Button) findViewById(R.id.charca_area_btn);
+		btn = (ImageButton) findViewById(R.id.charca_area_btn);
 		btn.setOnClickListener(clickListener);
 		btn.setTag(GameArea.CHARCA);
 
-		btn = (Button) findViewById(R.id.parque_area_btn);
+		btn = (ImageButton) findViewById(R.id.parque_area_btn);
 		btn.setOnClickListener(clickListener);
 		btn.setTag(GameArea.PARQUE);
 
-		btn = (Button) findViewById(R.id.colegio_area_btn);
+		btn = (ImageButton) findViewById(R.id.colegio_area_btn);
 		btn.setOnClickListener(clickListener);
 		btn.setTag(GameArea.COLEGIO);
 
-		btn = (Button) findViewById(R.id.instructions_btn);
+		btn = (ImageButton) findViewById(R.id.instructions_btn);
 		btn.setOnClickListener(clickListener);
 
-		btn = (Button) findViewById(R.id.go_back_btn);
+		btn = (ImageButton) findViewById(R.id.go_back_btn);
 		btn.setOnClickListener(clickListener);
 	}
 

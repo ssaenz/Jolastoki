@@ -2,12 +2,26 @@ package eu.lapecera.jolastoki.util;
 
 import android.content.Context;
 import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnCompletionListener;
 import android.util.Log;
 
 public class MusicManager {
 	
 	private static final String TAG = "MusicManager";
 	private static MediaPlayer mediaPlayer;
+	
+	public static void playSingle (Context context, int resource) {
+		MediaPlayer mp = MediaPlayer.create(context, resource);
+		mp.setLooping(false);
+		mp.start();
+		mp.setOnCompletionListener(new OnCompletionListener() {
+			
+			@Override
+			public void onCompletion(MediaPlayer mp) {
+				mp.release();
+			}
+		});
+	}
 
 	public static void start(Context context, int music) {
 		start(context, music, false);

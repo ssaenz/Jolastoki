@@ -9,7 +9,7 @@ import eu.lapecera.jolastoki.domain.GameLevel;
 import eu.lapecera.jolastoki.games.GameView;
 import eu.lapecera.jolastoki.games.dragndrop.StandardDragNDropGameView;
 
-public enum DragNDropGameViewConfig implements GameViewConfig {
+public enum StandardDragNDropGameViewConfig implements GameViewConfig {
 
 	parque_1_3 (GameLevel.ONE, R.layout.layout_parque_1_3, R.string.parque_1_3_title, 60000l, 
 			new HashMap<Integer, Integer>() { 
@@ -30,7 +30,7 @@ public enum DragNDropGameViewConfig implements GameViewConfig {
 	private int title;
 	private Map<Integer, Integer> targets;
 
-	private DragNDropGameViewConfig(GameLevel level, int layout, int title, long time, Map<Integer, Integer> targets) {
+	private StandardDragNDropGameViewConfig(GameLevel level, int layout, int title, long time, Map<Integer, Integer> targets) {
 		this.level = level;
 		this.time = time;
 		this.title = title;

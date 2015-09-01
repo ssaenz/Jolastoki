@@ -54,25 +54,27 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	public List<Score> getScore (GameArea area, GameLevel level) {
 		
 		SQLiteDatabase db = this.getReadableDatabase();
-		Cursor cursor = db.query(Score.TABLE_NAME, null, "area = ? AND level = ?", new String[]{area.name(), level.name()}, null, null, Score.KEY_SCORE + " DESC");
+		Cursor cursor = db.query(Score.TABLE_NAME, null, "area = ? AND level = ?", new String[]{area.name(), level.name()}, null, null, Score.KEY_SCORE + " DESC", "10");
 		List<Score> scores = new ArrayList<Score>();
-		
+		int position = 1;
 		for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
-			Score score = buildScore (cursor);
+			Score score = buildScore (cursor, position);
 			scores.add(score);
+			position ++;
 		}
 		cursor.close();
 		return scores;
 	}
 	
 	
-	private Score buildScore (Cursor cursor) {
+	private Score buildScore (Cursor cursor, int position) {
 		Score score = new Score();
 		score.setId(cursor.getLong(cursor.getColumnIndex(Score.KEY_ID)));
 		score.setArea(cursor.getString(cursor.getColumnIndex(Score.KEY_AREA)));
 		score.setLevel(cursor.getString(cursor.getColumnIndex(Score.KEY_LEVEL)));
 		score.setName(cursor.getString(cursor.getColumnIndex(Score.KEY_NAME)));
 		score.setScore(cursor.getInt(cursor.getColumnIndex(Score.KEY_SCORE)));
+		score.setPosition(position);
 		return score;
 	}
 

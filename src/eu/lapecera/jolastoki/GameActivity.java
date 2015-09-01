@@ -1,4 +1,4 @@
-package eu.lapecera.jolastoki.games;
+package eu.lapecera.jolastoki;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -23,6 +23,7 @@ import eu.lapecera.jolastoki.common.OnGameOverListener;
 import eu.lapecera.jolastoki.config.GameViewConfig;
 import eu.lapecera.jolastoki.domain.GameArea;
 import eu.lapecera.jolastoki.domain.GameLevel;
+import eu.lapecera.jolastoki.games.GameView;
 import eu.lapecera.jolastoki.widget.GameNumber;
 
 public class GameActivity extends BaseActivity implements OnGameOverListener {
@@ -46,7 +47,7 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	private int currentGame;
 	private List<GameView> games = new ArrayList<GameView>();
 
-	private Handler timeChanger = new Handler();
+	private Handler handler = new Handler();
 
 	private boolean timeStopped = false;
 
@@ -80,7 +81,7 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 
 		currentGame = 0;
 		loadNextGame();
-		timeChanger.postDelayed(timeUpdater, 1000);
+		handler.postDelayed(timeUpdater, 1000);
 
 	}
 
@@ -97,12 +98,7 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	 */
 	@Override
 	public void OnGameOver() {
-		calculateTotalScore ();
-		if (currentGame < games.size()) {
-			loadNextGame();
-		} else {
-			goToGameOverActivity();
-		}
+		startScoreAnimation ();
 	}
 
 	@Override
@@ -120,14 +116,39 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	
 	private synchronized void playTime() {
 		this.timeStopped = false;
-		timeChanger.postDelayed(timeUpdater, 1000);
+		handler.postDelayed(timeUpdater, 1000);
 	}
 
-	private void calculateTotalScore () {
+	private void startScoreAnimation () {
 		long timeRest = (Long) this.timeView.getTag();
-		score = score + (int)(timeRest/100);
-		scoreView.setText(Long.toString(score));
+		handler.postDelayed(new ScoreAnimation(timeRest/100), 1);
 	}
+	
+	private class ScoreAnimation implements Runnable {
+		private long scoreAmount;
+		
+		public ScoreAnimation(long scoreAmount) {
+			this.scoreAmount = scoreAmount;
+		}
+		@Override
+		public void run() {
+			score = score + 5;
+			scoreAmount = scoreAmount - 5;
+			timeView.setText(format.format(new Date(scoreAmount * 100)));
+			scoreView.setText(Long.toString(score));
+			if (scoreAmount <= 0) {
+				if (currentGame < games.size()) {
+					loadNextGame();
+				} else {
+					goToGameOverActivity();
+				}
+			} else {
+				handler.postDelayed(this, 1);
+			}
+		}
+		
+	}
+	
 
 	private void loadNextGame () {
 		gameContent.removeAllViews();
@@ -152,7 +173,7 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 			time = time - 1000;
 			this.timeView.setText(format.format(new Date(time)));
 			this.timeView.setTag(time);
-			timeChanger.postDelayed(timeUpdater, 1000);
+			handler.postDelayed(timeUpdater, 1000);
 		}
 	}
 	

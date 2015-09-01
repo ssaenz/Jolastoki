@@ -2,8 +2,8 @@
 <resources>
 
     <string name="app_name">Jolastoki</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+
+    <string name="activity_area_title">AUKERATU MAILA</string>
     
     <string name="area_pairs_title">Juego de las parejas</string>
     <string name="area_quiz_title">Juego de preguntas</string>
@@ -29,6 +29,9 @@
     <string name="mercado_3_1_answer_2">YOGURTA</string>
     <string name="mercado_3_1_answer_3">PATEA</string>
     <string name="mercado_3_1_answer_4">TXORIZOA</string>
+    
+    
+    <string name="mercado_3_3_title">ZENBAKIAK KONPARATU, ZEINU EGOKIA HERRESTAN ERAMANEZ</string>
     
     <string name="parque_1_1_question">ASMA EZAZU ZER LETRAK \nBIDAIATZEN DUEN, BETI, \nAUTOBUSEZ, BIZIKLETAZ, \nITSASOAN BARRENA ONTZIAN ETA \nUNIBERTSOAN ZEHAN KOHETEAN</string>
     <string name="parque_1_1_title">ASMAKIZUNAK</string>

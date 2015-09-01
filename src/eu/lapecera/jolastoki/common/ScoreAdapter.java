@@ -41,7 +41,7 @@ public class ScoreAdapter extends BaseAdapter {
 			TextView name = (TextView) v.findViewById(R.id.score_name);
 			TextView amount = (TextView) v.findViewById(R.id.score_amount);
 			
-			pos.setText(Integer.toString(position));
+			pos.setText(Integer.toString(score.getPosition()));
 			name.setText(score.getName());
 			amount.setText(Integer.toString(score.getScore()));
 		}

@@ -9,34 +9,37 @@
         android:layout_height="match_parent"
         android:orientation="horizontal" />
 
-    <LinearLayout
-        android:id="@+id/game_header"
+    <View
+        android:id="@+id/header"
         android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_header_height"
+        android:background="@color/green" />
+
+    <eu.lapecera.jolastoki.widget.TypographyTextView
+        android:id="@+id/game_time"
+        style="@style/normalText"
+        android:layout_width="@dimen/activity_game_score_and_time_width"
         android:layout_height="wrap_content"
-        android:background="@drawable/cabecera_juegos"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="@dimen/game_header_padding" >
+        android:background="@drawable/fondo_stroke_verde_liso"
+        android:drawableLeft="@drawable/cabecera_juegos_ico_reloj"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/time_text_padding"
+        android:text="00:00" />
 
-        <eu.lapecera.jolastoki.widget.TypographyTextView
-            android:id="@+id/game_title"
-            style="@style/smallText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="@dimen/score_and_time_width"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Un titulo largo para ver cuánto ocupa el texto" />
-
-        <eu.lapecera.jolastoki.widget.GameNumber
-            android:id="@+id/game_number"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:layout_marginRight="@dimen/game_icon_small"
-            android:layout_weight="1" />
-    </LinearLayout>
+    <eu.lapecera.jolastoki.widget.TypographyTextView
+        android:id="@+id/game_score"
+        style="@style/normalText"
+        android:layout_width="@dimen/activity_game_score_and_time_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_time"
+        android:background="@drawable/fondo_stroke_verde_redondo_izq_abajo"
+        android:drawableLeft="@drawable/cabecera_juegos_ico_estrella"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:gravity="center_vertical|left"
+        android:padding="@dimen/score_text_padding"
+        android:text="0" />
+    
 
     <ImageView
         android:id="@+id/game_icon"
@@ -52,43 +55,33 @@
         android:id="@+id/header_ico_level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_margin="@dimen/game_level_icon_margin"
+        android:layout_alignRight="@+id/game_icon"
+        android:layout_alignTop="@+id/game_icon"
+        android:layout_margin="@dimen/top_icon_margin"
         android:background="@drawable/cabecera_juegos_ico_niveles"
         android:gravity="center"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white" />
 
-    <LinearLayout
-        android:id="@+id/timeAndScoreContent"
-        android:layout_width="@dimen/score_and_time_width"
-        android:layout_height="@dimen/score_and_time_height"
-        android:orientation="vertical" >
+    <eu.lapecera.jolastoki.widget.GameNumber
+        android:id="@+id/game_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/game_icon"
+        android:layout_alignTop="@+id/header"
+        android:layout_alignBottom="@+id/header"
+        android:gravity="center" />
 
-        <eu.lapecera.jolastoki.widget.TypographyTextView
-            android:id="@+id/game_time"
-            style="@style/normalText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/cabecera_juegos_fondo_blanco"
-            android:drawableLeft="@drawable/cabecera_juegos_ico_reloj"
-            android:drawablePadding="@dimen/drawable_padding"
-            android:gravity="left|center_vertical"
-            android:padding="@dimen/time_text_padding"
-            android:text="00:00" />
-
-        <eu.lapecera.jolastoki.widget.TypographyTextView
-            android:id="@+id/game_score"
-            style="@style/normalText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/cabecera_juegos_fondo_blanco"
-            android:drawableLeft="@drawable/cabecera_juegos_ico_estrella"
-            android:drawablePadding="@dimen/drawable_padding"
-            android:gravity="center_vertical|left"
-            android:padding="@dimen/score_text_padding"
-            android:text="0" />
-    </LinearLayout>
+    <eu.lapecera.jolastoki.widget.TypographyTextView
+        android:id="@+id/game_title"
+        style="@style/smallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/header"
+        android:layout_alignBottom="@+id/header"
+        android:layout_toRightOf="@+id/game_score"
+        android:layout_toLeftOf="@+id/game_number"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Un titulo largo para ver cuánto ocupa el texto" />
 
 </RelativeLayout>

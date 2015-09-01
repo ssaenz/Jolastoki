@@ -5,15 +5,15 @@ import java.util.List;
 import java.util.Map;
 
 import android.content.Context;
-import android.media.MediaPlayer;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import eu.lapecera.jolastoki.R;
-import eu.lapecera.jolastoki.config.DragNDropSpecialGameViewConfig;
 import eu.lapecera.jolastoki.config.GameViewConfig;
+import eu.lapecera.jolastoki.config.ModOneDragNDropGameViewConfig;
+import eu.lapecera.jolastoki.util.MusicManager;
 
 public class ModOneDragNDropGameView extends DragNDropGameView {
 
@@ -38,7 +38,7 @@ public class ModOneDragNDropGameView extends DragNDropGameView {
 	protected void onCreateView(GameViewConfig config) {
 		super.onCreateView(config);
 		
-		screensTarget = ((DragNDropSpecialGameViewConfig) config).getScreens();
+		screensTarget = ((ModOneDragNDropGameViewConfig) config).getScreens();
 		container = (LinearLayout) findViewById(R.id.container);
 		
 		currentIndex = 0;
@@ -87,8 +87,7 @@ public class ModOneDragNDropGameView extends DragNDropGameView {
 			if (currentIndex < screens.size()) {
 				loadNextScreen();
 			} else {
-				if (getGameOverListener() != null)
-					getGameOverListener().OnGameOver();
+				endGame();
 			}
 		}
 	};
@@ -98,15 +97,11 @@ public class ModOneDragNDropGameView extends DragNDropGameView {
 		if (v.getId() == R.id.parque_x_2_target && screensTarget.get(currentScreen) == getDraggingView().getId()) {
 			targetButton.setText(((Button)getDraggingView()).getText());
 			targetButton.setVisibility(View.VISIBLE);
-			MediaPlayer mp = MediaPlayer.create(getContext(), R.raw.acierto);
-			mp.setLooping(false);
-			mp.start();
+			MusicManager.playSingle(getContext(), R.raw.acierto);
 			handler.postDelayed(resetRunnable, 1000);
 		} else {
 			if (screensTarget.get(currentScreen) != getDraggingView().getId()) {
-				MediaPlayer mp = MediaPlayer.create(getContext(), R.raw.fallo);
-				mp.setLooping(false);
-				mp.start();
+				MusicManager.playSingle(getContext(), R.raw.fallo);
 			}
 			moveBack(getDroppedX(), getDraggingView().getX(), getDroppedY(), getDraggingView().getY());
 		}

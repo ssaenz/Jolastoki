@@ -17,7 +17,16 @@ public class Score {
 	private String level;
 	private String name;
 	private int score;
+	private int position;
 	
+	public int getPosition() {
+		return position;
+	}
+
+	public void setPosition(int position) {
+		this.position = position;
+	}
+
 	public long getId() {
 		return id;
 	}

@@ -2,21 +2,60 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:custom="http://schemas.android.com/apk/res/eu.lapecera.jolastoki">
     
-    <style name="typographyText">
+    <style name="arialText">
         <item name="android:textColor">@android:color/black</item>
         <item name="ttf_name">Arial_Rounded_Bold.ttf</item>
     </style>
     
+    <style name="arialWhiteText" parent="arialText">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
     
-    <style name="bigText" parent="typographyText">
+    <style name="arialBlackText" parent="arialText">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    
+    
+    <style name="bigText" parent="arialBlackText">
         <item name="android:textSize">@dimen/big_text_size</item>
     </style>
     
-    <style name="normalText" parent="typographyText">
+    <style name="normalText" parent="arialBlackText">
         <item name="android:textSize">@dimen/normal_text_size</item>
     </style>
     
-    <style name="smallText" parent="typographyText">
+    <style name="smallText" parent="arialBlackText">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+    
+    
+    <style name="bigWhiteText" parent="arialWhiteText">
+        <item name="android:textSize">@dimen/big_text_size</item>
+    </style>
+    
+    <style name="normalWhiteText" parent="arialWhiteText">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+    
+    <style name="smallWhiteText" parent="arialWhiteText">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+    
+    
+    <style name="eraserText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="ttf_name">Eraser.ttf</item>
+    </style>
+    
+    <style name="bigEraserText" parent="eraserText">
+        <item name="android:textSize">@dimen/big_text_size</item>
+    </style>
+    
+    <style name="normalEraserText" parent="eraserText">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+    
+    <style name="smallEraserText" parent="eraserText">
         <item name="android:textSize">@dimen/small_text_size</item>
     </style>
     

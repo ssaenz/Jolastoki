@@ -9,7 +9,7 @@ import eu.lapecera.jolastoki.domain.GameLevel;
 import eu.lapecera.jolastoki.games.GameView;
 import eu.lapecera.jolastoki.games.dragndrop.ModOneDragNDropGameView;
 
-public enum DragNDropSpecialGameViewConfig implements GameViewConfig {
+public enum ModOneDragNDropGameViewConfig implements GameViewConfig {
 
 	parque_1_2 (GameLevel.ONE, R.layout.layout_parque_1_2, R.string.parque_x_2_title, 60000l, 
 			R.drawable.parque_2_circulo_acierto, R.drawable.parque_2_circulo_normal,
@@ -54,7 +54,7 @@ public enum DragNDropSpecialGameViewConfig implements GameViewConfig {
 	private int backgroundNormal;
 	private Map<Integer, Integer> screens;
 
-	private DragNDropSpecialGameViewConfig(GameLevel level, int layout, int title, long time, int backgroundOk, int backgroundNormal, Map<Integer, Integer> screens) {
+	private ModOneDragNDropGameViewConfig(GameLevel level, int layout, int title, long time, int backgroundOk, int backgroundNormal, Map<Integer, Integer> screens) {
 		this.level = level;
 		this.time = time;
 		this.title = title;

@@ -1,9 +1,9 @@
 package eu.lapecera.jolastoki.common;
 
 import android.content.Context;
-import android.media.MediaPlayer;
 import android.view.View;
 import android.view.View.OnClickListener;
+import eu.lapecera.jolastoki.util.MusicManager;
 
 public abstract class AudibleOnClickListener implements OnClickListener {
 	
@@ -16,10 +16,8 @@ public abstract class AudibleOnClickListener implements OnClickListener {
 	}
 	@Override
 	public void onClick(View v) {
-		MediaPlayer mp = MediaPlayer.create(this.context, resid);
-		mp.setLooping(false);
+		MusicManager.playSingle(this.context, this.resid);
 		onAudibleClick(v);
-		mp.start();
 	}
 	
 	public abstract void onAudibleClick (View v);

@@ -1,7 +1,6 @@
 package eu.lapecera.jolastoki.games.quiz;
 
 import android.content.Context;
-import android.media.MediaPlayer;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +10,7 @@ import eu.lapecera.jolastoki.common.AudibleOnClickListener;
 import eu.lapecera.jolastoki.config.GameViewConfig;
 import eu.lapecera.jolastoki.config.QuizGameViewConfig;
 import eu.lapecera.jolastoki.games.GameView;
+import eu.lapecera.jolastoki.util.MusicManager;
 
 public class QuizGameView extends GameView {
 
@@ -22,11 +22,13 @@ public class QuizGameView extends GameView {
 	private int currentScreen;
 	private int currentRightAnswers;
 	private int currentIndex = 0;
-	
+
 	private LinearLayout containerLayout;
 
 	private Handler handler = new Handler();
 	private ButtonHandler buttonHandler = new ButtonHandler();
+
+	private boolean gameOver = false;
 
 	public QuizGameView(Context context, GameViewConfig config) {
 		super(context, config);
@@ -45,25 +47,24 @@ public class QuizGameView extends GameView {
 
 				@Override
 				public void onAudibleClick(View v) {
-					final View button = v;
-					button.setSelected(true);
-					buttonHandler.setView(button);
-					if (v.getId() == QuizGameView.this.currentRightAnswers) {
-						if (getGameOverListener() != null && !hasMoreScreens()) {
-							getGameOverListener().OnStopTime();
-						}
-						MediaPlayer mp = MediaPlayer.create(getContext(), R.raw.acierto);
-						mp.setLooping(false);
-						mp.start();
-						buttonHandler.setFallo(true);
+					if (!gameOver) {
+						final View button = v;
+						button.setSelected(true);
+						buttonHandler.setView(button);
+						if (v.getId() == QuizGameView.this.currentRightAnswers) {
+							if (getGameOverListener() != null && !hasMoreScreens()) {
+								gameOver = true;
+								getGameOverListener().OnStopTime();
+							}
+							MusicManager.playSingle(getContext(), R.raw.acierto);
+							buttonHandler.setFallo(true);
 
-					} else {
-						MediaPlayer mp = MediaPlayer.create(getContext(), R.raw.fallo);
-						mp.setLooping(false);
-						mp.start();
-						buttonHandler.setFallo(false);
+						} else {
+							MusicManager.playSingle(getContext(), R.raw.fallo);
+							buttonHandler.setFallo(false);
+						}
+						handler.postDelayed(buttonHandler, 1000);
 					}
-					handler.postDelayed(buttonHandler, 1000);
 				}
 			});
 		}
@@ -87,7 +88,7 @@ public class QuizGameView extends GameView {
 		setScreen(this.currentIndex);
 		this.currentRightAnswers = this.rightAnswers[this.currentIndex];
 	}
-	
+
 	private void setScreen (int index) {
 		this.currentScreen = this.screens[index];
 		View screenView = LayoutInflater.from(getContext()).inflate(this.currentScreen, null);

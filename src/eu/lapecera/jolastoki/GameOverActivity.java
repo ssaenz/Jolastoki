@@ -1,13 +1,12 @@
-package eu.lapecera.jolastoki.games;
+package eu.lapecera.jolastoki;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import eu.lapecera.jolastoki.R;
 import eu.lapecera.jolastoki.common.BaseActivity;
 import eu.lapecera.jolastoki.common.Constants;
 import eu.lapecera.jolastoki.domain.GameArea;
 import eu.lapecera.jolastoki.domain.GameLevel;
+import eu.lapecera.jolastoki.util.MusicManager;
 import eu.lapecera.jolastoki.widget.AnimationView;
 import eu.lapecera.jolastoki.widget.AnimationView.OnAnimationCompleteListener;
 
@@ -35,9 +34,7 @@ public class GameOverActivity extends BaseActivity {
 				goToRanking();
 			}
 		});
-		MediaPlayer mp = MediaPlayer.create(this, R.raw.motivacion);
-		mp.setLooping(false);
-		mp.start();
+		MusicManager.playSingle(this, R.raw.motivacion);
 	}
 
 
