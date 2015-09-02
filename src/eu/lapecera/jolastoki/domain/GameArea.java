@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import eu.lapecera.jolastoki.R;
+import eu.lapecera.jolastoki.config.ColorGameViewConfig;
 import eu.lapecera.jolastoki.config.GameViewConfig;
 import eu.lapecera.jolastoki.config.ModOneDragNDropGameViewConfig;
 import eu.lapecera.jolastoki.config.ModTwoDragNDropGameViewConfig;
@@ -17,6 +18,9 @@ public enum GameArea {
 	MERCADO		(R.drawable.cabecera_juegos_ico_mercado, new GameViewConfig[]{	QuizGameViewConfig.MERCADO_1_1, 
 																				QuizGameViewConfig.MERCADO_2_1, 
 																				QuizGameViewConfig.MERCADO_3_1,
+																				ColorGameViewConfig.MERCADO_1_2,
+																				ColorGameViewConfig.MERCADO_2_2,
+																				ColorGameViewConfig.MERCADO_3_2,
 																				ModTwoDragNDropGameViewConfig.MERCADO_3_3}),
 	
 	CHARCA		(R.drawable.cabecera_juegos_ico_charca, new GameViewConfig[]{	PairsGameViewConfig.CHARCA_1_1,

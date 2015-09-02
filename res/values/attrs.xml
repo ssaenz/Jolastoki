@@ -5,4 +5,8 @@
         <attr name="ttf_name" format="string"/>
     </declare-styleable>
     
+    <declare-styleable name="InteractiveView">
+        <attr name="assets_dir" format="string"/>
+    </declare-styleable>
+    
 </resources>

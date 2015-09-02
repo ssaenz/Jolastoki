@@ -2,11 +2,14 @@ package eu.lapecera.jolastoki.widget;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.lang.ref.WeakReference;
 import java.nio.IntBuffer;
 import java.util.Arrays;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -19,6 +22,7 @@ import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.MotionEvent;
 import android.view.View;
+import eu.lapecera.jolastoki.R;
 
 /**
  * Interactive picture view.
@@ -47,7 +51,16 @@ public class InteractiveView extends View {
 	
 	public InteractiveView(Context context, AttributeSet attrs) {
 		super(context, attrs);
+		
 		initialize();
+
+		TypedArray customAttrs = context.obtainStyledAttributes(attrs, R.styleable.InteractiveView);
+		String assetsDir = customAttrs.getString(R.styleable.InteractiveView_assets_dir);
+		Log.i("IntegeractiveView", "Dir: " + assetsDir);
+		File dir = new File( getContext().getExternalCacheDir(), assetsDir);
+		this.copyFromAssets(dir, assetsDir);
+		File[] files = dir.listFiles();
+		this.setRegionFiles(files);
 	}
 	
 	private void initialize() {
@@ -456,6 +469,36 @@ public class InteractiveView extends View {
 		Log.d(TAG, "handleMessage()");
 		invalidate();
 		mIsBusy = msg.what != 0;
+	}
+	
+	private void copyFromAssets(File dir, String dirName) {
+		if ( dir.exists() ) return; 
+			
+		// Create dir
+		dir.mkdirs();
+		
+		// Copy files from assets
+		try {
+			String[] names = getContext().getAssets().list(dirName);
+			for (String name : names ) {
+			     InputStream is = getContext().getAssets().open(dirName + File.separator + name);
+
+			     File outFile = new File(dir, name);
+			     FileOutputStream fos = new FileOutputStream(outFile);
+			     
+			     byte[] buffer = new byte[1024];
+			     int read;
+			     while ( (read = is.read(buffer)) != -1 ) {
+			    	 fos.write(buffer, 0, read);
+			     }
+			     
+			     is.close();
+			     fos.close();
+			} 
+		}
+		catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }
