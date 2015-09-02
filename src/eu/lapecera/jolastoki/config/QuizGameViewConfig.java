@@ -19,7 +19,7 @@ public enum QuizGameViewConfig implements GameViewConfig {
 	MERCADO_3_1 (GameLevel.THREE, R.layout.layout_mercado_3_1, R.string.mercado_1_1_title, 
 					new int[]{R.id.mercado_1_1_answer_1, R.id.mercado_1_1_answer_2, R.id.mercado_1_1_answer_3, R.id.mercado_1_1_answer_4}, 
 					-1, new int[]{}, 
-					new int[]{R.id.mercado_1_1_answer_3}, 60000),
+					new int[]{R.id.mercado_1_1_answer_2}, 60000),
 	PARQUE_1_1 (GameLevel.ONE, R.layout.layout_parque_1_1, R.string.parque_1_1_title, 
 					new int[]{R.id.parque_1_1_bt1, R.id.parque_1_1_bt2, R.id.parque_1_1_bt3}, 
 					-1, new int[]{}, 

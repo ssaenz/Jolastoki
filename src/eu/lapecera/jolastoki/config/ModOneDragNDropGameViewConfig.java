@@ -9,9 +9,9 @@ import eu.lapecera.jolastoki.domain.GameLevel;
 import eu.lapecera.jolastoki.games.GameView;
 import eu.lapecera.jolastoki.games.dragndrop.ModOneDragNDropGameView;
 
-public enum ModOneDragNDropGameViewConfig implements GameViewConfig {
+public enum ModOneDragNDropGameViewConfig implements DragNDropGameViewConfig {
 
-	parque_1_2 (GameLevel.ONE, R.layout.layout_parque_1_2, R.string.parque_x_2_title, 60000l, 
+	parque_1_2 (GameLevel.ONE, R.layout.layout_parque_1_2, R.string.parque_x_2_title, 60000l,
 			R.drawable.parque_2_circulo_acierto, R.drawable.parque_2_circulo_normal,
 			new HashMap<Integer, Integer>() { 
 				private static final long serialVersionUID = 1L;
@@ -22,7 +22,7 @@ public enum ModOneDragNDropGameViewConfig implements GameViewConfig {
 					put(R.layout.screen_parque_1_2_8minus8, R.id.parque_x_2_bt3);
 					put(R.layout.screen_parque_1_2_4plus3, R.id.parque_x_2_bt4);
 				}}),
-	parque_2_2 (GameLevel.TWO, R.layout.layout_parque_2_2, R.string.parque_x_2_title, 60000l, 
+	parque_2_2 (GameLevel.TWO, R.layout.layout_parque_2_2, R.string.parque_x_2_title, 60000l,
 			R.drawable.parque_2_circulo_acierto, R.drawable.parque_2_circulo_normal,
 			new HashMap<Integer, Integer>() { 
 				private static final long serialVersionUID = 1L;
@@ -33,7 +33,7 @@ public enum ModOneDragNDropGameViewConfig implements GameViewConfig {
 					put(R.layout.screen_parque_2_2_44plus33, R.id.parque_x_2_bt3);
 					put(R.layout.screen_parque_2_2_83minus25, R.id.parque_x_2_bt4);
 				}}),
-	parque_3_2 (GameLevel.THREE, R.layout.layout_parque_3_2, R.string.parque_x_2_title, 60000l, 
+	parque_3_2 (GameLevel.THREE, R.layout.layout_parque_3_2, R.string.parque_x_2_title, 60000l,
 			R.drawable.parque_2_circulo_acierto, R.drawable.parque_2_circulo_normal,
 			new HashMap<Integer, Integer>() { 
 				private static final long serialVersionUID = 1L;
@@ -50,42 +50,26 @@ public enum ModOneDragNDropGameViewConfig implements GameViewConfig {
 	private int layout;
 	private long time;
 	private int title;
-	private int backgroundOk;
 	private int backgroundNormal;
 	private Map<Integer, Integer> screens;
+	private int endTargetBackground;
 
-	private ModOneDragNDropGameViewConfig(GameLevel level, int layout, int title, long time, int backgroundOk, int backgroundNormal, Map<Integer, Integer> screens) {
+	private ModOneDragNDropGameViewConfig(GameLevel level, int layout, int title, long time, int endTargetBackground, int backgroundNormal, Map<Integer, Integer> screens) {
 		this.level = level;
 		this.time = time;
 		this.title = title;
 		this.layout = layout;
-		this.backgroundOk = backgroundOk;
 		this.backgroundNormal = backgroundNormal;
+		this.endTargetBackground = endTargetBackground;
 		this.screens = screens;
-	}
-
-	public int getBackgroundOk() {
-		return backgroundOk;
-	}
-
-	public void setBackgroundOk(int backgroundOk) {
-		this.backgroundOk = backgroundOk;
 	}
 
 	public int getBackgroundNormal() {
 		return backgroundNormal;
 	}
 
-	public void setBackgroundNormal(int backgroundNormal) {
-		this.backgroundNormal = backgroundNormal;
-	}
-
 	public Map<Integer, Integer> getScreens() {
 		return screens;
-	}
-
-	public void setScreens(Map<Integer, Integer> screens) {
-		this.screens = screens;
 	}
 
 	@Override
@@ -111,6 +95,11 @@ public enum ModOneDragNDropGameViewConfig implements GameViewConfig {
 	@Override
 	public GameView getGameView(Context context) {
 		return new ModOneDragNDropGameView(context, this);
+	}
+
+	@Override
+	public int getEndTargetBackground() {
+		return this.endTargetBackground;
 	}
 
 }

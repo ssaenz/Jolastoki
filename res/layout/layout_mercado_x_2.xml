@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue" >
+    
+    <eu.lapecera.jolastoki.widget.InteractiveView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/fondo_borde_naranja_redondeado" 
+        android:padding="10dp">
+
+        <Button
+            style="@style/bigText"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mercado_verde"
+            android:text="X"
+            android:id="@+id/mercado_x_2_bt1" />
+
+        <Button
+            style="@style/bigText"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mercado_rojo"
+            android:text="G"
+            android:id="@+id/mercado_x_2_bt2" />
+
+        <Button
+            style="@style/bigText"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mercado_rosa"
+            android:text="r"
+            android:id="@+id/mercado_x_2_bt3" />
+
+        <Button
+            style="@style/bigText"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mercado_amarillo"
+            android:text="O"
+            android:id="@+id/mercado_x_2_bt4" />
+
+        <Button
+            style="@style/bigText"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mercado_naranja"
+            android:text="N"
+            android:id="@+id/mercado_x_2_bt5" />
+
+        <Button
+            style="@style/bigText"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mercado_cielo"
+            android:text="U"
+            android:id="@+id/mercado_x_2_bt6" />
+
+        <Button
+            style="@style/bigText"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mercado_pistacho"
+            android:text="B"
+            android:id="@+id/mercado_x_2_bt7" />
+
+        <Button
+            style="@style/bigText"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mercado_caqui"
+            android:text="M"
+            android:id="@+id/mercado_x_2_bt8" />
+
+        <Button
+            style="@style/bigText"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mercado_pino"
+            android:text="Z"
+            android:id="@+id/mercado_x_2_bt9" />
+
+        <Button
+            style="@style/bigText"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mercado_gris"
+            android:text="E"
+            android:id="@+id/mercado_x_2_bt10" />
+    </LinearLayout>
+
+</RelativeLayout>

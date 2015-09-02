@@ -3,12 +3,16 @@
             xmlns:custom="http://schemas.android.com/apk/res/eu.lapecera.jolastoki">
     
     <style name="arialText">
-        <item name="android:textColor">@android:color/black</item>
         <item name="ttf_name">Arial_Rounded_Bold.ttf</item>
+        <item name="android:bufferType">spannable</item>
     </style>
     
     <style name="arialWhiteText" parent="arialText">
         <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+    <style name="arialOrangeText" parent="arialText">
+        <item name="android:textColor">@color/orange</item>
     </style>
     
     <style name="arialBlackText" parent="arialText">
@@ -38,6 +42,19 @@
     </style>
     
     <style name="smallWhiteText" parent="arialWhiteText">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+    
+    
+    <style name="bigOrangeText" parent="arialBlackText">
+        <item name="android:textSize">@dimen/big_text_size</item>
+    </style>
+    
+    <style name="normalOrangeText" parent="arialBlackText">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+    
+    <style name="smallOrangeText" parent="arialBlackText">
         <item name="android:textSize">@dimen/small_text_size</item>
     </style>
     

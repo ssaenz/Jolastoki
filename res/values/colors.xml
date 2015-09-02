@@ -6,4 +6,15 @@
     <color name="blue">#06d7f8</color>
     <color name="white_90">#e6ffffff</color>
     
+    <color name="mercado_verde">#82a508</color>
+    <color name="mercado_pino">#039233</color>
+    <color name="mercado_pistacho">#c7d209</color>
+    <color name="mercado_caqui">#c19246</color>
+    <color name="mercado_cielo">#d5ecf8</color>
+    <color name="mercado_gris">#e0dbb4</color>
+    <color name="mercado_rojo">#e22221</color>
+    <color name="mercado_rosa">#f7c9ca</color>
+    <color name="mercado_amarillo">#f8ef97</color>
+    <color name="mercado_naranja">#f19506</color>
+    
 </resources>

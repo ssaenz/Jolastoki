@@ -11,7 +11,7 @@
     <string name="area_color_title">Juego de colorear</string>
     
     
-    <string name="mercado_1_1_title">Selecciona la respuesta correcta</string>
+    <string name="mercado_1_1_title">AUKERATU ERANTZUN ZUZENA</string>
     <string name="mercado_1_1_question">ZEIN JANARIK DITU PROTEINAK?</string>
     <string name="mercado_1_1_answer_1">DILISTAK</string>
     <string name="mercado_1_1_answer_2">OGIA</string>
@@ -82,6 +82,8 @@
     <string name="charca_title_2_1">ANIMALIA BAKOITZA DAGOKION EZAUGARRIAREKIN LOTU</string>
     <string name="charca_title_3_1">ANTZEKO HITZAK LOTU</string>
     
+    <string name="charca_x_3_title">SEGIDA DAGOKION FITXAREKIN OSATU</string>
+    
     <string name="charca_1_1_bt_1">POLITA</string>
     <string name="charca_1_1_bt_2">ITXITA</string>
     <string name="charca_1_1_bt_3">TXIKIA</string>
@@ -102,4 +104,50 @@
     <string name="charca_3_1_bt_4">MUTURKA</string>
     <string name="charca_3_1_bt_5">HAIZPE</string>
     <string name="charca_3_1_bt_6">TXILIOKA</string>
+    
+    
+    <string name="charca_x_2_title">ESALDIA BUKATU</string>
+    
+    <string name="charca_1_2_bt1">DUGU</string>
+    <string name="charca_1_2_bt2">DUT</string>
+    <string name="charca_1_2_bt3">DU</string>
+    <string name="charca_1_2_bt4">DUZUE</string>
+    <string name="charca_1_2_bt5">DUTE</string>
+    <string name="charca_1_2_bt6">DUZU</string>
+    
+    <string name="charca_1_2_target1">NIK SALTO EGITEN</string>
+    <string name="charca_1_2_target2">ZUK SALTO EGITEN</string>
+    <string name="charca_1_2_target3">HARK SALTO EGITEN</string>
+    <string name="charca_1_2_target4">GUK SALTO EGITEN</string>
+    <string name="charca_1_2_target5">SUEK SALTO EGITEN</string>
+    <string name="charca_1_2_target6">HAIEK SALTO EGITEN</string>
+    
+    <string name="charca_2_2_bt1">ZUTEN</string>
+    <string name="charca_2_2_bt2">GENUEN</string>
+    <string name="charca_2_2_bt3">ZENUTEN</string>
+    <string name="charca_2_2_bt4">ZUEN</string>
+    <string name="charca_2_2_bt5">NUEN</string>
+    <string name="charca_2_2_bt6">ZENUEN</string>
+    
+    <string name="charca_2_2_target1">NIK SALTO EGIN</string>
+    <string name="charca_2_2_target2">SUK SALTO EGIN</string>
+    <string name="charca_2_2_target3">HARK SALTO EGIN</string>
+    <string name="charca_2_2_target4">GUK SALTO EGIN</string>
+    <string name="charca_2_2_target5">ZUEK SALTO EGIN</string>
+    <string name="charca_2_2_target6">HAIEK SALTO EGIN</string>
+    
+    <string name="charca_3_2_bt1">DUGU</string>
+    <string name="charca_3_2_bt2">DUT</string>
+    <string name="charca_3_2_bt3">DU</string>
+    <string name="charca_3_2_bt4">DUZUE</string>
+    <string name="charca_3_2_bt5">DUTE</string>
+    <string name="charca_3_2_bt6">DUZU</string>
+    
+    <string name="charca_3_2_target1">NIK SALTO EGINGO</string>
+    <string name="charca_3_2_target2">ZUK SALTO EGINGO</string>
+    <string name="charca_3_2_target3">HARK SALTO EGINGO</string>
+    <string name="charca_3_2_target4">GUK SALTO EGINGO</string>
+    <string name="charca_3_2_target5">ZUEK SALTO EGINGO</string>
+    <string name="charca_3_2_target6">HAIEK SALTO EGINGO</string>
+    
 </resources>

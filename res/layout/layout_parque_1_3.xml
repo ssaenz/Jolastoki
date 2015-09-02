@@ -51,7 +51,7 @@
                 android:id="@+id/parque_1_3_target4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/parque_3_1_pentagono_on" />
+                android:background="@drawable/parque_3_1_pentagono_off" />
         </LinearLayout>
 
         <LinearLayout

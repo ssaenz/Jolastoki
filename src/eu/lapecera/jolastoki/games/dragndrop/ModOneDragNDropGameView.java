@@ -86,6 +86,7 @@ public class ModOneDragNDropGameView extends DragNDropGameView {
 			targetButton.setVisibility(View.INVISIBLE);
 			if (currentIndex < screens.size()) {
 				loadNextScreen();
+				getDraggingView().setVisibility(View.VISIBLE);
 			} else {
 				endGame();
 			}
@@ -95,15 +96,16 @@ public class ModOneDragNDropGameView extends DragNDropGameView {
 	@Override
 	protected void onDropView(View v) {
 		if (v.getId() == R.id.parque_x_2_target && screensTarget.get(currentScreen) == getDraggingView().getId()) {
-			targetButton.setText(((Button)getDraggingView()).getText());
-			targetButton.setVisibility(View.VISIBLE);
+			
+			placeFigureOnTarget(getDraggingView(), targetButton);
+			
 			MusicManager.playSingle(getContext(), R.raw.acierto);
 			handler.postDelayed(resetRunnable, 1000);
 		} else {
 			if (screensTarget.get(currentScreen) != getDraggingView().getId()) {
 				MusicManager.playSingle(getContext(), R.raw.fallo);
 			}
-			moveBack(getDroppedX(), getDraggingView().getX(), getDroppedY(), getDraggingView().getY());
+			moveBack(getDroppedX(), getDroppedY());
 		}
 		
 	}

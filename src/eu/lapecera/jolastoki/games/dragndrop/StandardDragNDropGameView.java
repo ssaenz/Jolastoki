@@ -26,7 +26,7 @@ public class StandardDragNDropGameView extends DragNDropGameView {
 	protected void onCreateView(GameViewConfig config) {
 		super.onCreateView(config);
 		targetMap = ((StandardDragNDropGameViewConfig)config).getTargets();
-		Collection<Integer> figures = targetMap.values();
+		Collection<Integer> figures = ((StandardDragNDropGameViewConfig)config).getFigures();
 		Set<Integer> targets = targetMap.keySet();
 
 		for (Integer figure : figures) {
@@ -44,7 +44,7 @@ public class StandardDragNDropGameView extends DragNDropGameView {
 	protected void onDropView(View v) {
 		if (targetMap.containsKey(v.getId()) && targetMap.get(v.getId()) == getDraggingView().getId()) {
 			getDraggingView().setVisibility(View.INVISIBLE);
-			v.setBackgroundDrawable(getDraggingView().getBackground());
+			placeFigureOnTarget(getDraggingView(), v);
 			MusicManager.playSingle(getContext(), R.raw.acierto);
 			numMatches ++;
 			if (numMatches == targetMap.size()) {
@@ -54,7 +54,7 @@ public class StandardDragNDropGameView extends DragNDropGameView {
 			if (targetMap.containsKey(v.getId())) {
 				MusicManager.playSingle(getContext(), R.raw.fallo);
 			}
-			moveBack(getDroppedX(), getDraggingView().getX(), getDroppedY(), getDraggingView().getY());
+			moveBack(getDroppedX(), getDroppedY());
 		}
 	}
 }

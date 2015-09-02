@@ -21,7 +21,11 @@ public enum GameArea {
 	
 	CHARCA		(R.drawable.cabecera_juegos_ico_charca, new GameViewConfig[]{	PairsGameViewConfig.CHARCA_1_1,
 																				PairsGameViewConfig.CHARCA_2_1,
-																				PairsGameViewConfig.CHARCA_3_1}),
+																				PairsGameViewConfig.CHARCA_3_1,
+																				StandardDragNDropGameViewConfig.charca_1_3,
+																				StandardDragNDropGameViewConfig.charca_2_3,
+																				StandardDragNDropGameViewConfig.charca_3_3,
+																				StandardDragNDropGameViewConfig.charca_1_2}),
 	
 	PARQUE		(R.drawable.cabecera_juegos_ico_parque, new GameViewConfig[]{	QuizGameViewConfig.PARQUE_1_1, 
 																				ModOneDragNDropGameViewConfig.parque_1_2,

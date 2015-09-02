@@ -83,7 +83,7 @@ public class ModTwoDragNDropGameView extends DragNDropGameView {
 	@Override
 	protected void onDropView(View view) {
 		if (view != this && targets.contains(view.getId()) && targetMap.get(currentScreen).get(view.getId()) == getDraggingView().getId()) {
-			((ImageView) view).setImageDrawable(((ImageView) getDraggingView()).getDrawable());
+			placeFigureOnTarget(getDraggingView(), view);
 			MusicManager.playSingle(getContext(), R.raw.acierto);
 			targetCount ++;
 			if (targetCount >= targetMap.get(currentScreen).keySet().size()) {
@@ -94,7 +94,7 @@ public class ModTwoDragNDropGameView extends DragNDropGameView {
 			if (view != this && targetMap.get(currentScreen).get(view.getId()) != getDraggingView().getId()) {
 				MusicManager.playSingle(getContext(), R.raw.fallo);
 			}
-			moveBack(getDroppedX(), getDraggingView().getX(), getDroppedY(), getDraggingView().getY());
+			moveBack(getDroppedX(), getDroppedY());
 		}
 	}
 

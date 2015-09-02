@@ -1,60 +1,72 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/background_front"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/parque_1_1_fondo" >
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/parque_1_1_fondo" />
 
     <TextView
         style="@style/normalText"
         android:layout_width="@dimen/parque_cartel_width"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="125dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="125dp"
         android:background="@drawable/parque_1_1_cartel"
         android:gravity="center"
         android:padding="@dimen/parque_cartel_padding"
         android:text="@string/parque_2_1_question" >
     </TextView>
 
-    <ImageButton
-        android:id="@+id/parque_2_1_bt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/parque_btn_container"
-        android:background="@android:color/transparent"
-        android:src="@drawable/parque_2_1_bt1" />
-
     <LinearLayout
-        android:id="@+id/parque_btn_container"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" >
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/parque_2_1_bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/parque_2_1_bt1" />
 
         <ImageButton
             android:id="@+id/parque_2_1_bt2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
             android:src="@drawable/parque_2_1_bt2" />
 
         <ImageButton
             android:id="@+id/parque_2_1_bt3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
             android:src="@drawable/parque_2_1_bt3" />
-    </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/parque_2_1_bt4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/parque_btn_container"
-        android:background="@android:color/transparent"
-        android:src="@drawable/parque_2_1_bt4" />
+        <ImageButton
+            android:id="@+id/parque_2_1_bt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/parque_2_1_bt4" />
+    </LinearLayout>
 
 </RelativeLayout>

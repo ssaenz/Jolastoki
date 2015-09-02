@@ -11,9 +11,9 @@ import eu.lapecera.jolastoki.domain.GameLevel;
 import eu.lapecera.jolastoki.games.GameView;
 import eu.lapecera.jolastoki.games.dragndrop.ModTwoDragNDropGameView;
 
-public enum ModTwoDragNDropGameViewConfig implements GameViewConfig {
+public enum ModTwoDragNDropGameViewConfig implements DragNDropGameViewConfig {
 	
-	MERCADO_3_3 (GameLevel.THREE, R.layout.layout_mercado_3_3, R.string.mercado_3_3_title, 60000l, 
+	MERCADO_3_3 (GameLevel.THREE, R.layout.layout_mercado_3_3, R.string.mercado_3_3_title, 60000l, -1,
 					Arrays.asList(R.id.mercado_3_3_figure_eq, R.id.mercado_3_3_figure_gt, R.id.mercado_3_3_figure_lt),
 					Arrays.asList(R.id.mercado_3_3_target1, R.id.mercado_3_3_target2, R.id.mercado_3_3_target3),
 					new HashMap<Integer, Map<Integer, Integer>>() {
@@ -55,8 +55,9 @@ public enum ModTwoDragNDropGameViewConfig implements GameViewConfig {
 	private List<Integer> figures;
 	private List<Integer> targets;
 	private Map<Integer, Map<Integer, Integer>> targetMap;
+	private int endTargetBackground;
 	
-	private ModTwoDragNDropGameViewConfig (GameLevel level, int layout, int title, long time, List<Integer> figures, List<Integer> targets, Map<Integer, Map<Integer, Integer>> targetMap) {
+	private ModTwoDragNDropGameViewConfig (GameLevel level, int layout, int title, long time, int endTargetBackground, List<Integer> figures, List<Integer> targets, Map<Integer, Map<Integer, Integer>> targetMap) {
 		this.level = level;
 		this.layout = layout;
 		this.title = title;
@@ -64,6 +65,7 @@ public enum ModTwoDragNDropGameViewConfig implements GameViewConfig {
 		this.figures = figures;
 		this.targets = targets;
 		this.targetMap = targetMap;
+		this.endTargetBackground = endTargetBackground;
 	}
 
 	public List<Integer> getTargets() {
@@ -101,6 +103,11 @@ public enum ModTwoDragNDropGameViewConfig implements GameViewConfig {
 	@Override
 	public GameView getGameView(Context context) {
 		return new ModTwoDragNDropGameView(context, this);
+	}
+
+	@Override
+	public int getEndTargetBackground() {
+		return this.endTargetBackground;
 	}
 
 }
