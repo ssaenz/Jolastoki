@@ -93,6 +93,12 @@ public class InteractiveView extends View {
 	}
 	
 	@Override
+	protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+		super.onLayout(changed, left, top, right, bottom);
+		setRegionFiles(mFiles);
+	}
+	
+	@Override
 	public boolean dispatchTouchEvent(MotionEvent event) {
 		if ( mEnabledRegion == -1 ) return true;
 		
@@ -295,6 +301,7 @@ public class InteractiveView extends View {
 	 */
 	public void setRegionFiles(File[] files) {
 		mFiles = files;
+		if (getWidth() > 0 && getHeight() > 0)
 		post(new Runnable() {
 			
 			@Override

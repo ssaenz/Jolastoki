@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -62,8 +64,17 @@ public class ColorGameView extends GameView implements OnClickListener {
 	public void onClick(View v) {
 		int region = buttons.indexOf(v.getId()) + 1;
 		interactiveView.setEnabledRegion( region );
-		int color = getContext().getResources().getColor((Integer)v.getTag());
-		interactiveView.setColorSelection( color );
+		Log.i("ColorGameView", "tag: " + v.getTag());
+		try {
+			int colorParsed = Color.parseColor((String)v.getTag());
+			Log.v("ColorGameView", "color: " + colorParsed);
+			int color = getContext().getResources().getColor(R.color.mercado_cielo);
+			interactiveView.setColorSelection( colorParsed );
+		} catch (Exception e) {
+			Log.e("ColorGameView", e.getMessage());
+			e.printStackTrace();
+		}
+		
 	}
 
 	private void copyFromAssets() {

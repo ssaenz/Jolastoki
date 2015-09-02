@@ -20,14 +20,14 @@ public enum ColorGameViewConfig implements GameViewConfig {
 						{
 							put(R.id.mercado_x_2_bt1, "X");
 							put(R.id.mercado_x_2_bt2, "G");
-							put(R.id.mercado_x_2_bt2, "R");
-							put(R.id.mercado_x_2_bt2, "O");
-							put(R.id.mercado_x_2_bt2, "N");
-							put(R.id.mercado_x_2_bt2, "U");
-							put(R.id.mercado_x_2_bt2, "B");
-							put(R.id.mercado_x_2_bt2, "M");
-							put(R.id.mercado_x_2_bt2, "Z");
-							put(R.id.mercado_x_2_bt2, "E");
+							put(R.id.mercado_x_2_bt3, "R");
+							put(R.id.mercado_x_2_bt4, "O");
+							put(R.id.mercado_x_2_bt5, "N");
+							put(R.id.mercado_x_2_bt6, "U");
+							put(R.id.mercado_x_2_bt7, "B");
+							put(R.id.mercado_x_2_bt8, "M");
+							put(R.id.mercado_x_2_bt9, "Z");
+							put(R.id.mercado_x_2_bt10, "E");
 						}
 					}),
 	MERCADO_2_2 (GameLevel.TWO, R.layout.layout_mercado_x_2, R.string.mercado_x_2_title, 60000l,
@@ -37,14 +37,14 @@ public enum ColorGameViewConfig implements GameViewConfig {
 				{
 					put(R.id.mercado_x_2_bt1, "PO");
 					put(R.id.mercado_x_2_bt2, "KO");
-					put(R.id.mercado_x_2_bt2, "GO");
-					put(R.id.mercado_x_2_bt2, "ZO");
-					put(R.id.mercado_x_2_bt2, "BO");
-					put(R.id.mercado_x_2_bt2, "MO");
-					put(R.id.mercado_x_2_bt2, "LO");
-					put(R.id.mercado_x_2_bt2, "HO");
-					put(R.id.mercado_x_2_bt2, "NO");
-					put(R.id.mercado_x_2_bt2, "DO");
+					put(R.id.mercado_x_2_bt3, "GO");
+					put(R.id.mercado_x_2_bt4, "ZO");
+					put(R.id.mercado_x_2_bt5, "BO");
+					put(R.id.mercado_x_2_bt6, "MO");
+					put(R.id.mercado_x_2_bt7, "LO");
+					put(R.id.mercado_x_2_bt8, "HO");
+					put(R.id.mercado_x_2_bt9, "NO");
+					put(R.id.mercado_x_2_bt10, "DO");
 				}
 			}),
 	MERCADO_3_2 (GameLevel.THREE, R.layout.layout_mercado_x_2, R.string.mercado_x_2_title, 60000l,
@@ -54,14 +54,14 @@ public enum ColorGameViewConfig implements GameViewConfig {
 				{
 					put(R.id.mercado_x_2_bt1, "TXA");
 					put(R.id.mercado_x_2_bt2, "TXE");
-					put(R.id.mercado_x_2_bt2, "TXI");
-					put(R.id.mercado_x_2_bt2, "TXO");
-					put(R.id.mercado_x_2_bt2, "TXU");
-					put(R.id.mercado_x_2_bt2, "HAZ");
-					put(R.id.mercado_x_2_bt2, "HEZ");
-					put(R.id.mercado_x_2_bt2, "HIZ");
-					put(R.id.mercado_x_2_bt2, "HOZ");
-					put(R.id.mercado_x_2_bt2, "HUZ");
+					put(R.id.mercado_x_2_bt3, "TXI");
+					put(R.id.mercado_x_2_bt4, "TXO");
+					put(R.id.mercado_x_2_bt5, "TXU");
+					put(R.id.mercado_x_2_bt6, "HAZ");
+					put(R.id.mercado_x_2_bt7, "HEZ");
+					put(R.id.mercado_x_2_bt8, "HIZ");
+					put(R.id.mercado_x_2_bt9, "HOZ");
+					put(R.id.mercado_x_2_bt10, "HUZ");
 				}
 			});
 	
