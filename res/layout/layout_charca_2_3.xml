@@ -35,7 +35,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="fitStart"
-                    android:src="@drawable/charca_3_1_ficha_mariquita" />
+                    android:src="@drawable/charca_3_2_ficha_rana" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="fitStart"
-                    android:src="@drawable/charca_3_1_ficha_mariquita" />
+                    android:src="@drawable/charca_3_2_ficha_rana" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -78,7 +78,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="fitStart"
-                    android:src="@drawable/charca_3_1_ficha_rana" />
+                    android:src="@drawable/charca_3_1_ficha_nenufar" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -96,7 +96,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="fitStart"
-                    android:src="@drawable/charca_3_1_ficha_rana" />
+                    android:src="@drawable/charca_3_1_ficha_nenufar" />
 
                 <ImageView
                     android:id="@+id/charca_3_target2"
@@ -127,7 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="fitStart"
-                    android:src="@drawable/charca_3_1_ficha_nenufar" />
+                    android:src="@drawable/charca_3_2_ficha_mariquita" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -162,28 +162,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitStart"
-                android:background="@drawable/charca_3_1_ficha_nenufar" />
+                android:background="@drawable/charca_3_1_ficha_rana" />
 
             <ImageView
                 android:id="@+id/charca_3_figure2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitStart"
-                android:background="@drawable/charca_3_1_ficha_mariposa" />
+                android:background="@drawable/charca_3_2_ficha_mariquita" />
 
             <ImageView
                 android:id="@+id/charca_3_figure3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitStart"
-                android:background="@drawable/charca_3_1_ficha_rana" />
-
+                android:background="@drawable/charca_3_2_ficha_rana" />
+            
             <ImageView
                 android:id="@+id/charca_3_figure4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitStart"
-                android:background="@drawable/charca_3_1_ficha_mariquita" />
+                android:background="@drawable/charca_3_1_ficha_mariposa" />
         </LinearLayout>
     </LinearLayout>
 

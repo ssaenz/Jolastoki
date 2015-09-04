@@ -41,9 +41,9 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 			new HashMap<Integer, Integer>() {
 		private static final long serialVersionUID = 1L;
 		{
-			put(R.id.charca_3_target1, R.id.charca_3_figure4);
-			put(R.id.charca_3_target2, R.id.charca_3_figure3);
-			put(R.id.charca_3_target3, R.id.charca_3_figure1);
+			put(R.id.charca_3_target1, R.id.charca_3_figure3);
+			put(R.id.charca_3_target2, R.id.charca_3_figure1);
+			put(R.id.charca_3_target3, R.id.charca_3_figure2);
 		}
 
 	}),
@@ -52,9 +52,9 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 			new HashMap<Integer, Integer>() {
 		private static final long serialVersionUID = 1L;
 		{
-			put(R.id.charca_3_target1, R.id.charca_3_figure4);
-			put(R.id.charca_3_target2, R.id.charca_3_figure3);
-			put(R.id.charca_3_target3, R.id.charca_3_figure1);
+			put(R.id.charca_3_target1, R.id.charca_3_figure2);
+			put(R.id.charca_3_target2, R.id.charca_3_figure1);
+			put(R.id.charca_3_target3, R.id.charca_3_figure3);
 		}
 
 	}),
