@@ -1,70 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/charca_1_fondo"
-    android:orientation="horizontal" >
+    android:layout_height="match_parent" >
 
-    <RelativeLayout
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/charca_1_elementos" 
-        android:paddingTop="50dp">
+        android:layout_marginTop="@dimen/activity_header_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/charca_1_fondo" />
 
-        <eu.lapecera.jolastoki.widget.TypographyButton
-            android:id="@+id/charca_bt1"
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_header_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/charca_1_elementos" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_header_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/charca_bt" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
 
-        <eu.lapecera.jolastoki.widget.TypographyButton
-            android:id="@+id/charca_bt2"
+            <eu.lapecera.jolastoki.widget.TypographyButton
+                android:id="@+id/charca_bt1"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/charca_figuras_margin"
+                android:layout_height="wrap_content"
+                android:background="@drawable/charca_bt" />
+
+            <eu.lapecera.jolastoki.widget.TypographyButton
+                android:id="@+id/charca_bt2"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/charca_figuras_margin"
+                android:layout_height="wrap_content"
+                android:background="@drawable/charca_bt" />
+
+            <eu.lapecera.jolastoki.widget.TypographyButton
+                android:id="@+id/charca_bt3"
+                android:layout_margin="@dimen/charca_figuras_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/charca_bt" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/charca_bt1"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/charca_bt" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
 
-        <eu.lapecera.jolastoki.widget.TypographyButton
-            android:id="@+id/charca_bt3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/charca_bt2"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/charca_bt" />
+            <eu.lapecera.jolastoki.widget.TypographyButton
+                android:id="@+id/charca_bt4"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/charca_figuras_margin"
+                android:layout_height="wrap_content"
+                android:background="@drawable/charca_bt" />
 
-        <eu.lapecera.jolastoki.widget.TypographyButton
-            android:id="@+id/charca_bt4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/charca_bt" />
+            <eu.lapecera.jolastoki.widget.TypographyButton
+                android:id="@+id/charca_bt5"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/charca_figuras_margin"
+                android:layout_height="wrap_content"
+                android:background="@drawable/charca_bt" />
 
-        <eu.lapecera.jolastoki.widget.TypographyButton
-            android:id="@+id/charca_bt5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_below="@id/charca_bt4"
-            android:layout_marginRight="100dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/charca_bt" />
+            <eu.lapecera.jolastoki.widget.TypographyButton
+                android:id="@+id/charca_bt6"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/charca_figuras_margin"
+                android:layout_height="wrap_content"
+                android:background="@drawable/charca_bt" />
+        </LinearLayout>
+    </LinearLayout>
 
-        <eu.lapecera.jolastoki.widget.TypographyButton
-            android:id="@+id/charca_bt6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_below="@id/charca_bt5"
-            android:layout_marginRight="150dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/charca_bt" />
-    </RelativeLayout>
-
-</LinearLayout>
+</RelativeLayout>

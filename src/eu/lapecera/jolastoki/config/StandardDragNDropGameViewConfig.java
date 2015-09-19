@@ -99,6 +99,34 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 			put(R.id.charca_3_2_target6, R.id.charca_2_bt5);
 		}
 
+	}),
+	mercado_1_3 (GameLevel.ONE, R.layout.layout_mercado_1_3, R.string.mercado_1_3_title, 60000l, -1,
+			Arrays.asList(R.id.mercado_1_3_figure1, R.id.mercado_1_3_figure2, R.id.mercado_1_3_figure2, R.id.mercado_1_3_figure3, R.id.mercado_1_3_figure4, R.id.mercado_1_3_figure5, R.id.mercado_1_3_figure6),
+			new HashMap<Integer, Integer>() {
+		private static final long serialVersionUID = 1L;
+		{
+			put(R.id.mercado_1_3_target1, R.id.mercado_1_3_figure1);
+			put(R.id.mercado_1_3_target2, R.id.mercado_1_3_figure2);
+			put(R.id.mercado_1_3_target3, R.id.mercado_1_3_figure3);
+			put(R.id.mercado_1_3_target4, R.id.mercado_1_3_figure4);
+			put(R.id.mercado_1_3_target5, R.id.mercado_1_3_figure5);
+			put(R.id.mercado_1_3_target6, R.id.mercado_1_3_figure6);
+		}
+
+	}),
+	mercado_2_3 (GameLevel.ONE, R.layout.layout_mercado_1_3, R.string.mercado_1_3_title, 60000l, -1,
+			Arrays.asList(R.id.mercado_1_3_figure1, R.id.mercado_1_3_figure2, R.id.mercado_1_3_figure2, R.id.mercado_1_3_figure3, R.id.mercado_1_3_figure4, R.id.mercado_1_3_figure5, R.id.mercado_1_3_figure6),
+			new HashMap<Integer, Integer>() {
+		private static final long serialVersionUID = 1L;
+		{
+			put(R.id.mercado_1_3_target1, R.id.mercado_1_3_figure1);
+			put(R.id.mercado_1_3_target2, R.id.mercado_1_3_figure2);
+			put(R.id.mercado_1_3_target3, R.id.mercado_1_3_figure3);
+			put(R.id.mercado_1_3_target4, R.id.mercado_1_3_figure4);
+			put(R.id.mercado_1_3_target5, R.id.mercado_1_3_figure5);
+			put(R.id.mercado_1_3_target6, R.id.mercado_1_3_figure6);
+		}
+
 	});
 
 	private GameLevel level;

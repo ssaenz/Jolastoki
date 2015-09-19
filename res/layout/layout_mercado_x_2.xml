@@ -5,11 +5,12 @@
     android:layout_height="match_parent"
     android:background="@color/blue" >
     
-    
-    <FrameLayout
-        android:id="@+id/content"
+    <eu.lapecera.jolastoki.widget.InteractiveView
+        android:layout_marginTop="@dimen/activity_header_height"
+        android:id="@+id/interactiveView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        jolastoki:assets_dir="pictures" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -20,103 +21,103 @@
         android:background="@drawable/fondo_borde_naranja_redondeado" 
         android:padding="10dp">
 
-        <Button
+        <ToggleButton
             style="@style/bigText"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/mercado_verde"
+            android:background="@drawable/toogle_selector_verde"
             android:tag="@color/mercado_verde"
             android:id="@+id/mercado_x_2_bt1" />
 
-        <Button
+        <ToggleButton
             style="@style/bigText"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/mercado_rojo"
+            android:background="@drawable/toogle_selector_rojo"
             android:tag="@color/mercado_rojo"
             android:id="@+id/mercado_x_2_bt2" />
 
-        <Button
+        <ToggleButton
             style="@style/bigText"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/mercado_rosa"
+            android:background="@drawable/toogle_selector_rosa"
             android:tag="@color/mercado_rosa"
             android:id="@+id/mercado_x_2_bt3" />
 
-        <Button
+        <ToggleButton
             style="@style/bigText"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/mercado_amarillo"
+            android:background="@drawable/toogle_selector_amarillo"
             android:tag="@color/mercado_amarillo"
             android:id="@+id/mercado_x_2_bt4" />
 
-        <Button
+        <ToggleButton
             style="@style/bigText"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/mercado_naranja"
+            android:background="@drawable/toogle_selector_naranja"
             android:tag="@color/mercado_naranja"
             android:id="@+id/mercado_x_2_bt5" />
 
-        <Button
+        <ToggleButton
             style="@style/bigText"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/mercado_cielo"
+            android:background="@drawable/toogle_selector_cielo"
             android:tag="@color/mercado_cielo"
             android:id="@+id/mercado_x_2_bt6" />
 
-        <Button
+        <ToggleButton
             style="@style/bigText"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/mercado_pistacho"
+            android:background="@drawable/toogle_selector_pistacho"
             android:tag="@color/mercado_pistacho"
             android:id="@+id/mercado_x_2_bt7" />
 
-        <Button
+        <ToggleButton
             style="@style/bigText"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/mercado_caqui"
+            android:background="@drawable/toogle_selector_caqui"
             android:tag="@color/mercado_caqui"
             android:id="@+id/mercado_x_2_bt8" />
 
-        <Button
+        <ToggleButton
             style="@style/bigText"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/mercado_pino"
+            android:background="@drawable/toogle_selector_pino"
             android:tag="@color/mercado_pino"
             android:id="@+id/mercado_x_2_bt9" />
 
-        <Button
+        <ToggleButton
             style="@style/bigText"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/mercado_gris"
+            android:background="@drawable/toogle_selector_gris"
             android:tag="@color/mercado_gris"
             android:id="@+id/mercado_x_2_bt10" />
     </LinearLayout>

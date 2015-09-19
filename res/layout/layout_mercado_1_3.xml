@@ -7,21 +7,25 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerInside"
+        android:scaleType="centerCrop"
         android:src="@drawable/mercado_3_1_fondo" />
 
     <LinearLayout
-        android:layout_centerInParent="true"
-        android:gravity="center"
+        android:id="@+id/piramide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/mercado_1_3_piramide_margin_left"
+        android:gravity="center"
         android:orientation="vertical" >
 
         <ImageView
+            android:id="@+id/mercado_1_3_target1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_1_pieza1" />
+            android:src="@drawable/mercado_3_1_pieza1base" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -29,42 +33,121 @@
             android:orientation="horizontal" >
 
             <ImageView
+                android:id="@+id/mercado_1_3_target2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mercado_3_1_pieza2base" />
+
+            <ImageView
+                android:id="@+id/mercado_1_3_target3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mercado_3_1_pieza3base" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/mercado_1_3_target4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mercado_3_1_pieza4base" />
+
+            <ImageView
+                android:id="@+id/mercado_1_3_target5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mercado_3_1_pieza5base" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mercado_1_3_target6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_1_pieza6base" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/piramide"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/mercado_1_3_figure6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mercado_1_3_piezas_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mercado_3_1_pieza6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/mercado_1_3_figure1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mercado_1_3_piezas_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mercado_3_1_pieza1" />
+
+            <ImageView
+                android:id="@+id/mercado_1_3_figure3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mercado_1_3_piezas_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mercado_3_1_pieza3" />
+
+            <ImageView
+                android:id="@+id/mercado_1_3_figure4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mercado_1_3_piezas_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mercado_3_1_pieza4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/mercado_1_3_figure2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mercado_1_3_piezas_margin"
                 android:scaleType="fitCenter"
                 android:src="@drawable/mercado_3_1_pieza2" />
 
             <ImageView
+                android:id="@+id/mercado_1_3_figure5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_1_pieza3" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_1_pieza4" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mercado_1_3_piezas_margin"
                 android:scaleType="fitCenter"
                 android:src="@drawable/mercado_3_1_pieza5" />
         </LinearLayout>
-        
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_1_pieza6" />
     </LinearLayout>
 
 </RelativeLayout>

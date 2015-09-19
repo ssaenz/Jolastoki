@@ -21,6 +21,7 @@ public enum GameArea {
 																				ColorGameViewConfig.MERCADO_1_2,
 																				ColorGameViewConfig.MERCADO_2_2,
 																				ColorGameViewConfig.MERCADO_3_2,
+																				StandardDragNDropGameViewConfig.mercado_1_3,
 																				ModTwoDragNDropGameViewConfig.MERCADO_3_3}),
 	
 	CHARCA		(R.drawable.cabecera_juegos_ico_charca, new GameViewConfig[]{	PairsGameViewConfig.CHARCA_1_1,
@@ -29,7 +30,9 @@ public enum GameArea {
 																				StandardDragNDropGameViewConfig.charca_1_3,
 																				StandardDragNDropGameViewConfig.charca_2_3,
 																				StandardDragNDropGameViewConfig.charca_3_3,
-																				StandardDragNDropGameViewConfig.charca_1_2}),
+																				StandardDragNDropGameViewConfig.charca_1_2,
+																				StandardDragNDropGameViewConfig.charca_2_2,
+																				StandardDragNDropGameViewConfig.charca_3_2}),
 	
 	PARQUE		(R.drawable.cabecera_juegos_ico_parque, new GameViewConfig[]{	QuizGameViewConfig.PARQUE_1_1, 
 																				ModOneDragNDropGameViewConfig.parque_1_2,

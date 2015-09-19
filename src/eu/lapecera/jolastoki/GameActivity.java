@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -50,6 +51,8 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	private Handler handler = new Handler();
 
 	private boolean timeStopped = false;
+	
+	private Dialog timeoutDialog;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -115,8 +118,8 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	}
 	
 	private synchronized void playTime() {
+		Log.i("GameActivity", "playTime()");
 		this.timeStopped = false;
-		handler.postDelayed(timeUpdater, 1000);
 	}
 
 	private void startScoreAnimation () {
@@ -178,21 +181,25 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	}
 	
 	private void showTimeoutDialog() {
-		final Dialog dialog = new Dialog(this);
-		dialog.setContentView(R.layout.dialog_timeout);
-		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-		Button accept = (Button) dialog.findViewById(R.id.accept);
+		if (timeoutDialog == null) {
 
-		accept.setOnClickListener(new OnClickListener() {
+			timeoutDialog = new Dialog(this);
+			timeoutDialog.setContentView(R.layout.dialog_timeout);
+			timeoutDialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
-			@Override
-			public void onClick(View v) {
-				GameActivity.this.OnGameOver();
-				dialog.dismiss();
-			}
-		});
+			Button accept = (Button) timeoutDialog.findViewById(R.id.accept);
 
-		dialog.show();
+			accept.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+					GameActivity.this.OnGameOver();
+					timeoutDialog.dismiss();
+				}
+			});
+		}
+
+		timeoutDialog.show();
 	}
 	
 	private void goToGameOverActivity () {

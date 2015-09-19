@@ -52,6 +52,7 @@
         android:src="@drawable/cabecera_juegos_ico_charca" />
 
     <eu.lapecera.jolastoki.widget.TypographyTextView
+        style="@style/smallWhiteText"
         android:id="@+id/header_ico_level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

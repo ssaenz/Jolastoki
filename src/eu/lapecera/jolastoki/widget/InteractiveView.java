@@ -29,6 +29,10 @@ import eu.lapecera.jolastoki.R;
  */
 public class InteractiveView extends View {
 	
+	public interface OnCompletedColorsListener {
+		public void onCompletedColor ();
+	}
+	
 	private static final String TAG = "EditorView";
 	
 	private Paint mPaint;
@@ -42,6 +46,8 @@ public class InteractiveView extends View {
 	private int mTop;
 	private boolean mIsBusy = false;
 	private boolean mIsScalable = true;
+	
+	private OnCompletedColorsListener listener;
 
 	
 	public InteractiveView(Context context) {
@@ -95,7 +101,8 @@ public class InteractiveView extends View {
 	@Override
 	protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
 		super.onLayout(changed, left, top, right, bottom);
-		setRegionFiles(mFiles);
+		if (mMatrixRegion == null)
+			setRegionFiles(mFiles);
 	}
 	
 	@Override
@@ -122,6 +129,10 @@ public class InteractiveView extends View {
 			catch (Exception e) {}
 		}
 		return super.dispatchTouchEvent(event);
+	}
+	
+	public void setOnCompletedColorListener (OnCompletedColorsListener listener) {
+		this.listener = listener;
 	}
 	
     /**
@@ -215,11 +226,11 @@ public class InteractiveView extends View {
 	public int[] getRegionIds() {
 		int[] ids = new int[mFiles.length-1];
 		int j = 0;
-		for (int i=0;i<mFiles.length;i++) {
+		for (int i = 0; i < mFiles.length; i ++) {
 			int id = getNumber( mFiles[i].getName() );
 			if ( id != 0 ) {
 				ids[j] = id;
-				j++;
+				j ++;
 			}
 		}
 		Arrays.sort(ids);
@@ -250,6 +261,8 @@ public class InteractiveView extends View {
 		if ( mIsBusy ) {
 			return;
 		}
+		
+		
 		mFilters.put(id, color);
 		new Thread(new Runnable() {
 			
@@ -431,7 +444,8 @@ public class InteractiveView extends View {
 	    	int pixel = pixelOutput;
 	    	if ( Color.alpha(pixelRegion) == 0xFF ) {
 	    		// Set the pixel with the color
-	    		pixel = color;
+	    		
+	    		pixel = Color.argb(Color.alpha(pixelRegion), Color.red(color), Color.green(color), Color.blue(color));
 	    		
 	        	// Hack to swap the RED and BLUE chanels of ARGB to
 	        	// preserve the REAL color.
@@ -476,6 +490,8 @@ public class InteractiveView extends View {
 		Log.d(TAG, "handleMessage()");
 		invalidate();
 		mIsBusy = msg.what != 0;
+		if (mFilters.size() == mFiles.length - 1 && listener != null)
+			listener.onCompletedColor();
 	}
 	
 	private void copyFromAssets(File dir, String dirName) {
