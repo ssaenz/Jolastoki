@@ -32,6 +32,10 @@
         <item name="android:textSize">@dimen/small_text_size</item>
     </style>
     
+    <style name="tinyText" parent="arialBlackText">
+        <item name="android:textSize">@dimen/tiny_text_size</item>
+    </style>
+    
     
     <style name="bigWhiteText" parent="arialWhiteText">
         <item name="android:textSize">@dimen/big_text_size</item>

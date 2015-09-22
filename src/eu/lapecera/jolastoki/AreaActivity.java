@@ -41,7 +41,7 @@ public class AreaActivity extends BaseActivity {
 
 		btn = (ImageButton) findViewById(R.id.colegio_area_btn);
 		btn.setOnClickListener(clickListener);
-		btn.setTag(GameArea.COLEGIO);
+		btn.setTag(GameArea.BIBLIOTECA);
 
 		btn = (ImageButton) findViewById(R.id.instructions_btn);
 		btn.setOnClickListener(clickListener);

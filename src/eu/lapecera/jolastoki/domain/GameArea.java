@@ -15,13 +15,15 @@ import eu.lapecera.jolastoki.config.StandardDragNDropGameViewConfig;
 
 public enum GameArea {
 	
-	MERCADO		(R.drawable.cabecera_juegos_ico_mercado, new GameViewConfig[]{	QuizGameViewConfig.MERCADO_1_1, 
+	MERCADO		(R.drawable.cabecera_juegos_ico_mercado, new GameViewConfig[]{	
+																				QuizGameViewConfig.MERCADO_1_1, 
 																				QuizGameViewConfig.MERCADO_2_1, 
 																				QuizGameViewConfig.MERCADO_3_1,
 																				ColorGameViewConfig.MERCADO_1_2,
 																				ColorGameViewConfig.MERCADO_2_2,
 																				ColorGameViewConfig.MERCADO_3_2,
 																				StandardDragNDropGameViewConfig.mercado_1_3,
+																				StandardDragNDropGameViewConfig.mercado_2_3,
 																				ModTwoDragNDropGameViewConfig.MERCADO_3_3}),
 	
 	CHARCA		(R.drawable.cabecera_juegos_ico_charca, new GameViewConfig[]{	PairsGameViewConfig.CHARCA_1_1,
@@ -44,7 +46,11 @@ public enum GameArea {
 																				ModOneDragNDropGameViewConfig.parque_3_2,
 																				QuizGameViewConfig.PARQUE_3_3}),
 	
-	COLEGIO		(R.drawable.cabecera_juegos_ico_colegio, new GameViewConfig[]{});
+	BIBLIOTECA		(R.drawable.cabecera_juegos_ico_colegio, new GameViewConfig[]{	
+//																					StandardDragNDropGameViewConfig.biblioteca_1_1,
+//																					StandardDragNDropGameViewConfig.biblioteca_2_1,
+//																					StandardDragNDropGameViewConfig.biblioteca_3_1,
+																					StandardDragNDropGameViewConfig.biblioteca_1_2});
 
 	private int icon;
 	private GameViewConfig[] games;

@@ -2,10 +2,13 @@ package eu.lapecera.jolastoki.games.dragndrop;
 
 import java.util.Collection;
 import java.util.Map;
-import java.util.Set;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.view.View;
+import android.widget.ImageView;
 import eu.lapecera.jolastoki.R;
 import eu.lapecera.jolastoki.config.GameViewConfig;
 import eu.lapecera.jolastoki.config.StandardDragNDropGameViewConfig;
@@ -14,25 +17,26 @@ import eu.lapecera.jolastoki.util.MusicManager;
 public class StandardDragNDropGameView extends DragNDropGameView {
 
 	private static final String VIEW_TAG = "Button answer";
-
 	public StandardDragNDropGameView(Context context, GameViewConfig config) {
 		super(context, config);
 	}
 
 	private Map<Integer, Integer> targetMap;
 	private int numMatches = 0;
+	private Map<Integer, Integer> targetBackgournds;
 	
 	@Override
 	protected void onCreateView(GameViewConfig config) {
 		super.onCreateView(config);
 		targetMap = ((StandardDragNDropGameViewConfig)config).getTargets();
+		targetBackgournds = ((StandardDragNDropGameViewConfig)config).getMultiFigureTargetBackgound();
 		Collection<Integer> figures = ((StandardDragNDropGameViewConfig)config).getFigures();
-		Set<Integer> targets = targetMap.keySet();
+		Collection<Integer> targets = targetMap.values();
 
 		for (Integer figure : figures) {
 			View v = findViewById(figure);
-			v.setTag(VIEW_TAG);
 			v.setOnTouchListener(this);
+			v.setTag(VIEW_TAG);
 		}
 
 		for (Integer target : targets) {
@@ -42,7 +46,7 @@ public class StandardDragNDropGameView extends DragNDropGameView {
 
 	@Override
 	protected void onDropView(View v) {
-		if (targetMap.containsKey(v.getId()) && targetMap.get(v.getId()) == getDraggingView().getId()) {
+		if (targetMap.containsValue(v.getId()) && targetMap.get(getDraggingView().getId()) == v.getId()) {
 			getDraggingView().setVisibility(View.INVISIBLE);
 			placeFigureOnTarget(getDraggingView(), v);
 			MusicManager.playSingle(getContext(), R.raw.acierto);
@@ -51,10 +55,25 @@ public class StandardDragNDropGameView extends DragNDropGameView {
 				endGame();
 			}
 		} else {
-			if (targetMap.containsKey(v.getId())) {
+			if (targetMap.containsValue(v.getId())) {
 				MusicManager.playSingle(getContext(), R.raw.fallo);
 			}
 			moveBack(getDroppedX(), getDroppedY());
+		}
+	}
+	
+	@Override
+	protected void placeFigureOnTarget(View figure, View target) {
+		if (targetBackgournds != null) {
+			Drawable dr = ((ImageView)figure).getDrawable();
+			Bitmap bitmap = ((BitmapDrawable) dr).getBitmap();
+			
+			Drawable d = new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(bitmap, figure.getWidth() /2, figure.getHeight()/2, true));
+			ImageView figureTarget = (ImageView) findViewById(targetBackgournds.get(figure.getId()));
+			figureTarget.setImageDrawable(d);
+			figureTarget.setVisibility(View.VISIBLE);
+		} else {
+			super.placeFigureOnTarget(figure, target);
 		}
 	}
 }

@@ -1,8 +1,568 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:layout_height="match_parent" >
 
-</LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mercado_3_1_fondo" />
+
+    <RelativeLayout
+        android:id="@+id/piramide_nivel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/mercado_2_3_piramide_margin_top" >
+
+        <ImageView
+            android:id="@+id/mercado_2_3_target1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_1_pieza1base" />
+
+        <TextView
+            style="@style/tinyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mercado_2_3_target1"
+            android:layout_alignLeft="@+id/mercado_2_3_target1"
+            android:layout_alignRight="@+id/mercado_2_3_target1"
+            android:layout_alignTop="@+id/mercado_2_3_target1"
+            android:layout_marginTop="@dimen/mercado_2_3_target1_margin_top"
+            android:gravity="center"
+            android:text="KOIPEA \nETA AZUDREA" />
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure1target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mercado_2_3_figure1target"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/mercado_2_3_figure2target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/mercado_2_3_figure3target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/piramide_nivel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/piramide_nivel1"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/mercado_2_3_target2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mercado_3_1_pieza2base" />
+
+            <TextView
+                style="@style/tinyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mercado_2_3_target2"
+                android:layout_alignLeft="@+id/mercado_2_3_target2"
+                android:layout_alignRight="@+id/mercado_2_3_target2"
+                android:layout_alignTop="@+id/mercado_2_3_target2"
+                android:layout_marginLeft="@dimen/mercado_2_3_target2_margin_left"
+                android:gravity="center"
+                android:text="PROTEINAK" />
+
+            <ImageView
+                android:id="@+id/mercado_2_3_figure4target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mercado_2_3_figure4target"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/mercado_2_3_figure5target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/mercado_2_3_figure6target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/mercado_2_3_target3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mercado_3_1_pieza3base" />
+
+            <TextView
+                style="@style/tinyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mercado_2_3_target3"
+                android:layout_alignLeft="@+id/mercado_2_3_target3"
+                android:layout_alignRight="@+id/mercado_2_3_target3"
+                android:layout_alignTop="@+id/mercado_2_3_target3"
+                android:layout_marginRight="@dimen/mercado_2_3_target3_margin_right"
+                android:gravity="center"
+                android:text="ESNEKIAK" />
+
+            <ImageView
+                android:id="@+id/mercado_2_3_figure8target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/mercado_2_3_figure7target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/mercado_2_3_figure8target"
+                android:scaleType="fitCenter"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/mercado_2_3_figure9target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mercado_2_3_figure7target"
+                android:layout_toRightOf="@+id/mercado_2_3_figure8target"
+                android:scaleType="fitCenter"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/piramide_nivel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/piramide_nivel2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/mercado_2_3_target4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mercado_3_1_pieza4base" />
+
+            <TextView
+                style="@style/tinyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mercado_2_3_target4"
+                android:layout_alignLeft="@+id/mercado_2_3_target4"
+                android:layout_alignRight="@+id/mercado_2_3_target4"
+                android:layout_alignTop="@+id/mercado_2_3_target4"
+                android:gravity="center"
+                android:text="BARAZKIAK" />
+
+            <ImageView
+                android:id="@+id/mercado_2_3_figure10target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mercado_2_3_figure10target"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/mercado_2_3_figure11target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/mercado_2_3_figure12target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/mercado_2_3_target5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mercado_3_1_pieza5base" />
+
+            <TextView
+                style="@style/tinyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mercado_2_3_target5"
+                android:layout_alignLeft="@+id/mercado_2_3_target5"
+                android:layout_alignRight="@+id/mercado_2_3_target5"
+                android:layout_alignTop="@+id/mercado_2_3_target5"
+                android:gravity="center"
+                android:text="FRUITUAK" />
+
+            <ImageView
+                android:id="@+id/mercado_2_3_figure13target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mercado_2_3_figure13target"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/mercado_2_3_figure14target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/mercado_2_3_figure15target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/piramide_nivel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/piramide_nivel3"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/mercado_2_3_target6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_1_pieza6base" />
+
+        <TextView
+            style="@style/tinyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mercado_2_3_target6"
+            android:layout_alignLeft="@+id/mercado_2_3_target6"
+            android:layout_alignRight="@+id/mercado_2_3_target6"
+            android:layout_alignTop="@+id/mercado_2_3_target6"
+            android:gravity="center"
+            android:text="KARBONO-HIDRATOAK" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/mercado_2_3_figure16target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/mercado_2_3_figure17target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/mercado_2_3_figure18target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/figuresContainerLeftLevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/piramide_nivel1"
+        android:layout_toLeftOf="@+id/piramide_nivel1"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure10"
+            android:tag="@id/mercado_2_3_figure10target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza10g" />
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure5"
+            android:tag="@id/mercado_2_3_figure5target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza5g" />
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure9"
+            android:tag="@id/mercado_2_3_figure9target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza9g" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/figuresContainerLeftLevel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/figuresContainerLeftLevel1"
+        android:layout_toLeftOf="@+id/piramide_nivel2"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure16"
+            android:tag="@id/mercado_2_3_figure16target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza16g" />
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure6"
+            android:tag="@id/mercado_2_3_figure6target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza6g" />
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure15"
+            android:tag="@id/mercado_2_3_figure15target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza15g" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/figuresContainerLeftLevel2"
+        android:layout_toLeftOf="@+id/piramide_nivel3"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure1"
+            android:tag="@id/mercado_2_3_figure1target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza1g" />
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure3"
+            android:tag="@id/mercado_2_3_figure3target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza3g" />
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure11"
+            android:tag="@id/mercado_2_3_figure11target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza11g" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/figureContainerRightLevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/piramide_nivel1"
+        android:layout_toRightOf="@+id/piramide_nivel1"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure12"
+            android:tag="@id/mercado_2_3_figure12target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza12g" />
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure17"
+            android:tag="@id/mercado_2_3_figure17target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza17g" />
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure4"
+            android:tag="@id/mercado_2_3_figure4target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza4g" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/figureContainerRightLevel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/figureContainerRightLevel1"
+        android:layout_toRightOf="@+id/piramide_nivel2"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure18"
+            android:tag="@id/mercado_2_3_figure18target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza18g" />
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure8"
+            android:tag="@id/mercado_2_3_figure8target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza8g" />
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure13"
+            android:tag="@id/mercado_2_3_figure13target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza13g" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/figureContainerRightLevel2"
+        android:layout_toRightOf="@+id/piramide_nivel3"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure7"
+            android:tag="@id/mercado_2_3_figure7target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza7g" />
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza14g"
+            android:tag="@id/mercado_2_3_figure14target" />
+
+        <ImageView
+            android:id="@+id/mercado_2_3_figure2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_3_2_pieza2g"
+            android:tag="@id/mercado_2_3_figure2target" />
+    </LinearLayout>
+
+</RelativeLayout>

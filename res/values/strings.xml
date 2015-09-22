@@ -155,4 +155,17 @@
     <string name="charca_3_2_target5">ZUEK SALTO EGINGO</string>
     <string name="charca_3_2_target6">HAIEK SALTO EGINGO</string>
     
+    <string name="biblioteca_1_1_title">ZENBAKIAK TXIKIENETIK HANDIENERA ANTOLATU</string>
+    
+    <string name="biblioteca_1_2_title">MARRAZKI BAKOITZA DAGOKION TOKIAN KOKATU</string>
+    
+    <string name="biblioteca_1_2_target4">EGUIZKITAKO \nBETAURREKOAK</string>
+    <string name="biblioteca_1_2_target6">SANDALIAK</string>
+    <string name="biblioteca_1_2_target2">BAINUJANTZIA</string>
+    <string name="biblioteca_1_2_target3">ELASTIKOA</string>
+    <string name="biblioteca_1_2_target1">TXANOA</string>
+    <string name="biblioteca_1_2_target8">BUFANDA</string>
+    <string name="biblioteca_1_2_target5">BOTAK</string>
+    <string name="biblioteca_1_2_target7">BEROKIA</string>
+    
 </resources>
