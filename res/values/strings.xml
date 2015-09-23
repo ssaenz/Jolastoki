@@ -155,9 +155,9 @@
     <string name="charca_3_2_target5">ZUEK SALTO EGINGO</string>
     <string name="charca_3_2_target6">HAIEK SALTO EGINGO</string>
     
-    <string name="biblioteca_1_1_title">ZENBAKIAK TXIKIENETIK HANDIENERA ANTOLATU</string>
+    <string name="biblioteca_1_title">ZENBAKIAK TXIKIENETIK HANDIENERA ANTOLATU</string>
     
-    <string name="biblioteca_1_2_title">MARRAZKI BAKOITZA DAGOKION TOKIAN KOKATU</string>
+    <string name="biblioteca_2_title">MARRAZKI BAKOITZA DAGOKION TOKIAN KOKATU</string>
     
     <string name="biblioteca_1_2_target4">EGUIZKITAKO \nBETAURREKOAK</string>
     <string name="biblioteca_1_2_target6">SANDALIAK</string>
@@ -167,5 +167,35 @@
     <string name="biblioteca_1_2_target8">BUFANDA</string>
     <string name="biblioteca_1_2_target5">BOTAK</string>
     <string name="biblioteca_1_2_target7">BEROKIA</string>
+
+    <string name="biblioteca_2_2_target3">HELIKOPTEROA</string>
+    <string name="biblioteca_2_2_target1">HEGAZKINA</string>
+    <string name="biblioteca_2_2_target7">ITSASONTZIA</string>
+    <string name="biblioteca_2_2_target4">MOTOA</string>
+    <string name="biblioteca_2_2_target5">GLOBOA</string>
+    <string name="biblioteca_2_2_target6">AUTOBUSA</string>
+    <string name="biblioteca_2_2_target2">BIZIKLETA</string>
+    <string name="biblioteca_2_2_target8">TRENA</string>
+    
+    <string name="biblioteca_3_2_target2">LEHOIA</string>
+    <string name="biblioteca_3_2_target3">ERRINOZEROA</string>
+    <string name="biblioteca_3_2_target7">DORTOKA</string>
+    <string name="biblioteca_3_2_target5">SUGEA</string>
+    <string name="biblioteca_3_2_target8">JIRAFA</string>
+    <string name="biblioteca_3_2_target1">TXIMINOA</string>
+    <string name="biblioteca_3_2_target4">UNTXIA</string>
+    <string name="biblioteca_3_2_target6">ELEFANTEA</string>
+    
+    <string name="biblioteca_2_3_title">ERANSKAILUAK LEKU EGOKIAN IPINI</string>
+    
+    <string name="biblioteca_2_3_title1">ZENTZUMENAK</string>
+    <string name="biblioteca_2_3_title2">EGUNERO \nEGITEKOAK</string>
+    <string name="biblioteca_2_3_title3">GAUZAK</string>
+    
+    <string name="biblioteca_2_3_ikusi">IKUSI</string>
+    <string name="biblioteca_2_3_entzun">ENTZUN</string>
+    <string name="biblioteca_2_3_ukitu">UKITU</string>
+    <string name="biblioteca_2_3_jan">JAN</string>
+    <string name="biblioteca_2_3_usaindu">USAINDU</string>
     
 </resources>

@@ -50,7 +50,11 @@ public enum GameArea {
 //																					StandardDragNDropGameViewConfig.biblioteca_1_1,
 //																					StandardDragNDropGameViewConfig.biblioteca_2_1,
 //																					StandardDragNDropGameViewConfig.biblioteca_3_1,
-																					StandardDragNDropGameViewConfig.biblioteca_1_2});
+//																					StandardDragNDropGameViewConfig.biblioteca_1_2,
+//																					StandardDragNDropGameViewConfig.biblioteca_2_2,
+//																					StandardDragNDropGameViewConfig.biblioteca_3_2,
+																					StandardDragNDropGameViewConfig.biblioteca_1_3,
+																					StandardDragNDropGameViewConfig.biblioteca_2_3});
 
 	private int icon;
 	private GameViewConfig[] games;

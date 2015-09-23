@@ -25,7 +25,7 @@
     <dimen name="game_icon_small">60dp</dimen>
     <dimen name="top_icon_margin">3dp</dimen>
     
-    <dimen name="stroke_width">3dp</dimen>
+    <dimen name="stroke_width">1dp</dimen>
     <dimen name="corner_radius">6dp</dimen>
     
     <dimen name="corner_radius_cabecera">5dp</dimen>

@@ -21,13 +21,14 @@
     <dimen name="big_text_size">25sp</dimen>
     <dimen name="normal_text_size">20sp</dimen>
     <dimen name="small_text_size">15sp</dimen>
+    <dimen name="extra_small_text_size">10sp</dimen>
     <dimen name="tiny_text_size">6sp</dimen>
     
     <dimen name="game_icon_small">80dp</dimen>
     <dimen name="top_icon_margin">5dp</dimen>
     
-    <dimen name="stroke_width">5dp</dimen>
-    <dimen name="corner_radius">10dp</dimen>
+    <dimen name="stroke_width">2dp</dimen>
+    <dimen name="corner_radius">5dp</dimen>
     
     <dimen name="corner_radius_cabecera">8dp</dimen>
     
@@ -74,6 +75,21 @@
     <dimen name="mercado_2_3_target3_margin_right">10dp</dimen>
     <dimen name="mercado_2_3_piramide_margin_top">100dp</dimen>
     <dimen name="mercado_2_3_piezas_margin">5dp</dimen>
+    
+    <dimen name="biblioteca_1_3_target_letter_padding_small">5dp</dimen>
+    <dimen name="biblioteca_1_3_target_letter_padding_big">10dp</dimen>
+    
+    <dimen name="biblioteca_1_3_letter_padding_small">10dp</dimen>
+    <dimen name="biblioteca_1_3_letter_padding_big">15dp</dimen>
+    
+    <dimen name="biblioteca_1_3_target_size">36dp</dimen>
+    <dimen name="biblioteca_1_3_ficha_size">48dp</dimen>
+    
+    
+    <dimen name="biblioteca_2_3_padding_caja">10dp</dimen>
+    <dimen name="biblioteca_2_3_element_height">36dp</dimen>
+    <dimen name="biblioteca_2_3_title_height">48dp</dimen>
+    <dimen name="biblioteca_2_3_title_padding">10dp</dimen>
     
     <dimen name="charca_figuras_margin">20dp</dimen>
     

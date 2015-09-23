@@ -29,7 +29,7 @@
     <dimen name="game_icon_small">90dp</dimen>
     <dimen name="top_icon_margin">5dp</dimen>
     
-    <dimen name="stroke_width">5dp</dimen>
+    <dimen name="stroke_width">2dp</dimen>
     <dimen name="corner_radius">10dp</dimen>
     
     <dimen name="corner_radius_cabecera">8dp</dimen>

@@ -1,83 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:custom="http://schemas.android.com/apk/res/eu.lapecera.jolastoki">
-    
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res/eu.lapecera.jolastoki">
+
     <style name="arialText">
         <item name="ttf_name">Arial_Rounded_Bold.ttf</item>
         <item name="android:bufferType">spannable</item>
     </style>
-    
+
     <style name="arialWhiteText" parent="arialText">
         <item name="android:textColor">@android:color/white</item>
     </style>
-    
+
     <style name="arialOrangeText" parent="arialText">
         <item name="android:textColor">@color/orange</item>
     </style>
-    
+
     <style name="arialBlackText" parent="arialText">
         <item name="android:textColor">@android:color/black</item>
     </style>
-    
-    
+
     <style name="bigText" parent="arialBlackText">
         <item name="android:textSize">@dimen/big_text_size</item>
     </style>
-    
+
     <style name="normalText" parent="arialBlackText">
         <item name="android:textSize">@dimen/normal_text_size</item>
     </style>
-    
+
     <style name="smallText" parent="arialBlackText">
         <item name="android:textSize">@dimen/small_text_size</item>
     </style>
-    
+
+    <style name="extraSmallText" parent="arialBlackText">
+        <item name="android:textSize">@dimen/extra_small_text_size</item>
+    </style>
+
     <style name="tinyText" parent="arialBlackText">
         <item name="android:textSize">@dimen/tiny_text_size</item>
     </style>
-    
-    
+
     <style name="bigWhiteText" parent="arialWhiteText">
         <item name="android:textSize">@dimen/big_text_size</item>
     </style>
-    
+
     <style name="normalWhiteText" parent="arialWhiteText">
         <item name="android:textSize">@dimen/normal_text_size</item>
     </style>
-    
+
     <style name="smallWhiteText" parent="arialWhiteText">
         <item name="android:textSize">@dimen/small_text_size</item>
     </style>
-    
-    
+
     <style name="bigOrangeText" parent="arialBlackText">
         <item name="android:textSize">@dimen/big_text_size</item>
     </style>
-    
+
     <style name="normalOrangeText" parent="arialBlackText">
         <item name="android:textSize">@dimen/normal_text_size</item>
     </style>
-    
+
     <style name="smallOrangeText" parent="arialBlackText">
         <item name="android:textSize">@dimen/small_text_size</item>
     </style>
-    
-    
+
     <style name="eraserText">
         <item name="android:textColor">@android:color/white</item>
         <item name="ttf_name">Eraser.ttf</item>
     </style>
-    
+
     <style name="bigEraserText" parent="eraserText">
         <item name="android:textSize">@dimen/big_text_size</item>
     </style>
-    
+
     <style name="normalEraserText" parent="eraserText">
         <item name="android:textSize">@dimen/normal_text_size</item>
     </style>
-    
+
     <style name="smallEraserText" parent="eraserText">
         <item name="android:textSize">@dimen/small_text_size</item>
     </style>
-    
+
+    <style name="biblioteca_1_3_text_white" parent="bigWhiteText">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/biblioteca_1_3_target_letter_padding_big</item>
+        <item name="android:paddingRight">@dimen/biblioteca_1_3_target_letter_padding_big</item>
+        <item name="android:paddingTop">@dimen/biblioteca_1_3_target_letter_padding_small</item>
+        <item name="android:paddingBottom">@dimen/biblioteca_1_3_target_letter_padding_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="biblioteca_1_3_text_target" parent="bigText">
+        <item name="android:gravity">center</item>
+        <item name="android:width">@dimen/biblioteca_1_3_target_size</item>
+        <item name="android:height">@dimen/biblioteca_1_3_target_size</item>
+        <item name="android:background">@drawable/background_white_rounded</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="biblioteca_1_3_text_black" parent="bigText">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/background_white_rounded_stroked</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="biblioteca_2_3_text_white" parent="smallWhiteText">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/biblioteca_2_3_title_padding</item>
+        <item name="android:background">@drawable/background_morado_rounded_stroked</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="biblioteca_2_3_text_black" parent="smallText">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/biblioteca_2_3_title_padding</item>
+        <item name="android:background">@drawable/background_white_rounded_stroked</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

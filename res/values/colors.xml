@@ -17,4 +17,11 @@
     <color name="mercado_amarillo">#f8ef97</color>
     <color name="mercado_naranja">#f19506</color>
     
+    <color name="brown">#c27e00</color>
+    <color name="yellow">#f5bd00</color>
+    <color name="biblioteca_azul">#c4e8e7</color>
+    <color name="biblioteca_rosa">#ffcce4</color>
+    <color name="biblioteca_morado">#a25e86</color>
+    <color name="biblioteca_verde">#346732</color>
+    
 </resources>

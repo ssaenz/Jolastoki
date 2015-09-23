@@ -169,7 +169,7 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 		}
 
 	}),
-	biblioteca_1_1 (GameLevel.ONE, R.layout.layout_biblioteca_1_1, R.string.biblioteca_1_1_title, 60000l, -1,
+	biblioteca_1_1 (GameLevel.ONE, R.layout.layout_biblioteca_1_1, R.string.biblioteca_1_title, 60000l, -1,
 			Arrays.asList(R.id.biblioteca_1_figure1, R.id.biblioteca_1_figure2, R.id.biblioteca_1_figure3,
 							R.id.biblioteca_1_figure4, R.id.biblioteca_1_figure5, R.id.biblioteca_1_figure6,
 							R.id.biblioteca_1_figure7, R.id.biblioteca_1_figure8, R.id.biblioteca_1_figure9,
@@ -190,7 +190,7 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 		}
 
 	}, null),
-	biblioteca_2_1 (GameLevel.TWO, R.layout.layout_biblioteca_2_1, R.string.biblioteca_1_1_title, 60000l, -1,
+	biblioteca_2_1 (GameLevel.TWO, R.layout.layout_biblioteca_2_1, R.string.biblioteca_1_title, 60000l, -1,
 			Arrays.asList(R.id.biblioteca_1_figure1, R.id.biblioteca_1_figure2, R.id.biblioteca_1_figure3,
 							R.id.biblioteca_1_figure4, R.id.biblioteca_1_figure5, R.id.biblioteca_1_figure6,
 							R.id.biblioteca_1_figure7, R.id.biblioteca_1_figure8, R.id.biblioteca_1_figure9,
@@ -211,7 +211,7 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 		}
 
 	}, null),
-	biblioteca_3_1 (GameLevel.THREE, R.layout.layout_biblioteca_3_1, R.string.biblioteca_1_1_title, 60000l, -1,
+	biblioteca_3_1 (GameLevel.THREE, R.layout.layout_biblioteca_3_1, R.string.biblioteca_1_title, 60000l, -1,
 			Arrays.asList(R.id.biblioteca_1_figure1, R.id.biblioteca_1_figure2, R.id.biblioteca_1_figure3,
 							R.id.biblioteca_1_figure4, R.id.biblioteca_1_figure5, R.id.biblioteca_1_figure6,
 							R.id.biblioteca_1_figure7, R.id.biblioteca_1_figure8, R.id.biblioteca_1_figure9,
@@ -232,7 +232,7 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 		}
 
 	}, null),
-	biblioteca_1_2 (GameLevel.ONE, R.layout.layout_biblioteca_1_2, R.string.biblioteca_1_2_title, 60000l, R.drawable.biblioteca_2_2_pieza_base,
+	biblioteca_1_2 (GameLevel.ONE, R.layout.layout_biblioteca_1_2, R.string.biblioteca_2_title, 60000l, R.drawable.biblioteca_2_2_pieza_base,
 			Arrays.asList(R.id.biblioteca_2_figure1, R.id.biblioteca_2_figure2, R.id.biblioteca_2_figure3,
 							R.id.biblioteca_2_figure4, R.id.biblioteca_2_figure5, R.id.biblioteca_2_figure6,
 							R.id.biblioteca_2_figure7, R.id.biblioteca_2_figure8),
@@ -247,6 +247,80 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 			put(R.id.biblioteca_2_figure6, R.id.biblioteca_2_target6);
 			put(R.id.biblioteca_2_figure7, R.id.biblioteca_2_target7);
 			put(R.id.biblioteca_2_figure8, R.id.biblioteca_2_target8);
+		}
+
+	}, null),
+	biblioteca_2_2 (GameLevel.TWO, R.layout.layout_biblioteca_2_2, R.string.biblioteca_2_title, 60000l, R.drawable.biblioteca_2_2_pieza_base,
+			Arrays.asList(R.id.biblioteca_2_figure1, R.id.biblioteca_2_figure2, R.id.biblioteca_2_figure3,
+							R.id.biblioteca_2_figure4, R.id.biblioteca_2_figure5, R.id.biblioteca_2_figure6,
+							R.id.biblioteca_2_figure7, R.id.biblioteca_2_figure8),
+			new HashMap<Integer, Integer>() {
+		private static final long serialVersionUID = 1L;
+		{
+			put(R.id.biblioteca_2_figure1, R.id.biblioteca_2_target1);
+			put(R.id.biblioteca_2_figure2, R.id.biblioteca_2_target2);
+			put(R.id.biblioteca_2_figure3, R.id.biblioteca_2_target3);
+			put(R.id.biblioteca_2_figure4, R.id.biblioteca_2_target4);
+			put(R.id.biblioteca_2_figure5, R.id.biblioteca_2_target5);
+			put(R.id.biblioteca_2_figure6, R.id.biblioteca_2_target6);
+			put(R.id.biblioteca_2_figure7, R.id.biblioteca_2_target7);
+			put(R.id.biblioteca_2_figure8, R.id.biblioteca_2_target8);
+		}
+
+	}, null),
+	biblioteca_3_2 (GameLevel.THREE, R.layout.layout_biblioteca_3_2, R.string.biblioteca_2_title, 60000l, R.drawable.biblioteca_2_2_pieza_base,
+			Arrays.asList(R.id.biblioteca_2_figure1, R.id.biblioteca_2_figure2, R.id.biblioteca_2_figure3,
+							R.id.biblioteca_2_figure4, R.id.biblioteca_2_figure5, R.id.biblioteca_2_figure6,
+							R.id.biblioteca_2_figure7, R.id.biblioteca_2_figure8),
+			new HashMap<Integer, Integer>() {
+		private static final long serialVersionUID = 1L;
+		{
+			put(R.id.biblioteca_2_figure1, R.id.biblioteca_2_target1);
+			put(R.id.biblioteca_2_figure2, R.id.biblioteca_2_target2);
+			put(R.id.biblioteca_2_figure3, R.id.biblioteca_2_target3);
+			put(R.id.biblioteca_2_figure4, R.id.biblioteca_2_target4);
+			put(R.id.biblioteca_2_figure5, R.id.biblioteca_2_target5);
+			put(R.id.biblioteca_2_figure6, R.id.biblioteca_2_target6);
+			put(R.id.biblioteca_2_figure7, R.id.biblioteca_2_target7);
+			put(R.id.biblioteca_2_figure8, R.id.biblioteca_2_target8);
+		}
+
+	}, null),
+	biblioteca_1_3 (GameLevel.ONE, R.layout.layout_biblioteca_1_3, R.string.biblioteca_2_title, 60000l, -1,
+			Arrays.asList(R.id.biblioteca_1_3_figure1, R.id.biblioteca_1_3_figure2, R.id.biblioteca_1_3_figure3,
+							R.id.biblioteca_1_3_figure4, R.id.biblioteca_1_3_figure5, R.id.biblioteca_1_3_figure6,
+							R.id.biblioteca_1_3_figure7, R.id.biblioteca_1_3_figure8, R.id.biblioteca_1_3_figure9, R.id.biblioteca_1_3_figure10),
+			new HashMap<Integer, Integer>() {
+		private static final long serialVersionUID = 1L;
+		{
+			put(R.id.biblioteca_1_3_figure1, R.id.biblioteca_1_3_target9);
+			put(R.id.biblioteca_1_3_figure2, R.id.biblioteca_1_3_target6);
+			put(R.id.biblioteca_1_3_figure3, R.id.biblioteca_1_3_target5);
+			put(R.id.biblioteca_1_3_figure4, R.id.biblioteca_1_3_target10);
+			put(R.id.biblioteca_1_3_figure5, R.id.biblioteca_1_3_target2);
+			put(R.id.biblioteca_1_3_figure6, R.id.biblioteca_1_3_target7);
+			put(R.id.biblioteca_1_3_figure7, R.id.biblioteca_1_3_target3);
+			put(R.id.biblioteca_1_3_figure8, R.id.biblioteca_1_3_target8);
+			put(R.id.biblioteca_1_3_figure9, R.id.biblioteca_1_3_target1);
+			put(R.id.biblioteca_1_3_figure10, R.id.biblioteca_1_3_target4);
+		}
+
+	}, null),
+	biblioteca_2_3 (GameLevel.TWO, R.layout.layout_biblioteca_2_3, R.string.biblioteca_2_3_title, 60000l, R.drawable.background_white_rounded,
+			Arrays.asList(R.id.biblioteca_2_3_figure1, R.id.biblioteca_2_3_figure2, R.id.biblioteca_2_3_figure3,
+							R.id.biblioteca_2_3_figure4, R.id.biblioteca_2_3_figure5, R.id.biblioteca_2_3_figure6,
+							R.id.biblioteca_2_3_figure7, R.id.biblioteca_2_3_figure8),
+			new HashMap<Integer, Integer>() {
+		private static final long serialVersionUID = 1L;
+		{
+			put(R.id.biblioteca_2_3_figure1, R.id.biblioteca_2_3_target6);
+			put(R.id.biblioteca_2_3_figure2, R.id.biblioteca_2_3_target3);
+			put(R.id.biblioteca_2_3_figure3, R.id.biblioteca_2_3_target2);
+			put(R.id.biblioteca_2_3_figure4, R.id.biblioteca_2_3_target7);
+			put(R.id.biblioteca_2_3_figure5, R.id.biblioteca_2_3_target4);
+			put(R.id.biblioteca_2_3_figure6, R.id.biblioteca_2_3_target1);
+			put(R.id.biblioteca_2_3_figure7, R.id.biblioteca_2_3_target5);
+			put(R.id.biblioteca_2_3_figure8, R.id.biblioteca_2_3_target8);
 		}
 
 	}, null);

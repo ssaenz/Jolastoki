@@ -55,17 +55,15 @@ public abstract class DragNDropGameView extends GameView implements OnTouchListe
 		switch (event.getAction()) {
 		case DragEvent.ACTION_DRAG_LOCATION:
 			if (!v.equals(this)) {
-				return false;
+				return true;
 			}
 			droppedX = event.getX();
 			droppedY = event.getY();
-			Log.i("Current location", "x: " + droppedX + ", y: " + droppedY);
 			break;
 		case DragEvent.ACTION_DROP:
 			onDropView(v);
 			break;
 		case DragEvent.ACTION_DRAG_EXITED:
-			Log.i("DragEvent", "Drag exited " + event.getAction());
 			if (v.equals(this)) {
 				moveBack(droppedX, droppedY);
 			}
@@ -81,7 +79,7 @@ public abstract class DragNDropGameView extends GameView implements OnTouchListe
 		if (target instanceof ImageView) {
 			((ImageView) target).setImageDrawable(((ImageView)figure).getDrawable());
 		} else if (target instanceof TextView || target instanceof Button) {
-			((TextView)target).setText(((TextView)figure).getText());
+			((TextView)target).setText(((TextView)figure).getText(), TextView.BufferType.SPANNABLE);
 		} 
 		
 		if (endTargetBackground != -1) {
