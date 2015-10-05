@@ -2,6 +2,8 @@ package eu.lapecera.jolastoki.games.quiz;
 
 import android.content.Context;
 import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -25,7 +27,6 @@ public class QuizGameView extends GameView {
 
 	private LinearLayout containerLayout;
 
-	private Handler handler = new Handler();
 	private ButtonHandler buttonHandler = new ButtonHandler();
 
 	private boolean gameOver = false;
@@ -47,6 +48,7 @@ public class QuizGameView extends GameView {
 
 				@Override
 				public void onAudibleClick(View v) {
+					Log.i(QuizGameView.class.getName(), "On click, gameOver = " + gameOver);
 					if (!gameOver) {
 						final View button = v;
 						button.setSelected(true);
@@ -57,13 +59,12 @@ public class QuizGameView extends GameView {
 								getGameOverListener().OnStopTime();
 							}
 							MusicManager.playSingle(getContext(), R.raw.acierto);
-							buttonHandler.setFallo(true);
+							Log.i(QuizGameView.class.getName(), "before buttonHandler call, gameOver = " + gameOver);
 
 						} else {
 							MusicManager.playSingle(getContext(), R.raw.fallo);
-							buttonHandler.setFallo(false);
 						}
-						handler.postDelayed(buttonHandler, 1000);
+						buttonHandler.sendEmptyMessageDelayed(v.getId(),  1000);
 					}
 				}
 			});
@@ -96,30 +97,27 @@ public class QuizGameView extends GameView {
 		containerLayout.addView(screenView);
 	}
 
-	private class ButtonHandler implements Runnable {
+	private class ButtonHandler extends Handler {
 
 		private View view;
-		private boolean isOk = true;
 
 		public void setView (View v) {
 			this.view = v;
 		}
-		public void setFallo (boolean isOk) {
-			this.isOk = isOk;
-		}
 
 		@Override
-		public void run() {
-			if (isOk) {
+		public void handleMessage(Message msg) {
+			if (msg.what == QuizGameView.this.currentRightAnswers) {
 				if (hasMoreScreens()) {
 					showNextScreen();
 				} else if (getGameOverListener() != null) {
 					getGameOverListener().OnGameOver();
 				}
+				view.setSelected(false);
+				this.removeMessages(msg.what);
 			}
-			view.setSelected(false);
+			super.handleMessage(msg);
 		}
-
 	}
 
 }

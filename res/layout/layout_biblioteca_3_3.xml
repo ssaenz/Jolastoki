@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/biblioteca_3_3_fondo" />
+
+    <RelativeLayout
+        android:id="@+id/esqueletoContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:id="@+id/fondoEsqueleto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/biblioteca_3_3_cajaesqueleto" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fondoEsqueleto"
+            android:layout_alignTop="@+id/fondoEsqueleto"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical" >
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:text="ESKUMUTURRA"
+                android:visibility="invisible" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_target1"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_target2"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_target3"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_target4"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_target5"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_target6"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_target7"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/esqueletoContainer" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_figure1"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="LEPOA" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_figure2"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="SORBALDA" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_figure3"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="UKALONDOA" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_figure4"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="ESKUMUTURRA" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_figure5"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="ALDAKA" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_figure6"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="BELAUNA" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_figure7"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="ORKATILA" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

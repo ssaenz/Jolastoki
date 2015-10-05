@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/parque_3_1_fondo"
-    android:paddingTop="50dp" >
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/parque_3_1_fondo" />
 
     <LinearLayout
         android:id="@+id/parque_1_3_box_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="@drawable/parque_3_1_caja"
-        android:orientation="horizontal" 
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
-        android:paddingLeft="20dp"
-        android:paddingTop="20dp"
+        android:background="@drawable/parque_3_1_caja"
+        android:orientation="horizontal"
         android:paddingBottom="20dp"
-        android:paddingRight="40dp">
+        android:paddingLeft="20dp"
+        android:paddingRight="40dp"
+        android:paddingTop="20dp" >
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -72,53 +77,59 @@
                 android:background="@drawable/parque_3_1_hexagono_off" />
         </LinearLayout>
     </LinearLayout>
-    
-     <ImageView android:id="@+id/parque_1_3_bt1"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:rotation="30"
-         android:background="@drawable/parque_3_1_cuadrado_on"
-         android:layout_alignTop="@id/parque_1_3_box_container"
-         android:layout_toLeftOf="@id/parque_1_3_box_container"/>
-     
-     <ImageView android:id="@+id/parque_1_3_bt2"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:rotation="-30"
-         android:background="@drawable/parque_3_1_triangulo_on"
-         android:layout_below="@id/parque_1_3_bt1"
-         android:layout_toLeftOf="@id/parque_1_3_box_container"/>
-     
-     <ImageView android:id="@+id/parque_1_3_bt3"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:rotation="60"
-         android:background="@drawable/parque_3_1_rectangulo_on"
-         android:layout_below="@id/parque_1_3_bt2"
-         android:layout_toLeftOf="@id/parque_1_3_box_container"/>
-     
-     <ImageView android:id="@+id/parque_1_3_bt4"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:rotation="15"
-         android:background="@drawable/parque_3_1_hexagono_on"
-         android:layout_alignTop="@id/parque_1_3_box_container"
-         android:layout_toRightOf="@id/parque_1_3_box_container"/>
-     
-     <ImageView android:id="@+id/parque_1_3_bt5"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:rotation="60"
-         android:background="@drawable/parque_3_1_circulo_on"
-         android:layout_below="@+id/parque_1_3_bt4"
-         android:layout_toRightOf="@id/parque_1_3_box_container"/>
-     
-     <ImageView android:id="@+id/parque_1_3_bt6"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:rotation="25"
-         android:background="@drawable/parque_3_1_pentagono_on"
-         android:layout_below="@+id/parque_1_3_bt5"
-         android:layout_toRightOf="@id/parque_1_3_box_container"/>
+
+    <ImageView
+        android:id="@+id/parque_1_3_bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/parque_1_3_bt2"
+        android:layout_toLeftOf="@id/parque_1_3_box_container"
+        android:background="@drawable/parque_3_1_cuadrado_on"
+        android:rotation="30" />
+
+    <ImageView
+        android:id="@+id/parque_1_3_bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/parque_1_3_bt3"
+        android:layout_toLeftOf="@id/parque_1_3_box_container"
+        android:background="@drawable/parque_3_1_triangulo_on"
+        android:rotation="-30" />
+
+    <ImageView
+        android:id="@+id/parque_1_3_bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/parque_1_3_box_container"
+        android:background="@drawable/parque_3_1_rectangulo_on"
+        android:rotation="60" />
+
+    <ImageView
+        android:id="@+id/parque_1_3_bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/parque_1_3_bt5"
+        android:layout_toRightOf="@id/parque_1_3_box_container"
+        android:background="@drawable/parque_3_1_hexagono_on"
+        android:rotation="15" />
+
+    <ImageView
+        android:id="@+id/parque_1_3_bt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/parque_1_3_bt6"
+        android:layout_toRightOf="@id/parque_1_3_box_container"
+        android:background="@drawable/parque_3_1_circulo_on"
+        android:rotation="60" />
+
+    <ImageView
+        android:id="@+id/parque_1_3_bt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/parque_1_3_box_container"
+        android:background="@drawable/parque_3_1_pentagono_on"
+        android:rotation="25" />
 
 </RelativeLayout>

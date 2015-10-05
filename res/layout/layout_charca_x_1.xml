@@ -32,21 +32,25 @@
 
             <eu.lapecera.jolastoki.widget.TypographyButton
                 android:id="@+id/charca_bt1"
+                style="@style/smallText"
                 android:layout_width="wrap_content"
-                android:layout_margin="@dimen/charca_figuras_margin"
+                android:layout_margin="@dimen/charca_x_1_figuras_margin"
                 android:layout_height="wrap_content"
                 android:background="@drawable/charca_bt" />
 
             <eu.lapecera.jolastoki.widget.TypographyButton
                 android:id="@+id/charca_bt2"
+                style="@style/smallText"
                 android:layout_width="wrap_content"
-                android:layout_margin="@dimen/charca_figuras_margin"
+                android:gravity="top|center"
+                android:layout_margin="@dimen/charca_x_1_figuras_margin"
                 android:layout_height="wrap_content"
                 android:background="@drawable/charca_bt" />
 
             <eu.lapecera.jolastoki.widget.TypographyButton
                 android:id="@+id/charca_bt3"
-                android:layout_margin="@dimen/charca_figuras_margin"
+                style="@style/smallText"
+                android:layout_margin="@dimen/charca_x_1_figuras_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/charca_bt" />
@@ -61,22 +65,25 @@
 
             <eu.lapecera.jolastoki.widget.TypographyButton
                 android:id="@+id/charca_bt4"
+                style="@style/smallText"
                 android:layout_width="wrap_content"
-                android:layout_margin="@dimen/charca_figuras_margin"
+                android:layout_margin="@dimen/charca_x_1_figuras_margin"
                 android:layout_height="wrap_content"
                 android:background="@drawable/charca_bt" />
 
             <eu.lapecera.jolastoki.widget.TypographyButton
                 android:id="@+id/charca_bt5"
                 android:layout_width="wrap_content"
-                android:layout_margin="@dimen/charca_figuras_margin"
+                style="@style/smallText"
+                android:layout_margin="@dimen/charca_x_1_figuras_margin"
                 android:layout_height="wrap_content"
                 android:background="@drawable/charca_bt" />
 
             <eu.lapecera.jolastoki.widget.TypographyButton
                 android:id="@+id/charca_bt6"
+                style="@style/smallText"
                 android:layout_width="wrap_content"
-                android:layout_margin="@dimen/charca_figuras_margin"
+                android:layout_margin="@dimen/charca_x_1_figuras_margin"
                 android:layout_height="wrap_content"
                 android:background="@drawable/charca_bt" />
         </LinearLayout>

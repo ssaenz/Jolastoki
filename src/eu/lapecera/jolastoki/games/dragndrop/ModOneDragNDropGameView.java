@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import eu.lapecera.jolastoki.R;
 import eu.lapecera.jolastoki.config.GameViewConfig;
 import eu.lapecera.jolastoki.config.ModOneDragNDropGameViewConfig;
@@ -29,7 +30,7 @@ public class ModOneDragNDropGameView extends DragNDropGameView {
 	private LinearLayout container;
 	private List<Integer> screens;
 	
-	private LinearLayout targetLayout;
+	private RelativeLayout targetLayout;
 	private Button targetButton;
 	
 	private Handler handler = new Handler();
@@ -66,7 +67,7 @@ public class ModOneDragNDropGameView extends DragNDropGameView {
 		btn.setTag(VIEW_TAG);
 		
 		targetButton = (Button) findViewById(R.id.parque_x_2_bt_target);
-		targetLayout = (LinearLayout)findViewById(R.id.parque_x_2_target);
+		targetLayout = (RelativeLayout)findViewById(R.id.parque_x_2_target);
 		targetLayout.setOnDragListener(this);
 	}
 	

@@ -3,7 +3,7 @@
 
     <string name="app_name">Jolastoki</string>
 
-    <string name="activity_area_title">AUKERATU MAILA</string>
+    <string name="activity_area_title">AUKERATU MAIA</string>
     
     <string name="area_pairs_title">Juego de las parejas</string>
     <string name="area_quiz_title">Juego de preguntas</string>
@@ -124,7 +124,7 @@
     <string name="charca_1_2_target2">ZUK SALTO EGITEN</string>
     <string name="charca_1_2_target3">HARK SALTO EGITEN</string>
     <string name="charca_1_2_target4">GUK SALTO EGITEN</string>
-    <string name="charca_1_2_target5">SUEK SALTO EGITEN</string>
+    <string name="charca_1_2_target5">ZUEK SALTO EGITEN</string>
     <string name="charca_1_2_target6">HAIEK SALTO EGITEN</string>
     
     <string name="charca_2_2_bt1">ZUTEN</string>
@@ -159,6 +159,8 @@
     
     <string name="biblioteca_2_title">MARRAZKI BAKOITZA DAGOKION TOKIAN KOKATU</string>
     
+    <string name="biblioteca_1_3_title">LETRAK LEKU EGOKIAN IPINI</string>
+    
     <string name="biblioteca_1_2_target4">EGUIZKITAKO \nBETAURREKOAK</string>
     <string name="biblioteca_1_2_target6">SANDALIAK</string>
     <string name="biblioteca_1_2_target2">BAINUJANTZIA</string>
@@ -187,6 +189,8 @@
     <string name="biblioteca_3_2_target6">ELEFANTEA</string>
     
     <string name="biblioteca_2_3_title">ERANSKAILUAK LEKU EGOKIAN IPINI</string>
+    
+    <string name="biblioteca_3_3_title">ERANSKAILUAK LEKU EGOKIAN IPINI</string>
     
     <string name="biblioteca_2_3_title1">ZENTZUMENAK</string>
     <string name="biblioteca_2_3_title2">EGUNERO \nEGITEKOAK</string>

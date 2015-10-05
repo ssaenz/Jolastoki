@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/bigText"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/parque_3_3_cartelito"
-    android:gravity="center"
-    android:paddingTop="@dimen/parque_cartelito_padding_top"
-    android:text="@string/prisma" />
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/parque_3_3_cartelito" />
+
+    <TextView
+        style="@style/bigText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/parque_3_3_texto_cartelito_margin_bottom"
+        android:gravity="center"
+        android:text="@string/prisma" />
+
+</RelativeLayout>

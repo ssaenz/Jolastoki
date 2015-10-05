@@ -80,9 +80,9 @@
         android:layout_alignTop="@+id/header"
         android:layout_alignBottom="@+id/header"
         android:layout_toRightOf="@+id/game_score"
+        android:layout_marginLeft="@dimen/activity_game_title_margin_left"
         android:layout_toLeftOf="@+id/game_number"
-        android:layout_gravity="center"
-        android:gravity="center"
+        android:gravity="left|center_vertical"
         android:text="Un titulo largo para ver cuánto ocupa el texto" />
 
 </RelativeLayout>

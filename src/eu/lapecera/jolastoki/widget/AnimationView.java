@@ -81,6 +81,7 @@ public class AnimationView extends ImageView {
             int width = bmp.getWidth();
             int height = bmp.getHeight();
             Bitmap.Config config = bmp.getConfig();
+            bmp.recycle();
             mBitmap = Bitmap.createBitmap(width, height, config);
             mBitmapOptions = new BitmapFactory.Options();
             // setup bitmap reuse options. 

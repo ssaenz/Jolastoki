@@ -286,7 +286,7 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 		}
 
 	}, null),
-	biblioteca_1_3 (GameLevel.ONE, R.layout.layout_biblioteca_1_3, R.string.biblioteca_2_title, 60000l, -1,
+	biblioteca_1_3 (GameLevel.ONE, R.layout.layout_biblioteca_1_3, R.string.biblioteca_1_3_title, 60000l, -1,
 			Arrays.asList(R.id.biblioteca_1_3_figure1, R.id.biblioteca_1_3_figure2, R.id.biblioteca_1_3_figure3,
 							R.id.biblioteca_1_3_figure4, R.id.biblioteca_1_3_figure5, R.id.biblioteca_1_3_figure6,
 							R.id.biblioteca_1_3_figure7, R.id.biblioteca_1_3_figure8, R.id.biblioteca_1_3_figure9, R.id.biblioteca_1_3_figure10),
@@ -321,6 +321,23 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 			put(R.id.biblioteca_2_3_figure6, R.id.biblioteca_2_3_target1);
 			put(R.id.biblioteca_2_3_figure7, R.id.biblioteca_2_3_target5);
 			put(R.id.biblioteca_2_3_figure8, R.id.biblioteca_2_3_target8);
+		}
+
+	}, null),
+	biblioteca_3_3 (GameLevel.THREE, R.layout.layout_biblioteca_3_3, R.string.biblioteca_3_3_title, 60000l, -1,
+			Arrays.asList(R.id.biblioteca_3_3_figure1, R.id.biblioteca_3_3_figure2, R.id.biblioteca_3_3_figure3,
+							R.id.biblioteca_3_3_figure4, R.id.biblioteca_3_3_figure5, R.id.biblioteca_3_3_figure6,
+							R.id.biblioteca_3_3_figure7),
+			new HashMap<Integer, Integer>() {
+		private static final long serialVersionUID = 1L;
+		{
+			put(R.id.biblioteca_3_3_figure1, R.id.biblioteca_3_3_target1);
+			put(R.id.biblioteca_3_3_figure2, R.id.biblioteca_3_3_target2);
+			put(R.id.biblioteca_3_3_figure3, R.id.biblioteca_3_3_target3);
+			put(R.id.biblioteca_3_3_figure4, R.id.biblioteca_3_3_target4);
+			put(R.id.biblioteca_3_3_figure5, R.id.biblioteca_3_3_target5);
+			put(R.id.biblioteca_3_3_figure6, R.id.biblioteca_3_3_target6);
+			put(R.id.biblioteca_3_3_figure7, R.id.biblioteca_3_3_target7);
 		}
 
 	}, null);

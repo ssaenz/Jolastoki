@@ -7,6 +7,8 @@
     
     <declare-styleable name="InteractiveView">
         <attr name="assets_dir" format="string"/>
+        <attr name="first_layer" format="integer"/>
+        <attr name="last_layer" format="integer"/>
     </declare-styleable>
     
 </resources>

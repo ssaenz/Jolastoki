@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="@dimen/parque_cartelito_margin_right"
+        android:layout_marginRight="@dimen/parque_3_3_cartelito_margin_right"
         android:orientation="vertical" >
     </LinearLayout>
 

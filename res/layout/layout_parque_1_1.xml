@@ -11,25 +11,23 @@
 
     <TextView
         style="@style/normalText"
-        android:layout_width="@dimen/parque_cartel_width"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="125dp"
+        android:layout_above="@+id/buttonsContainer"
+        android:layout_marginLeft="@dimen/parque_x_1_cartel_margin"
+        android:layout_marginRight="@dimen/parque_x_1_cartel_margin"
         android:background="@drawable/parque_1_1_cartel"
         android:gravity="center"
-        android:padding="@dimen/parque_cartel_padding"
+        android:padding="@dimen/parque_x_1_cartel_padding"
         android:text="@string/parque_1_1_question" >
     </TextView>
 
     <LinearLayout
+        android:id="@+id/buttonsContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:gravity="center"
+        android:gravity="bottom"
         android:orientation="horizontal" >
 
         <ImageButton
@@ -41,12 +39,11 @@
             android:scaleType="fitCenter"
             android:src="@drawable/parque_1_1_bt1" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/parque_1_1_bt2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
             android:scaleType="fitCenter"
             android:src="@drawable/parque_1_1_bt2" />
 

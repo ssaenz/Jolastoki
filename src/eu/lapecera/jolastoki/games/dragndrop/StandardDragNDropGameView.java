@@ -7,6 +7,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import eu.lapecera.jolastoki.R;
@@ -46,7 +47,7 @@ public class StandardDragNDropGameView extends DragNDropGameView {
 
 	@Override
 	protected void onDropView(View v) {
-		if (targetMap.containsValue(v.getId()) && targetMap.get(getDraggingView().getId()) == v.getId()) {
+		if ((targetMap.containsValue(v.getId()) && (targetMap.get(getDraggingView().getId()) != null && targetMap.get(getDraggingView().getId()) == v.getId()))) {
 			getDraggingView().setVisibility(View.INVISIBLE);
 			placeFigureOnTarget(getDraggingView(), v);
 			MusicManager.playSingle(getContext(), R.raw.acierto);
@@ -65,12 +66,12 @@ public class StandardDragNDropGameView extends DragNDropGameView {
 	@Override
 	protected void placeFigureOnTarget(View figure, View target) {
 		if (targetBackgournds != null) {
-			Drawable dr = ((ImageView)figure).getDrawable();
-			Bitmap bitmap = ((BitmapDrawable) dr).getBitmap();
+//			Drawable dr = ((ImageView)figure).getDrawable();
+//			Bitmap bitmap = ((BitmapDrawable) dr).getBitmap();
 			
-			Drawable d = new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(bitmap, figure.getWidth() /2, figure.getHeight()/2, true));
+//			Drawable d = new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(bitmap, figure.getWidth() /2, figure.getHeight()/2, true));
 			ImageView figureTarget = (ImageView) findViewById(targetBackgournds.get(figure.getId()));
-			figureTarget.setImageDrawable(d);
+//			figureTarget.setImageDrawable(d);
 			figureTarget.setVisibility(View.VISIBLE);
 		} else {
 			super.placeFigureOnTarget(figure, target);

@@ -10,14 +10,12 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import eu.lapecera.jolastoki.R;
 import eu.lapecera.jolastoki.common.BaseActivity;
 import eu.lapecera.jolastoki.common.Constants;
 import eu.lapecera.jolastoki.common.OnGameOverListener;
@@ -118,7 +116,6 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	}
 	
 	private synchronized void playTime() {
-		Log.i("GameActivity", "playTime()");
 		this.timeStopped = false;
 	}
 
@@ -176,8 +173,8 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 			time = time - 1000;
 			this.timeView.setText(format.format(new Date(time)));
 			this.timeView.setTag(time);
-			handler.postDelayed(timeUpdater, 1000);
 		}
+		handler.postDelayed(timeUpdater, 1000);
 	}
 	
 	private void showTimeoutDialog() {

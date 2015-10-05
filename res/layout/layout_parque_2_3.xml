@@ -14,7 +14,7 @@
         android:layout_centerInParent="true"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="@dimen/parque_cartel_padding" />
+        android:padding="@dimen/parque_x_1_cartel_padding" />
 
     <LinearLayout
         android:layout_width="match_parent"

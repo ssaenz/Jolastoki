@@ -42,6 +42,8 @@ public abstract class DragNDropGameView extends GameView implements OnTouchListe
 	
 	private int endTargetBackground;
 	
+	private boolean movingBack = false;
+	
 	@Override
 	protected void onCreateView(GameViewConfig config) {
 		this.setOnDragListener(this);
@@ -68,8 +70,6 @@ public abstract class DragNDropGameView extends GameView implements OnTouchListe
 				moveBack(droppedX, droppedY);
 			}
 			break;
-
-
 		}
 		return true;
 	}
@@ -101,6 +101,8 @@ public abstract class DragNDropGameView extends GameView implements OnTouchListe
 			}
 			return true;
 		case MotionEvent.ACTION_DOWN:
+			if (movingBack)
+				return false;
 			if (!gameOver) {
 				draggingView = view;
 				
@@ -140,6 +142,7 @@ public abstract class DragNDropGameView extends GameView implements OnTouchListe
 	}
 
 	protected void moveBack(float _xFrom, float _yFrom) {
+		movingBack = true;
 		float xFrom = _xFrom - shadowImage.getWidth() / 2;
 		float yFrom = _yFrom  - shadowImage.getHeight() / 2;
 		float xTo = getRelativeX(draggingView);
@@ -159,6 +162,7 @@ public abstract class DragNDropGameView extends GameView implements OnTouchListe
 			public void onAnimationEnd(Animator animation) {
 				shadowImage.setVisibility(View.INVISIBLE);
 				draggingView.setVisibility(View.VISIBLE);
+				movingBack = false;
 			}
 			
 		});

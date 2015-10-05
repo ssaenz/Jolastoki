@@ -8,22 +8,22 @@ import android.graphics.Color;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ToggleButton;
 import eu.lapecera.jolastoki.R;
 import eu.lapecera.jolastoki.config.ColorGameViewConfig;
 import eu.lapecera.jolastoki.config.GameViewConfig;
 import eu.lapecera.jolastoki.games.GameView;
-import eu.lapecera.jolastoki.widget.InteractiveView;
-import eu.lapecera.jolastoki.widget.InteractiveView.OnCompletedColorsListener;
+import eu.lapecera.jolastoki.widget.MultiLayerView;
+import eu.lapecera.jolastoki.widget.MultiLayerView.OnCompletedColorsListener;
+import eu.lapecera.jolastoki.widget.MultiLayerView.OnRegionClickListener;
 
-public class ColorGameView extends GameView implements OnClickListener, OnCompletedColorsListener {
+public class ColorGameView extends GameView implements OnClickListener, OnCompletedColorsListener, OnRegionClickListener {
 
 	public ColorGameView(Context context, GameViewConfig config) {
 		super(context, config);
 	}
 
-	private InteractiveView interactiveView;
+	private MultiLayerView interactiveView;
 
 	private List<Integer> buttons;
 	private Map<Integer, String> buttonTexts;
@@ -41,8 +41,15 @@ public class ColorGameView extends GameView implements OnClickListener, OnComple
 			button.setTextOn(buttonTexts.get(buttonId));
 			button.setTextOff(buttonTexts.get(buttonId));
 		}
-		interactiveView = (InteractiveView) findViewById(R.id.interactiveView);
+		interactiveView = (MultiLayerView) findViewById(R.id.interactiveView);
 		interactiveView.setOnCompletedColorListener(this);
+		interactiveView.setOnRegionClickListener(this);
+	}
+	
+	@Override
+	protected void onDetachedFromWindow() {
+		interactiveView.recycle();
+		super.onDetachedFromWindow();
 	}
 
 	@Override
@@ -52,17 +59,21 @@ public class ColorGameView extends GameView implements OnClickListener, OnComple
 		selectedColor = (ToggleButton)v;
 		selectedColor.setChecked(true);
 		
-		int region = buttons.indexOf(v.getId()) + 1;
-		interactiveView.setEnabledRegion( region );
-		int color = Color.parseColor((String)v.getTag());
-		interactiveView.setColorSelection( color );
-
 	}
 
 	@Override
 	public void onCompletedColor() {
-		if (getGameOverListener() != null)
+		if (getGameOverListener() != null) {
 			getGameOverListener().OnGameOver();
+		}
+	}
+
+	@Override
+	public void onRegionClick(int region) {
+		int intValue = Integer.parseInt((String)selectedColor.getTag());
+		Log.i(this.getClass().getName(), "Tag: " + intValue + ", region: " + region);
+		if (intValue == region)
+			interactiveView.addFilter(region);
 	}
 
 }

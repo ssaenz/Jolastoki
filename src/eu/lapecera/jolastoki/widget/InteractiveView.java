@@ -417,7 +417,7 @@ public class InteractiveView extends View {
 	// The magic
 	
 	/**
-	 * Process to genrate the bitmap.
+	 * Process to generate the bitmap.
 	 * @param output The based bitmap to add a colored region.
 	 * @param region The bitmap region to apply color.
 	 * @param color The color to apply.
@@ -442,16 +442,27 @@ public class InteractiveView extends View {
 	    	int pixelOutput = bufferOutput.get();
 	        
 	    	int pixel = pixelOutput;
-	    	if ( Color.alpha(pixelRegion) == 0xFF ) {
+	    	if ( Color.alpha(pixelRegion) > 0 ) {
 	    		// Set the pixel with the color
-	    		
-	    		pixel = Color.argb(Color.alpha(pixelRegion), Color.red(color), Color.green(color), Color.blue(color));
+	    		Log.i("process", "pixel alpha: " + Color.alpha(pixelRegion));
+	    		Log.i("process", "pixel red: " + Color.red(pixelRegion));
+	    		Log.i("process", "pixel green: " + Color.green(pixelRegion));
+	    		Log.i("process", "pixel blue: " + Color.blue(pixelRegion));
+	    		int alpha = multiply(Color.alpha(pixelRegion), Color.alpha(pixel));
+	    		int red = multiply (Color.red(pixelRegion), Color.red(pixel));
+	    		int blue = multiply (Color.blue(pixelRegion), Color.blue(pixel));
+	    		int green = multiply (Color.green(pixelRegion), Color.green(pixel));
+
+	    		pixel = Color.argb(Color.alpha(alpha), Color.red(red), Color.green(green), Color.blue(blue));
+//	    		pixel = Color.argb(Color.alpha(pixelRegion), Color.red(color), Color.green(color), Color.blue(color));
 	    		
 	        	// Hack to swap the RED and BLUE chanels of ARGB to
 	        	// preserve the REAL color.
 	        	// WTF!
-	        	// Friends -> http://stackoverflow.com/questions/19772558/bitmap-setpixels-distorts-colors-under-android
+	    		// Friends -> http://stackoverflow.com/questions/19772558/bitmap-setpixels-distorts-colors-under-android
+	    		
 	        	pixel = ((pixel & 0xff00ff00)) | ((pixel & 0x000000ff) << 16) | ((pixel & 0x00ff0000) >> 16);
+	    		Log.i("alpha", "parsed pixel alpha: " + Color.alpha(pixel));
 	        }
 
 	        bufferOut.put( pixel );
@@ -463,6 +474,10 @@ public class InteractiveView extends View {
 	    region.recycle();
 	    
 	    return output;
+	}
+	
+	private int multiply(int in1, int in2) {
+	    return in1 * in2 / 255;
 	}
 	
 	//-------------------------------------------------------------------------

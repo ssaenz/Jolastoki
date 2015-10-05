@@ -29,25 +29,31 @@
             android:orientation="vertical" >
         </LinearLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/parque_x_2_target"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:gravity="center"
             android:orientation="vertical"
             android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/parque_2_circuloetiqueta" />
 
             <Button
                 android:id="@+id/parque_x_2_bt_target"
                 style="@style/bigText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
                 android:background="@drawable/parque_2_circulo_acierto"
                 android:visibility="invisible" />
-        </LinearLayout>
+        </RelativeLayout>
     </LinearLayout>
 
     <Button
