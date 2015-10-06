@@ -69,7 +69,6 @@
     <dimen name="parque_3_3_cartelito_margin_right">20dp</dimen>
     <dimen name="parque_3_3_cartelito_padding_top">40dp</dimen>
     
-    <dimen name="charca_x_1_figuras_margin">20dp</dimen>
     
     <dimen name="dialog_timeout_padding">20dp</dimen>
     

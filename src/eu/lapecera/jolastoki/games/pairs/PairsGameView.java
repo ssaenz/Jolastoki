@@ -58,6 +58,9 @@ public class PairsGameView extends GameView {
 									getGameOverListener().OnGameOver();
 								}
 							} else {
+								selectedButton.setSelected(false);
+								selectedButton.setBackgroundResource(R.drawable.charca_bt);
+								selectedButton = null;
 								v.setBackgroundResource(R.drawable.charca_1_bt_fallo);
 								MusicManager.playSingle(getContext(), R.raw.fallo);
 								new Handler().postDelayed(new Runnable() {

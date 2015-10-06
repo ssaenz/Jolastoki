@@ -19,10 +19,7 @@
             style="@style/normalText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_margin="@dimen/mercado_x_1_question_margin"
             android:gravity="center"
             android:text="@string/mercado_2_1_question" />
 
@@ -38,7 +35,7 @@
                 style="@style/normalText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="@dimen/mercado_x_1_answer_margin"
                 android:background="@drawable/mercado_1_1_bt_ko"
                 android:gravity="center"
                 android:text="@string/mercado_2_1_answer_1" />
@@ -48,7 +45,7 @@
                 style="@style/normalText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="@dimen/mercado_x_1_answer_margin"
                 android:background="@drawable/mercado_1_1_bt_ko"
                 android:gravity="center"
                 android:text="@string/mercado_2_1_answer_2" />
@@ -66,7 +63,7 @@
                 style="@style/normalText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="@dimen/mercado_x_1_answer_margin"
                 android:background="@drawable/mercado_1_1_bt_ok"
                 android:gravity="center"
                 android:text="@string/mercado_2_1_answer_3" />
@@ -76,7 +73,7 @@
                 style="@style/normalText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="@dimen/mercado_x_1_answer_margin"
                 android:background="@drawable/mercado_1_1_bt_ko"
                 android:gravity="center"
                 android:text="@string/mercado_2_1_answer_4" />

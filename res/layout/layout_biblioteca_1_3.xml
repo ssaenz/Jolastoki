@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="@dimen/biblioteca_1_3_content_margin_bottom"
         android:gravity="center"
         android:orientation="vertical" >
 
@@ -18,18 +18,18 @@
             android:layout_height="wrap_content"
             android:background="@drawable/background_yellow_rounded"
             android:orientation="horizontal"
-            android:paddingBottom="5dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingTop="5dp" >
+            android:paddingBottom="@dimen/biblioteca_1_3_target_line_padding_bottom"
+            android:paddingLeft="@dimen/biblioteca_1_3_target_line_padding_left"
+            android:paddingRight="@dimen/biblioteca_1_3_target_line_padding_right"
+            android:paddingTop="@dimen/biblioteca_1_3_target_line_padding_top" >
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 android:id="@+id/biblioteca_1_3_target1"
                 style="@style/biblioteca_1_3_text_target"
                 android:layout_width="@dimen/biblioteca_1_3_target_size"
                 android:layout_height="@dimen/biblioteca_1_3_target_size"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp" />
+                android:layout_marginLeft="@dimen/biblioteca_1_3_target_margin"
+                android:layout_marginRight="@dimen/biblioteca_1_3_target_margin" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 style="@style/biblioteca_1_3_text_white"
@@ -48,8 +48,8 @@
                 style="@style/biblioteca_1_3_text_target"
                 android:layout_width="@dimen/biblioteca_1_3_target_size"
                 android:layout_height="@dimen/biblioteca_1_3_target_size"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp" />
+                android:layout_marginLeft="@dimen/biblioteca_1_3_target_margin"
+                android:layout_marginRight="@dimen/biblioteca_1_3_target_margin" />
         </LinearLayout>
 
         <LinearLayout
@@ -57,10 +57,10 @@
             android:layout_height="wrap_content"
             android:background="@drawable/background_yellow_rounded"
             android:orientation="horizontal"
-            android:paddingBottom="5dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingTop="5dp" >
+            android:paddingBottom="@dimen/biblioteca_1_3_target_line_padding_bottom"
+            android:paddingLeft="@dimen/biblioteca_1_3_target_line_padding_left"
+            android:paddingRight="@dimen/biblioteca_1_3_target_line_padding_right"
+            android:paddingTop="@dimen/biblioteca_1_3_target_line_padding_top" >
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 style="@style/biblioteca_1_3_text_white"
@@ -73,8 +73,8 @@
                 style="@style/biblioteca_1_3_text_target"
                 android:layout_width="@dimen/biblioteca_1_3_target_size"
                 android:layout_height="@dimen/biblioteca_1_3_target_size"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp" />
+                android:layout_marginLeft="@dimen/biblioteca_1_3_target_margin"
+                android:layout_marginRight="@dimen/biblioteca_1_3_target_margin" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 style="@style/biblioteca_1_3_text_white"
@@ -99,8 +99,8 @@
                 style="@style/biblioteca_1_3_text_target"
                 android:layout_width="@dimen/biblioteca_1_3_target_size"
                 android:layout_height="@dimen/biblioteca_1_3_target_size"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp" />
+                android:layout_marginLeft="@dimen/biblioteca_1_3_target_margin"
+                android:layout_marginRight="@dimen/biblioteca_1_3_target_margin" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 style="@style/biblioteca_1_3_text_white"
@@ -126,18 +126,18 @@
             android:layout_height="wrap_content"
             android:background="@drawable/background_yellow_rounded"
             android:orientation="horizontal"
-            android:paddingBottom="5dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingTop="5dp" >
+            android:paddingBottom="@dimen/biblioteca_1_3_target_line_padding_bottom"
+            android:paddingLeft="@dimen/biblioteca_1_3_target_line_padding_left"
+            android:paddingRight="@dimen/biblioteca_1_3_target_line_padding_right"
+            android:paddingTop="@dimen/biblioteca_1_3_target_line_padding_top" >
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 android:id="@+id/biblioteca_1_3_target5"
                 style="@style/biblioteca_1_3_text_target"
                 android:layout_width="@dimen/biblioteca_1_3_target_size"
                 android:layout_height="@dimen/biblioteca_1_3_target_size"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp" />
+                android:layout_marginLeft="@dimen/biblioteca_1_3_target_margin"
+                android:layout_marginRight="@dimen/biblioteca_1_3_target_margin" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 style="@style/biblioteca_1_3_text_white"
@@ -162,8 +162,8 @@
                 style="@style/biblioteca_1_3_text_target"
                 android:layout_width="@dimen/biblioteca_1_3_target_size"
                 android:layout_height="@dimen/biblioteca_1_3_target_size"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp" />
+                android:layout_marginLeft="@dimen/biblioteca_1_3_target_margin"
+                android:layout_marginRight="@dimen/biblioteca_1_3_target_margin" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 style="@style/biblioteca_1_3_text_white"
@@ -177,10 +177,10 @@
             android:layout_height="wrap_content"
             android:background="@drawable/background_yellow_rounded"
             android:orientation="horizontal"
-            android:paddingBottom="5dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingTop="5dp" >
+            android:paddingBottom="@dimen/biblioteca_1_3_target_line_padding_bottom"
+            android:paddingLeft="@dimen/biblioteca_1_3_target_line_padding_left"
+            android:paddingRight="@dimen/biblioteca_1_3_target_line_padding_right"
+            android:paddingTop="@dimen/biblioteca_1_3_target_line_padding_top" >
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 style="@style/biblioteca_1_3_text_white"
@@ -205,16 +205,16 @@
                 style="@style/biblioteca_1_3_text_target"
                 android:layout_width="@dimen/biblioteca_1_3_target_size"
                 android:layout_height="@dimen/biblioteca_1_3_target_size"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp" />
+                android:layout_marginLeft="@dimen/biblioteca_1_3_target_margin"
+                android:layout_marginRight="@dimen/biblioteca_1_3_target_margin" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 android:id="@+id/biblioteca_1_3_target8"
                 style="@style/biblioteca_1_3_text_target"
                 android:layout_width="@dimen/biblioteca_1_3_target_size"
                 android:layout_height="@dimen/biblioteca_1_3_target_size"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp" />
+                android:layout_marginLeft="@dimen/biblioteca_1_3_target_margin"
+                android:layout_marginRight="@dimen/biblioteca_1_3_target_margin" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 style="@style/biblioteca_1_3_text_white"
@@ -228,10 +228,10 @@
             android:layout_height="wrap_content"
             android:background="@drawable/background_yellow_rounded"
             android:orientation="horizontal"
-            android:paddingBottom="5dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingTop="5dp" >
+            android:paddingBottom="@dimen/biblioteca_1_3_target_line_padding_bottom"
+            android:paddingLeft="@dimen/biblioteca_1_3_target_line_padding_left"
+            android:paddingRight="@dimen/biblioteca_1_3_target_line_padding_right"
+            android:paddingTop="@dimen/biblioteca_1_3_target_line_padding_top" >
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 style="@style/biblioteca_1_3_text_white"
@@ -256,8 +256,8 @@
                 style="@style/biblioteca_1_3_text_target"
                 android:layout_width="@dimen/biblioteca_1_3_target_size"
                 android:layout_height="@dimen/biblioteca_1_3_target_size"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp" />
+                android:layout_marginLeft="@dimen/biblioteca_1_3_target_margin"
+                android:layout_marginRight="@dimen/biblioteca_1_3_target_margin" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 style="@style/biblioteca_1_3_text_white"
@@ -270,8 +270,8 @@
                 style="@style/biblioteca_1_3_text_target"
                 android:layout_width="@dimen/biblioteca_1_3_target_size"
                 android:layout_height="@dimen/biblioteca_1_3_target_size"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp" />
+                android:layout_marginLeft="@dimen/biblioteca_1_3_target_margin"
+                android:layout_marginRight="@dimen/biblioteca_1_3_target_margin" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 style="@style/biblioteca_1_3_text_white"
@@ -309,8 +309,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="@dimen/biblioteca_1_3_figures_margin"
+        android:layout_marginLeft="@dimen/biblioteca_1_3_figures_margin"
         android:gravity="center"
         android:orientation="vertical" >
 
@@ -355,8 +355,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginBottom="@dimen/biblioteca_1_3_figures_margin"
+        android:layout_marginLeft="@dimen/biblioteca_1_3_figures_margin"
         android:orientation="vertical" >
 
         <eu.lapecera.jolastoki.widget.TypographyTextView

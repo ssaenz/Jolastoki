@@ -15,6 +15,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/charca_x_3_figures_margin_bottom"
+        android:layout_marginTop="@dimen/game_icon_small"
         android:gravity="center"
         android:orientation="horizontal" >
 
@@ -164,29 +165,33 @@
 
             <ImageView
                 android:id="@+id/charca_3_figure1"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:scaleType="fitStart"
                 android:src="@drawable/charca_3_1_ficha_nenufar" />
 
             <ImageView
                 android:id="@+id/charca_3_figure2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:scaleType="fitStart"
                 android:src="@drawable/charca_3_1_ficha_mariposa" />
 
             <ImageView
                 android:id="@+id/charca_3_figure3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp"
                 android:scaleType="fitStart"
                 android:src="@drawable/charca_3_1_ficha_rana" />
 
             <ImageView
                 android:id="@+id/charca_3_figure4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:scaleType="fitStart"
                 android:src="@drawable/charca_3_1_ficha_mariquita" />
         </LinearLayout>

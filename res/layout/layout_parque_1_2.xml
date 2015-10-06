@@ -14,9 +14,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="50dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginBottom="@dimen/parque_1_2_question_container_margin_bottom"
+        android:layout_marginRight="@dimen/parque_1_2_question_container_margin_right"
+        android:layout_marginTop="@dimen/parque_1_2_question_container_margin_top"
         android:background="@drawable/parque_2_etiqueta"
         android:gravity="center"
         android:orientation="vertical" >
@@ -25,7 +25,7 @@
             android:id="@+id/container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="75dp"
+            android:layout_marginTop="@dimen/parque_1_2_question_margin_top"
             android:orientation="vertical" >
         </LinearLayout>
 
@@ -36,7 +36,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:orientation="vertical"
-            android:padding="10dp" >
+            android:padding="@dimen/parque_1_2_target_padding" >
 
             <ImageView
                 android:layout_width="wrap_content"

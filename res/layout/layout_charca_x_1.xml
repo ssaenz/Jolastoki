@@ -6,21 +6,19 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/activity_header_height"
         android:scaleType="centerCrop"
         android:src="@drawable/charca_1_fondo" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/activity_header_height"
         android:scaleType="centerCrop"
         android:src="@drawable/charca_1_elementos" />
 
     <LinearLayout
-        android:layout_marginTop="@dimen/activity_header_height"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/game_icon_small"
         android:orientation="horizontal" >
 
         <LinearLayout
@@ -33,7 +31,9 @@
             <eu.lapecera.jolastoki.widget.TypographyButton
                 android:id="@+id/charca_bt1"
                 style="@style/smallText"
+                android:gravity="top|center"
                 android:layout_width="wrap_content"
+                android:padding="@dimen/charca_x_1_text_padding"
                 android:layout_margin="@dimen/charca_x_1_figuras_margin"
                 android:layout_height="wrap_content"
                 android:background="@drawable/charca_bt" />
@@ -41,6 +41,7 @@
             <eu.lapecera.jolastoki.widget.TypographyButton
                 android:id="@+id/charca_bt2"
                 style="@style/smallText"
+                android:padding="@dimen/charca_x_1_text_padding"
                 android:layout_width="wrap_content"
                 android:gravity="top|center"
                 android:layout_margin="@dimen/charca_x_1_figuras_margin"
@@ -50,6 +51,8 @@
             <eu.lapecera.jolastoki.widget.TypographyButton
                 android:id="@+id/charca_bt3"
                 style="@style/smallText"
+                android:padding="@dimen/charca_x_1_text_padding"
+                android:gravity="top|center"
                 android:layout_margin="@dimen/charca_x_1_figuras_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,6 +70,8 @@
                 android:id="@+id/charca_bt4"
                 style="@style/smallText"
                 android:layout_width="wrap_content"
+                android:gravity="top|center"
+                android:padding="@dimen/charca_x_1_text_padding"
                 android:layout_margin="@dimen/charca_x_1_figuras_margin"
                 android:layout_height="wrap_content"
                 android:background="@drawable/charca_bt" />
@@ -75,6 +80,9 @@
                 android:id="@+id/charca_bt5"
                 android:layout_width="wrap_content"
                 style="@style/smallText"
+                android:gravity="top|center"
+                android:text="probando"
+                android:padding="@dimen/charca_x_1_text_padding"
                 android:layout_margin="@dimen/charca_x_1_figuras_margin"
                 android:layout_height="wrap_content"
                 android:background="@drawable/charca_bt" />
@@ -83,6 +91,8 @@
                 android:id="@+id/charca_bt6"
                 style="@style/smallText"
                 android:layout_width="wrap_content"
+                android:gravity="top|center"
+                android:padding="@dimen/charca_x_1_text_padding"
                 android:layout_margin="@dimen/charca_x_1_figuras_margin"
                 android:layout_height="wrap_content"
                 android:background="@drawable/charca_bt" />

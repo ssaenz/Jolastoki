@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/score_name"
         android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/dialog_score_button_margin"
         android:background="@drawable/ranking_bt_aceptar" />
 
     <eu.lapecera.jolastoki.widget.TypographyTextView

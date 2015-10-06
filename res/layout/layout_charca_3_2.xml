@@ -19,20 +19,20 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".25"
+            android:layout_weight=".20"
             android:orientation="vertical"
-            android:padding="10dp" >
+            android:paddingLeft="@dimen/charca_x_2_figures_container_padding" >
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 android:id="@+id/charca_2_bt1"
                 style="@style/smallOrangeText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="@dimen/charca_x_2_figure_margin"
                 android:background="@drawable/charca_2_figura_normal"
                 android:gravity="center"
-                android:paddingBottom="3dp"
-                android:paddingTop="3dp"
+                android:paddingBottom="@dimen/charca_x_2_figure_padding"
+                android:paddingTop="@dimen/charca_x_2_figure_padding"
                 android:text="@string/charca_3_2_bt1" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -40,13 +40,11 @@
                 style="@style/smallOrangeText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="@dimen/charca_x_2_figure_margin"
                 android:background="@drawable/charca_2_figura_normal"
                 android:gravity="center"
-                android:paddingBottom="3dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="3dp"
+                android:paddingBottom="@dimen/charca_x_2_figure_padding"
+                android:paddingTop="@dimen/charca_x_2_figure_padding"
                 android:text="@string/charca_3_2_bt2" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -54,29 +52,26 @@
                 style="@style/smallOrangeText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="@dimen/charca_x_2_figure_margin"
                 android:background="@drawable/charca_2_figura_normal"
                 android:gravity="center"
-                android:paddingBottom="3dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="3dp"
+                android:paddingBottom="@dimen/charca_x_2_figure_padding"
+                android:paddingTop="@dimen/charca_x_2_figure_padding"
                 android:text="@string/charca_3_2_bt3" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".50"
-            android:orientation="horizontal"
-            android:paddingRight="10dp" >
+            android:layout_weight=".60"
+            android:orientation="horizontal" >
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight=".70"
+                android:layout_weight=".65"
                 android:orientation="vertical"
-                android:padding="10dp" >
+                android:padding="@dimen/charca_x_2_target_container_padding" >
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -89,10 +84,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="@dimen/charca_x_2_target_margin"
                         android:gravity="right"
-                        android:paddingBottom="3dp"
-                        android:paddingTop="3dp"
+                        android:paddingBottom="@dimen/charca_x_2_target_padding"
+                        android:paddingTop="@dimen/charca_x_2_target_padding"
                         android:text="@string/charca_3_2_target1" />
 
                     <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -100,10 +95,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="@dimen/charca_x_2_target_margin"
                         android:gravity="right"
-                        android:paddingBottom="3dp"
-                        android:paddingTop="3dp"
+                        android:paddingBottom="@dimen/charca_x_2_target_padding"
+                        android:paddingTop="@dimen/charca_x_2_target_padding"
                         android:text="@string/charca_3_2_target2" />
 
                     <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -111,10 +106,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="@dimen/charca_x_2_target_margin"
                         android:gravity="right"
-                        android:paddingBottom="3dp"
-                        android:paddingTop="3dp"
+                        android:paddingBottom="@dimen/charca_x_2_target_padding"
+                        android:paddingTop="@dimen/charca_x_2_target_padding"
                         android:text="@string/charca_3_2_target3" />
 
                     <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -122,10 +117,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="@dimen/charca_x_2_target_margin"
                         android:gravity="right"
-                        android:paddingBottom="3dp"
-                        android:paddingTop="3dp"
+                        android:paddingBottom="@dimen/charca_x_2_target_padding"
+                        android:paddingTop="@dimen/charca_x_2_target_padding"
                         android:text="@string/charca_3_2_target4" />
 
                     <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -133,10 +128,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="@dimen/charca_x_2_target_margin"
                         android:gravity="right"
-                        android:paddingBottom="3dp"
-                        android:paddingTop="3dp"
+                        android:paddingBottom="@dimen/charca_x_2_target_padding"
+                        android:paddingTop="@dimen/charca_x_2_target_padding"
                         android:text="@string/charca_3_2_target5" />
 
                     <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -144,10 +139,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="@dimen/charca_x_2_target_margin"
                         android:gravity="right"
-                        android:paddingBottom="3dp"
-                        android:paddingTop="3dp"
+                        android:paddingBottom="@dimen/charca_x_2_target_padding"
+                        android:paddingTop="@dimen/charca_x_2_target_padding"
                         android:text="@string/charca_3_2_target6" />
                 </LinearLayout>
             </LinearLayout>
@@ -155,82 +150,82 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight=".30"
+                android:layout_weight=".35"
                 android:orientation="vertical"
-                android:padding="10dp" >
+                android:padding="@dimen/charca_x_2_target_container_padding" >
 
                 <eu.lapecera.jolastoki.widget.TypographyTextView
                     android:id="@+id/charca_3_2_target1"
                     style="@style/smallWhiteText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/charca_x_2_target_margin"
                     android:background="@drawable/charca_2_target"
                     android:gravity="center"
-                    android:paddingBottom="3dp"
-                    android:paddingTop="3dp" />
+                    android:paddingBottom="@dimen/charca_x_2_target_padding"
+                    android:paddingTop="@dimen/charca_x_2_target_padding" />
 
                 <eu.lapecera.jolastoki.widget.TypographyTextView
                     android:id="@+id/charca_3_2_target2"
                     style="@style/smallWhiteText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/charca_x_2_target_margin"
                     android:background="@drawable/charca_2_target"
                     android:gravity="center"
-                    android:paddingBottom="3dp"
-                    android:paddingTop="3dp" />
+                    android:paddingBottom="@dimen/charca_x_2_target_padding"
+                    android:paddingTop="@dimen/charca_x_2_target_padding" />
 
                 <eu.lapecera.jolastoki.widget.TypographyTextView
                     android:id="@+id/charca_3_2_target3"
                     style="@style/smallWhiteText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/charca_x_2_target_margin"
                     android:background="@drawable/charca_2_target"
                     android:gravity="center"
-                    android:paddingBottom="3dp"
-                    android:paddingTop="3dp" />
+                    android:paddingBottom="@dimen/charca_x_2_target_padding"
+                    android:paddingTop="@dimen/charca_x_2_target_padding" />
 
                 <eu.lapecera.jolastoki.widget.TypographyTextView
                     android:id="@+id/charca_3_2_target4"
                     style="@style/smallWhiteText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/charca_x_2_target_margin"
                     android:background="@drawable/charca_2_target"
                     android:gravity="center"
-                    android:paddingBottom="3dp"
-                    android:paddingTop="3dp" />
+                    android:paddingBottom="@dimen/charca_x_2_target_padding"
+                    android:paddingTop="@dimen/charca_x_2_target_padding" />
 
                 <eu.lapecera.jolastoki.widget.TypographyTextView
                     android:id="@+id/charca_3_2_target5"
                     style="@style/smallWhiteText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/charca_x_2_target_margin"
                     android:background="@drawable/charca_2_target"
                     android:gravity="center"
-                    android:paddingBottom="3dp"
-                    android:paddingTop="3dp" />
+                    android:paddingBottom="@dimen/charca_x_2_target_padding"
+                    android:paddingTop="@dimen/charca_x_2_target_padding" />
 
                 <eu.lapecera.jolastoki.widget.TypographyTextView
                     android:id="@+id/charca_3_2_target6"
                     style="@style/smallWhiteText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/charca_x_2_target_margin"
                     android:background="@drawable/charca_2_target"
                     android:gravity="center"
-                    android:paddingBottom="3dp"
-                    android:paddingTop="3dp" />
+                    android:paddingBottom="@dimen/charca_x_2_target_padding"
+                    android:paddingTop="@dimen/charca_x_2_target_padding" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".25"
+            android:layout_weight=".20"
             android:orientation="vertical"
             android:padding="10dp" >
 
@@ -239,11 +234,11 @@
                 style="@style/smallOrangeText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="@dimen/charca_x_2_figure_margin"
                 android:background="@drawable/charca_2_figura_normal"
                 android:gravity="center"
-                android:paddingBottom="3dp"
-                android:paddingTop="3dp"
+                android:paddingBottom="@dimen/charca_x_2_figure_padding"
+                android:paddingTop="@dimen/charca_x_2_figure_padding"
                 android:text="@string/charca_3_2_bt4" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -251,11 +246,11 @@
                 style="@style/smallOrangeText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="@dimen/charca_x_2_figure_margin"
                 android:background="@drawable/charca_2_figura_normal"
                 android:gravity="center"
-                android:paddingBottom="3dp"
-                android:paddingTop="3dp"
+                android:paddingBottom="@dimen/charca_x_2_figure_padding"
+                android:paddingTop="@dimen/charca_x_2_figure_padding"
                 android:text="@string/charca_3_2_bt5" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -263,11 +258,11 @@
                 style="@style/smallOrangeText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="@dimen/charca_x_2_figure_margin"
                 android:background="@drawable/charca_2_figura_normal"
                 android:gravity="center"
-                android:paddingBottom="3dp"
-                android:paddingTop="3dp"
+                android:paddingBottom="@dimen/charca_x_2_figure_padding"
+                android:paddingTop="@dimen/charca_x_2_figure_padding"
                 android:text="@string/charca_3_2_bt6" />
         </LinearLayout>
     </LinearLayout>

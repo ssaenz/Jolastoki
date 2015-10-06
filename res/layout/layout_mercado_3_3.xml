@@ -9,38 +9,41 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="@dimen/mercado_3_3_container_margin_bottom"
         android:orientation="horizontal" >
-        <LinearLayout android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/container"></LinearLayout>
+            android:orientation="horizontal" >
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="@dimen/mercado_3_3_figure_container_margin_left"
             android:orientation="vertical" >
 
             <ImageView
                 android:id="@+id/mercado_3_3_figure_eq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/mercado_3_3_figure_margin"
                 android:src="@drawable/mercado_3_3_igual" />
 
             <ImageView
                 android:id="@+id/mercado_3_3_figure_gt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/mercado_3_3_figure_margin"
                 android:src="@drawable/mercado_3_3_mayor" />
 
             <ImageView
                 android:id="@+id/mercado_3_3_figure_lt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/mercado_3_3_figure_margin"
                 android:src="@drawable/mercado_3_3_menor" />
         </LinearLayout>
     </LinearLayout>

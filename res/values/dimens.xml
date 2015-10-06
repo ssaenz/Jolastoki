@@ -21,6 +21,8 @@
     <dimen name="activity_game_score_and_time_width">120dp</dimen>
     <dimen name="activity_game_title_margin_left">5dp</dimen>
     
+    <dimen name="dialog_level_padding">20dp</dimen>
+    
     <!-- Text styles -->
     <dimen name="big_text_size">25sp</dimen>
     <dimen name="normal_text_size">20sp</dimen>
@@ -40,6 +42,7 @@
     
     <dimen name="dialog_score_name_input_width">200dp</dimen>
     <dimen name="dialog_score_name_input_margin">5dp</dimen>
+    <dimen name="dialog_score_button_margin">5dp</dimen>
     <dimen name="dialog_score_padding">10dp</dimen>
     <dimen name="dialog_score_title_padding">5dp</dimen>
     <dimen name="dialog_score_star_top_margin">20dp</dimen>
@@ -64,6 +67,13 @@
     
     <dimen name="parque_3_3_texto_cartelito_margin_bottom">80dp</dimen>
     
+    <dimen name="parque_1_2_question_container_margin_top">50dp</dimen>
+    <dimen name="parque_1_2_question_container_margin_right">20dp</dimen>
+    <dimen name="parque_1_2_question_container_margin_bottom">50dp</dimen>
+    <dimen name="parque_1_2_question_margin_top">75dp</dimen>
+    
+    <dimen name="parque_1_2_target_padding">10dp</dimen>
+    
     <dimen name="mercado_1_3_piramide_margin_left">75dp</dimen>
     <dimen name="mercado_1_3_piramide_margin_bottom">50dp</dimen>
     <dimen name="mercado_1_3_piramide_margin_right">20dp</dimen>
@@ -80,6 +90,30 @@
     <dimen name="mercado_2_3_piezas_margin">10dp</dimen>
     <dimen name="mercado_2_3_piezas_margin_top">10dp</dimen>
     
+    <dimen name="mercado_x_1_question_margin">20dp</dimen>
+    <dimen name="mercado_x_1_answer_margin">5dp</dimen>
+    
+    <dimen name="mercado_3_3_container_margin_bottom">50dp</dimen>
+    <dimen name="mercado_3_3_figure_container_margin_left">100dp</dimen>
+    <dimen name="mercado_3_3_figure_margin">10dp</dimen>
+    
+    <dimen name="mercado_x_2_figure_container_margin">10dp</dimen>
+    <dimen name="mercado_x_2_figure_margin">5dp</dimen>
+    <dimen name="mercado_x_2_figure_padding">5dp</dimen>
+    
+    <dimen name="biblioteca_x_2_padding_cinta">30dp</dimen>
+    <dimen name="biblioteca_x_1y2_libro_margin">100dp</dimen>
+    <dimen name="biblioteca_x_1_libro_content_margin">20dp</dimen>
+    
+    <dimen name="biblioteca_x_2_target_margin">10dp</dimen>
+    <dimen name="biblioteca_x_2_cinta_margin_bottom">10dp</dimen>
+    
+    <dimen name="biblioteca_1_3_content_margin_bottom">30dp</dimen>
+    <dimen name="biblioteca_1_3_target_line_padding_top">5dp</dimen>
+    <dimen name="biblioteca_1_3_target_line_padding_left">20dp</dimen>
+    <dimen name="biblioteca_1_3_target_line_padding_right">20dp</dimen>
+    <dimen name="biblioteca_1_3_target_line_padding_bottom">5dp</dimen>
+    
     <dimen name="biblioteca_1_3_target_letter_padding_small">5dp</dimen>
     <dimen name="biblioteca_1_3_target_letter_padding_big">10dp</dimen>
     
@@ -89,9 +123,9 @@
     <dimen name="biblioteca_1_3_target_size">36dp</dimen>
     <dimen name="biblioteca_1_3_ficha_size">48dp</dimen>
     
-    <dimen name="biblioteca_x_2_padding_cinta">30dp</dimen>
-    <dimen name="biblioteca_x_1y2_libro_margin">100dp</dimen>
-    <dimen name="biblioteca_x_1_libro_content_margin">20dp</dimen>
+    <dimen name="biblioteca_1_3_target_margin">3dp</dimen>
+    
+    <dimen name="biblioteca_1_3_figures_margin">30dp</dimen>
     
     <dimen name="biblioteca_x_1_cinta_margin_bottom">10dp</dimen>
     <dimen name="biblioteca_x_1_cinta_padding">30dp</dimen>
@@ -100,8 +134,21 @@
     <dimen name="biblioteca_2_3_title_height">48dp</dimen>
     <dimen name="biblioteca_2_3_title_padding">10dp</dimen>
     
-    <dimen name="charca_x_1_figuras_margin">20dp</dimen>
-    <dimen name="charca_x_3_figures_margin_bottom">30dp</dimen>
+    <dimen name="biblioteca_3_3_target_container_margin_bottom">15dp</dimen>
+    <dimen name="biblioteca_3_3_target_padding">5dp</dimen>
+    <dimen name="biblioteca_3_3_figure_padding">5dp</dimen>
+    <dimen name="biblioteca_3_3_figure_margin">5dp</dimen>
+    
+    <dimen name="charca_x_1_figuras_margin">5dp</dimen>
+    <dimen name="charca_x_3_figures_margin_bottom">10dp</dimen>
+    <dimen name="charca_x_1_text_padding">8dp</dimen>
+    
+    <dimen name="charca_x_2_figures_container_padding">10dp</dimen>
+    <dimen name="charca_x_2_figure_margin">5dp</dimen>
+    <dimen name="charca_x_2_figure_padding">3dp</dimen>
+    <dimen name="charca_x_2_target_container_padding">10dp</dimen>
+    <dimen name="charca_x_2_target_padding">3dp</dimen>
+    <dimen name="charca_x_2_target_margin">5dp</dimen>
     
     
 </resources>

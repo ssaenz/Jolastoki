@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -42,6 +41,7 @@ public class ColorGameView extends GameView implements OnClickListener, OnComple
 			button.setTextOff(buttonTexts.get(buttonId));
 		}
 		interactiveView = (MultiLayerView) findViewById(R.id.interactiveView);
+		interactiveView.setLastLayerDrawable(getResources().getDrawable(((ColorGameViewConfig) config).getLastLayer()));
 		interactiveView.setOnCompletedColorListener(this);
 		interactiveView.setOnRegionClickListener(this);
 	}

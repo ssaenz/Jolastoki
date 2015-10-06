@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp" >
+        android:layout_marginBottom="@dimen/biblioteca_x_2_cinta_margin_bottom" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -88,8 +88,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/targetContainer"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginLeft="@dimen/biblioteca_x_1y2_libro_margin"
+        android:layout_marginRight="@dimen/biblioteca_x_1y2_libro_margin"
         android:layout_marginTop="@dimen/activity_header_height"
         android:orientation="horizontal" >
 
@@ -109,7 +109,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical" >
@@ -131,7 +131,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical" >
@@ -160,7 +160,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical" >
@@ -182,7 +182,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical" >
@@ -219,7 +219,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical" >
@@ -241,7 +241,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical" >
@@ -270,7 +270,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical" >
@@ -292,7 +292,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical" >

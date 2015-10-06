@@ -16,7 +16,6 @@
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="20dp"
         android:layout_marginTop="@dimen/activity_header_height"
         android:gravity="center"
         android:orientation="vertical" >
@@ -83,6 +82,7 @@
             android:id="@+id/mercado_1_3_figure6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
             android:layout_toRightOf="@+id/mercado_1_3_target1"
             android:layout_margin="@dimen/mercado_1_3_piezas_margin"
             android:scaleType="fitCenter"
@@ -100,9 +100,9 @@
             android:id="@+id/mercado_1_3_figure2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/mercado_1_3_nivel3"
+            android:layout_below="@+id/mercado_1_3_figure4"
+            android:layout_alignParentRight="true"
             android:layout_margin="@dimen/mercado_1_3_piezas_margin"
-            android:layout_toRightOf="@+id/mercado_1_3_target6"
             android:scaleType="fitCenter"
             android:src="@drawable/mercado_3_1_pieza2" />
 
@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/mercado_1_3_piezas_margin"
             android:layout_below="@+id/mercado_1_3_figure5"
-            android:layout_toLeftOf="@+id/mercado_1_3_target6"
+            android:layout_alignParentLeft="true"
             android:scaleType="fitCenter"
             android:src="@drawable/mercado_3_1_pieza3" />
 
@@ -120,10 +120,9 @@
             android:id="@+id/mercado_1_3_figure4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/mercado_1_3_nivel2"
+            android:layout_below="@+id/mercado_1_3_figure6"
+            android:layout_alignParentRight="true"
             android:layout_margin="@dimen/mercado_1_3_piezas_margin"
-            android:layout_marginLeft="18dp"
-            android:layout_toRightOf="@+id/mercado_1_3_nivel2"
             android:scaleType="fitCenter"
             android:src="@drawable/mercado_3_1_pieza4" />
 

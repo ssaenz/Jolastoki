@@ -13,7 +13,7 @@ import eu.lapecera.jolastoki.games.color.ColorGameView;
 
 public enum ColorGameViewConfig implements GameViewConfig {
 	
-	MERCADO_1_2 (GameLevel.ONE, R.layout.layout_mercado_x_2, R.string.mercado_x_2_title, 60000l,
+	MERCADO_1_2 (GameLevel.ONE, R.layout.layout_mercado_x_2, R.string.mercado_x_2_title, 60000l, R.drawable.mercado_2_1_letras,
 					Arrays.asList(R.id.mercado_x_2_bt1, R.id.mercado_x_2_bt2, R.id.mercado_x_2_bt3, R.id.mercado_x_2_bt4, R.id.mercado_x_2_bt5, R.id.mercado_x_2_bt6, R.id.mercado_x_2_bt7, R.id.mercado_x_2_bt8, R.id.mercado_x_2_bt9, R.id.mercado_x_2_bt10),
 					new HashMap<Integer, String> (){
 						private static final long serialVersionUID = 1L;
@@ -30,7 +30,7 @@ public enum ColorGameViewConfig implements GameViewConfig {
 							put(R.id.mercado_x_2_bt10, "E");
 						}
 					}),
-	MERCADO_2_2 (GameLevel.TWO, R.layout.layout_mercado_x_2, R.string.mercado_x_2_title, 60000l,
+	MERCADO_2_2 (GameLevel.TWO, R.layout.layout_mercado_x_2, R.string.mercado_x_2_title, 60000l, R.drawable.mercado_2_2_letras,
 			Arrays.asList(R.id.mercado_x_2_bt1, R.id.mercado_x_2_bt2, R.id.mercado_x_2_bt3, R.id.mercado_x_2_bt4, R.id.mercado_x_2_bt5, R.id.mercado_x_2_bt6, R.id.mercado_x_2_bt7, R.id.mercado_x_2_bt8, R.id.mercado_x_2_bt9, R.id.mercado_x_2_bt10),
 			new HashMap<Integer, String> (){
 				private static final long serialVersionUID = 1L;
@@ -47,7 +47,7 @@ public enum ColorGameViewConfig implements GameViewConfig {
 					put(R.id.mercado_x_2_bt10, "DO");
 				}
 			}),
-	MERCADO_3_2 (GameLevel.THREE, R.layout.layout_mercado_x_2, R.string.mercado_x_2_title, 60000l,
+	MERCADO_3_2 (GameLevel.THREE, R.layout.layout_mercado_x_2, R.string.mercado_x_2_title, 60000l, R.drawable.mercado_2_3_letras ,
 			Arrays.asList(R.id.mercado_x_2_bt1, R.id.mercado_x_2_bt2, R.id.mercado_x_2_bt3, R.id.mercado_x_2_bt4, R.id.mercado_x_2_bt5, R.id.mercado_x_2_bt6, R.id.mercado_x_2_bt7, R.id.mercado_x_2_bt8, R.id.mercado_x_2_bt9, R.id.mercado_x_2_bt10),
 			new HashMap<Integer, String> (){
 				private static final long serialVersionUID = 1L;
@@ -69,14 +69,16 @@ public enum ColorGameViewConfig implements GameViewConfig {
 	private GameLevel level;
 	private int layout;
 	private int title;
+	private int lastLayer;
 	private List<Integer> buttons;
 	private Map<Integer, String> buttonTexts;
 	
-	private ColorGameViewConfig(GameLevel level, int layout, int title, long time, List<Integer> buttons,  Map<Integer, String> buttonColors) {
+	private ColorGameViewConfig(GameLevel level, int layout, int title, long time, int lastLayer, List<Integer> buttons,  Map<Integer, String> buttonColors) {
 		this.time = time;
 		this.level = level;
 		this.layout = layout;
 		this.title = title;
+		this.lastLayer = lastLayer;
 		this.buttons = buttons;
 		this.buttonTexts = buttonColors;
 	}
@@ -87,6 +89,10 @@ public enum ColorGameViewConfig implements GameViewConfig {
 
 	public Map<Integer, String> getButtonTexts() {
 		return buttonTexts;
+	}
+	
+	public int getLastLayer () {
+		return this.lastLayer;
 	}
 
 	@Override

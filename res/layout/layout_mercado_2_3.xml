@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_1_pieza1base" />
+            android:src="@drawable/mercado_3_2_pieza1base" />
 
         <TextView
             style="@style/tinyText"
@@ -92,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_1_pieza2base" />
+                android:src="@drawable/mercado_3_2_pieza2base" />
 
             <TextView
                 android:id="@+id/mercado_2_3_target2text"
@@ -154,7 +154,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_1_pieza3base" />
+                android:src="@drawable/mercado_3_2_pieza3base" />
 
             <TextView
                 android:id="@+id/mercado_2_3_target3text"
@@ -222,7 +222,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_1_pieza4base" />
+                android:src="@drawable/mercado_3_2_pieza4base" />
 
             <TextView
                 android:id="@+id/mercado_2_3_target4text"
@@ -283,7 +283,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_1_pieza5base" />
+                android:src="@drawable/mercado_3_2_pieza5base" />
 
             <TextView
                 android:id="@+id/mercado_2_3_target5text"
@@ -351,7 +351,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_1_pieza6base" />
+            android:src="@drawable/mercado_3_2_pieza6base" />
 
         <TextView
             style="@style/tinyText"
@@ -404,8 +404,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/piramide_nivel1"
-        android:layout_marginRight="@dimen/mercado_2_3_piezas_margin"
-        android:layout_toLeftOf="@+id/piramide_nivel1"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+        android:layout_alignParentLeft="true"
         android:orientation="horizontal" >
 
         <ImageView
@@ -429,7 +429,6 @@
             android:id="@+id/mercado_2_3_figure5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
             android:scaleType="fitCenter"
             android:src="@drawable/mercado_3_2_pieza5g"
             android:tag="@id/mercado_2_3_figure5target" />
@@ -438,7 +437,6 @@
             android:id="@+id/mercado_2_3_figure9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
             android:scaleType="fitCenter"
             android:src="@drawable/mercado_3_2_pieza9g"
             android:tag="@id/mercado_2_3_figure9target" />
@@ -449,9 +447,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/figuresContainerLeftLevel1"
-        android:layout_marginRight="@dimen/mercado_2_3_piezas_margin"
-        android:layout_marginTop="@dimen/mercado_2_3_piezas_margin"
-        android:layout_toLeftOf="@+id/piramide_nivel2"
+        android:layout_alignParentLeft="true"
         android:orientation="horizontal" >
 
         <ImageView
@@ -476,7 +472,6 @@
             android:id="@+id/mercado_2_3_figure15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
             android:scaleType="fitCenter"
             android:src="@drawable/mercado_3_2_pieza15g"
             android:tag="@id/mercado_2_3_figure15target" />
@@ -486,8 +481,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/figuresContainerLeftLevel2"
-        android:layout_marginTop="@dimen/mercado_2_3_piezas_margin"
-        android:layout_toLeftOf="@+id/piramide_nivel4"
+        android:layout_marginLeft="@dimen/mercado_2_3_piezas_margin"
+        android:layout_alignParentLeft="true"
         android:gravity="center"
         android:orientation="horizontal" >
 
@@ -549,7 +544,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/figureContainerRightLevel1"
         android:layout_below="@+id/figureContainerRightLevel1"
-        android:layout_toRightOf="@+id/piramide_nivel2"
+            android:layout_margin="@dimen/mercado_2_3_piezas_margin"
+        android:layout_alignParentRight="true"
         android:orientation="horizontal" >
 
         <ImageView

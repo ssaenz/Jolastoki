@@ -32,8 +32,8 @@ public class MultiLayerView extends View {
 	private int[][] mMatrixRegions;
 	private Bitmap mBaseBitmap;
 	private Bitmap mLastBitmap;
-	private Drawable firstDrawableResource;
-	private Drawable lastDrawableResource;
+	private Drawable firstLayerDrawable;
+	private Drawable lastLayerDrawable;
 	private int mLeft;
 	private int mTop;
 	private OnRegionClickListener mRegionListener;
@@ -54,13 +54,16 @@ public class MultiLayerView extends View {
 		mFilters = new HashMap<Integer, File>();
 		TypedArray customAttrs = context.obtainStyledAttributes(attrs, R.styleable.InteractiveView);
 		String assetsDir = customAttrs.getString(R.styleable.InteractiveView_assets_dir);
-		firstDrawableResource = customAttrs.getDrawable(R.styleable.InteractiveView_first_layer);
-		lastDrawableResource = customAttrs.getDrawable(R.styleable.InteractiveView_last_layer);
+		firstLayerDrawable = customAttrs.getDrawable(R.styleable.InteractiveView_first_layer);
 		File dir = new File(getContext().getExternalCacheDir(), assetsDir);
 		this.copyFromAssets(dir, assetsDir);
 		this.setRegionFiles(Arrays.asList(dir.listFiles()));
 		customAttrs.recycle();
 		initialize();
+	}
+	
+	public void setLastLayerDrawable (Drawable lastLayer) {
+		this.lastLayerDrawable = lastLayer;
 	}
 
 	public Bitmap convertToBitmap(Drawable drawable, int widthPixels, int heightPixels) {
@@ -157,12 +160,12 @@ public class MultiLayerView extends View {
 
 	private void loadLastLayer () {
 		mLastBitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
-		mLastBitmap = convertToBitmap(lastDrawableResource, getWidth(), getHeight());
+		mLastBitmap = convertToBitmap(lastLayerDrawable, getWidth(), getHeight());
 	}
 
 	private Canvas drawBase () {
 		mBaseBitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
-		mBaseBitmap = convertToBitmap(firstDrawableResource, getWidth(), getHeight());
+		mBaseBitmap = convertToBitmap(firstLayerDrawable, getWidth(), getHeight());
 		Canvas canvas = new Canvas();
 		canvas.setBitmap(mBaseBitmap);
 		canvas.drawBitmap(mBaseBitmap, 0, 0, mPaint);
