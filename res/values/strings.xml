@@ -3,13 +3,16 @@
 
     <string name="app_name">Jolastoki</string>
 
-    <string name="activity_area_title">AUKERATU MAIA</string>
+    <string name="activity_area_title">AUKERATU GAIA</string>
     
     <string name="area_pairs_title">Juego de las parejas</string>
     <string name="area_quiz_title">Juego de preguntas</string>
     <string name="area_drag_drop_title">Juego de colocar</string>
     <string name="area_color_title">Juego de colorear</string>
     
+    <string name="dialog_level_title">AUKERATU MAILA</string>
+    
+    <string name="ranking_title">10 ONENAK</string>
     
     <string name="mercado_1_1_title">AUKERATU ERANTZUN ZUZENA</string>
     <string name="mercado_1_1_question">ZEIN JANARIK DITU PROTEINAK?</string>
@@ -38,7 +41,7 @@
     
     <string name="mercado_2_3_title">JANARIA DAGOKION TALDEAN KOKATU</string>
     
-    <string name="parque_1_1_question">ASMA EZAZU ZER LETRAK \nBIDAIATZEN DUEN, BETI, \nAUTOBUSEZ, BIZIKLETAZ, \nITSASOAN BARRENA ONTZIAN ETA \nUNIBERTSOAN ZEHAN KOHETEAN</string>
+    <string name="parque_1_1_question">ASMA EZAZU ZER LETRAK BIDAIATZEN DUEN, BETI, AUTOBUSEZ, BIZIKLETAZ, ITSASOAN BARRENA ONTZIAN ETA UNIBERTSOAN ZEHAN KOHETEAN</string>
     <string name="parque_1_1_title">ASMAKIZUNAK</string>
     
     <string name="parque_x_2_title">BATUKETAK ETA KENKETAK</string>

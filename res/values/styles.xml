@@ -50,6 +50,10 @@
         <item name="android:textSize">@dimen/small_text_size</item>
     </style>
 
+    <style name="extraSmallWhiteText" parent="arialWhiteText">
+        <item name="android:textSize">@dimen/extra_small_text_size</item>
+    </style>
+
     <style name="bigOrangeText" parent="arialBlackText">
         <item name="android:textSize">@dimen/big_text_size</item>
     </style>
@@ -102,7 +106,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="biblioteca_2_3_text_white" parent="smallWhiteText">
+    <style name="biblioteca_2_3_text_white" parent="extraSmallWhiteText">
         <item name="android:gravity">center</item>
         <item name="android:padding">@dimen/biblioteca_2_3_title_padding</item>
         <item name="android:background">@drawable/background_morado_rounded_stroked</item>

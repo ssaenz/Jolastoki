@@ -84,7 +84,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@+id/mercado_1_3_target1"
-            android:layout_margin="@dimen/mercado_1_3_piezas_margin"
             android:scaleType="fitCenter"
             android:src="@drawable/mercado_3_1_pieza6" />
 

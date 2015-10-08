@@ -27,61 +27,61 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/top_icon_margin"
+        android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        android:src="@drawable/portada_bt_atras" 
-            android:background="@android:color/transparent"/>
+        android:src="@drawable/portada_bt_atras" />
 
-        <ImageButton
-            android:id="@+id/instructions_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="fitCenter"
-            android:layout_alignParentRight="true"
-            android:layout_margin="@dimen/top_icon_margin"
-            android:src="@drawable/portada_bt_instrucciones" 
-            android:background="@android:color/transparent"/>
-    <LinearLayout
-        android:layout_centerInParent="true"
+    <ImageButton
+        android:id="@+id/instructions_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/top_icon_margin"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/portada_bt_instrucciones" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:orientation="horizontal" >
 
-
         <ImageButton
-            android:layout_weight="1"
             android:id="@+id/mercado_area_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/portada_ico_mercado" 
-            android:background="@android:color/transparent"/>
+            android:src="@drawable/portada_ico_mercado" />
 
         <ImageButton
             android:id="@+id/charca_area_btn"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/portada_ico_charca"
-            android:background="@android:color/transparent" />
+            android:src="@drawable/portada_ico_charca" />
 
         <ImageButton
             android:id="@+id/parque_area_btn"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/portada_ico_parque" 
-            android:background="@android:color/transparent"/>
+            android:src="@drawable/portada_ico_parque" />
 
         <ImageButton
             android:id="@+id/colegio_area_btn"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/portada_ico_colegio"
-            android:background="@android:color/transparent" />
+            android:src="@drawable/portada_ico_colegio" />
     </LinearLayout>
 
 </RelativeLayout>

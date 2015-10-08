@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/biblioteca_1_3_content_margin_bottom"
         android:gravity="center"
         android:orientation="vertical" >
 
@@ -229,8 +228,6 @@
             android:background="@drawable/background_yellow_rounded"
             android:orientation="horizontal"
             android:paddingBottom="@dimen/biblioteca_1_3_target_line_padding_bottom"
-            android:paddingLeft="@dimen/biblioteca_1_3_target_line_padding_left"
-            android:paddingRight="@dimen/biblioteca_1_3_target_line_padding_right"
             android:paddingTop="@dimen/biblioteca_1_3_target_line_padding_top" >
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -309,8 +306,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/biblioteca_1_3_figures_margin"
-        android:layout_marginLeft="@dimen/biblioteca_1_3_figures_margin"
         android:gravity="center"
         android:orientation="vertical" >
 
@@ -355,8 +350,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="@dimen/biblioteca_1_3_figures_margin"
-        android:layout_marginLeft="@dimen/biblioteca_1_3_figures_margin"
         android:orientation="vertical" >
 
         <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -394,5 +387,4 @@
             android:layout_height="@dimen/biblioteca_1_3_ficha_size"
             android:text="Z" />
     </LinearLayout>
-
 </RelativeLayout>

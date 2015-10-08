@@ -246,23 +246,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/targetContainer"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/activity_header_height"
         android:orientation="horizontal" >
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
+            android:layout_marginRight="@dimen/biblioteca_x_1_libro_content_margin"
             android:gravity="center"
             android:orientation="vertical" >
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal" >
 
@@ -270,14 +268,13 @@
                     android:id="@+id/biblioteca_1_figure2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+					android:layout_margin="10dp"
                     android:src="@drawable/biblioteca_1_3_232" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal" >
 
@@ -285,7 +282,7 @@
                     android:id="@+id/biblioteca_1_figure1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+					android:layout_margin="10dp"
                     android:rotation="-10"
                     android:src="@drawable/biblioteca_1_3_120" />
 
@@ -293,15 +290,14 @@
                     android:id="@+id/biblioteca_1_figure4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+					android:layout_margin="10dp"
                     android:rotation="20"
                     android:src="@drawable/biblioteca_1_3_456" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal" >
 
@@ -309,14 +305,14 @@
                     android:id="@+id/biblioteca_1_figure8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+					android:layout_margin="10dp"
                     android:src="@drawable/biblioteca_1_3_823" />
 
                 <ImageView
                     android:id="@+id/biblioteca_1_figure9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+					android:layout_margin="10dp"
                     android:rotation="-15"
                     android:src="@drawable/biblioteca_1_3_956" />
             </LinearLayout>
@@ -325,15 +321,13 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
             android:gravity="center"
+            android:layout_marginLeft="@dimen/biblioteca_x_1_libro_content_margin"
             android:orientation="vertical" >
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal" >
 
@@ -341,7 +335,7 @@
                     android:id="@+id/biblioteca_1_figure5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+					android:layout_margin="10dp"
                     android:rotation="20"
                     android:src="@drawable/biblioteca_1_3_555" />
 
@@ -349,15 +343,14 @@
                     android:id="@+id/biblioteca_1_figure6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+					android:layout_margin="10dp"
                     android:rotation="20"
                     android:src="@drawable/biblioteca_1_3_602" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal" >
 
@@ -365,14 +358,13 @@
                     android:id="@+id/biblioteca_1_figure10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+					android:layout_margin="10dp"
                     android:src="@drawable/biblioteca_1_3_999" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal" >
 
@@ -380,7 +372,7 @@
                     android:id="@+id/biblioteca_1_figure3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+					android:layout_margin="10dp"
                     android:rotation="-30"
                     android:src="@drawable/biblioteca_1_3_389" />
 
@@ -388,7 +380,7 @@
                     android:id="@+id/biblioteca_1_figure7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+					android:layout_margin="10dp"
                     android:rotation="15"
                     android:src="@drawable/biblioteca_1_3_704" />
             </LinearLayout>

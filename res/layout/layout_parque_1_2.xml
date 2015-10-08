@@ -14,9 +14,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="@dimen/parque_1_2_question_container_margin_bottom"
-        android:layout_marginRight="@dimen/parque_1_2_question_container_margin_right"
-        android:layout_marginTop="@dimen/parque_1_2_question_container_margin_top"
+        android:layout_marginBottom="@dimen/parque_x_2_question_container_margin_right"
+        android:layout_marginRight="@dimen/parque_x_2_question_container_margin_right"
+        android:layout_marginTop="@dimen/parque_x_2_question_container_margin_top"
         android:background="@drawable/parque_2_etiqueta"
         android:gravity="center"
         android:orientation="vertical" >
@@ -25,7 +25,7 @@
             android:id="@+id/container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/parque_1_2_question_margin_top"
+            android:layout_marginTop="@dimen/parque_x_2_question_margin_top"
             android:orientation="vertical" >
         </LinearLayout>
 
@@ -36,13 +36,13 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:orientation="vertical"
-            android:padding="@dimen/parque_1_2_target_padding" >
+            android:padding="@dimen/parque_x_2_target_padding" >
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:scaleType="centerCrop"
+                android:scaleType="fitCenter"
                 android:src="@drawable/parque_2_circuloetiqueta" />
 
             <Button
@@ -61,8 +61,8 @@
         style="@style/bigText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginRight="@dimen/parque_x_2_button1_margin_top"
+        android:layout_marginTop="@dimen/activity_game_score_and_time_width"
         android:layout_toLeftOf="@id/parque_x_2_question_container"
         android:background="@drawable/parque_2_circulo_normal"
         android:text="@string/parque_1_2_bt2" />
@@ -73,8 +73,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginRight="@dimen/parque_x_2_button1_margin_right"
+        android:layout_marginTop="@dimen/activity_game_score_and_time_width"
         android:layout_toLeftOf="@id/parque_x_2_bt2"
         android:background="@drawable/parque_2_circulo_normal"
         android:text="@string/parque_1_2_bt1" />
@@ -95,9 +95,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_toLeftOf="@id/parque_x_2_bt5"
+        android:layout_marginBottom="@dimen/parque_x_2_button4_margin_bottom"
+        android:layout_marginLeft="@dimen/parque_x_2_button4_margin_right"
+        android:layout_toRightOf="@+id/parque_x_2_bt3"
         android:background="@drawable/parque_2_circulo_normal"
         android:text="@string/parque_1_2_bt4" />
 
@@ -106,10 +106,8 @@
         style="@style/bigText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="150dp"
-        android:layout_marginRight="30dp"
-        android:layout_toLeftOf="@id/parque_x_2_bt4"
+        android:layout_marginLeft="@dimen/parque_x_2_button3_margin_right"
+        android:layout_below="@id/parque_x_2_bt1"
         android:background="@drawable/parque_2_circulo_normal"
         android:text="@string/parque_1_2_bt3" />
 

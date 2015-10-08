@@ -66,12 +66,7 @@ public class StandardDragNDropGameView extends DragNDropGameView {
 	@Override
 	protected void placeFigureOnTarget(View figure, View target) {
 		if (targetBackgournds != null) {
-//			Drawable dr = ((ImageView)figure).getDrawable();
-//			Bitmap bitmap = ((BitmapDrawable) dr).getBitmap();
-			
-//			Drawable d = new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(bitmap, figure.getWidth() /2, figure.getHeight()/2, true));
 			ImageView figureTarget = (ImageView) findViewById(targetBackgournds.get(figure.getId()));
-//			figureTarget.setImageDrawable(d);
 			figureTarget.setVisibility(View.VISIBLE);
 		} else {
 			super.placeFigureOnTarget(figure, target);

@@ -19,126 +19,118 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/mercado_x_2_figure_container_margin"
         android:background="@drawable/fondo_borde_naranja_redondeado"
-        android:orientation="horizontal" >
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/mercado_x_2_figure_margin" >
 
         <ToggleButton
             android:id="@+id/mercado_x_2_bt1"
-            style="@style/normalText"
+            style="@style/smallText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:singleLine="true"
-            android:layout_margin="@dimen/mercado_x_2_figure_margin"
             android:layout_weight="1"
             android:background="@drawable/toogle_selector_verde"
             android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
             android:tag="0" />
 
         <ToggleButton
             android:id="@+id/mercado_x_2_bt2"
-            style="@style/normalText"
+            style="@style/smallText"
             android:layout_width="wrap_content"
-            android:singleLine="true"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/mercado_x_2_figure_margin"
             android:layout_weight="1"
             android:background="@drawable/toogle_selector_rojo"
             android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
             android:tag="1" />
 
         <ToggleButton
             android:id="@+id/mercado_x_2_bt3"
-            style="@style/normalText"
+            style="@style/smallText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/mercado_x_2_figure_margin"
-            android:singleLine="true"
             android:layout_weight="1"
             android:background="@drawable/toogle_selector_rosa"
             android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
             android:tag="2" />
 
         <ToggleButton
             android:id="@+id/mercado_x_2_bt4"
-            style="@style/normalText"
+            style="@style/smallText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:singleLine="true"
-            android:layout_margin="@dimen/mercado_x_2_figure_margin"
             android:layout_weight="1"
             android:background="@drawable/toogle_selector_amarillo"
             android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
             android:tag="3" />
 
         <ToggleButton
             android:id="@+id/mercado_x_2_bt5"
-            style="@style/normalText"
+            style="@style/smallText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/mercado_x_2_figure_margin"
-            android:singleLine="true"
             android:layout_weight="1"
             android:background="@drawable/toogle_selector_naranja"
             android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
             android:tag="4" />
 
         <ToggleButton
             android:id="@+id/mercado_x_2_bt6"
-            style="@style/normalText"
-            android:singleLine="true"
+            style="@style/smallText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/mercado_x_2_figure_margin"
             android:layout_weight="1"
             android:background="@drawable/toogle_selector_cielo"
             android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
             android:tag="5" />
 
         <ToggleButton
             android:id="@+id/mercado_x_2_bt7"
-            style="@style/normalText"
+            style="@style/smallText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:singleLine="true"
-            android:layout_margin="@dimen/mercado_x_2_figure_margin"
             android:layout_weight="1"
             android:background="@drawable/toogle_selector_pistacho"
             android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
             android:tag="6" />
 
         <ToggleButton
             android:id="@+id/mercado_x_2_bt8"
-            style="@style/normalText"
+            style="@style/smallText"
             android:layout_width="wrap_content"
-            android:singleLine="true"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/mercado_x_2_figure_margin"
             android:layout_weight="1"
             android:background="@drawable/toogle_selector_caqui"
             android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
             android:tag="7" />
 
         <ToggleButton
             android:id="@+id/mercado_x_2_bt9"
-            style="@style/normalText"
+            style="@style/smallText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:singleLine="true"
-            android:layout_margin="@dimen/mercado_x_2_figure_margin"
             android:layout_weight="1"
             android:background="@drawable/toogle_selector_pino"
             android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
             android:tag="8" />
 
         <ToggleButton
             android:id="@+id/mercado_x_2_bt10"
-            style="@style/normalText"
-            android:singleLine="true"
+            style="@style/smallText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/mercado_x_2_figure_margin"
             android:layout_weight="1"
             android:background="@drawable/toogle_selector_gris"
             android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
             android:tag="9" />
     </LinearLayout>
 

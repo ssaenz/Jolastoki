@@ -2,8 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="eu.lapecera.jolastoki"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0.0" >
 
+    <compatible-screens>
+        <screen android:screenSize="normal"/>
+    </compatible-screens>
     <uses-sdk
         android:minSdkVersion="12"
         android:targetSdkVersion="21" />

@@ -10,15 +10,15 @@
         android:src="@drawable/parque_1_1_fondo" />
 
     <TextView
-        style="@style/normalText"
+        style="@style/smallText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/buttonsContainer"
         android:layout_marginLeft="@dimen/parque_x_1_cartel_margin"
         android:layout_marginRight="@dimen/parque_x_1_cartel_margin"
+        android:layout_marginTop="@dimen/activity_header_height"
         android:background="@drawable/parque_1_1_cartel"
         android:gravity="center"
-        android:layout_centerHorizontal="true"
         android:padding="@dimen/parque_x_1_cartel_padding"
         android:text="@string/parque_2_1_question" >
     </TextView>

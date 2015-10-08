@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:id="@+id/container"
-        android:layout_width="@dimen/parque_cartel_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
@@ -19,9 +19,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginBottom="@dimen/parque_2_3_margin"
+        android:layout_marginLeft="@dimen/parque_2_3_margin"
+        android:layout_marginRight="@dimen/parque_2_3_margin"
         android:layout_alignParentBottom="true"
         android:gravity="center"
         android:orientation="horizontal" >

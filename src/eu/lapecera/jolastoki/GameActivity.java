@@ -183,6 +183,7 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 			timeoutDialog = new Dialog(this);
 			timeoutDialog.setContentView(R.layout.dialog_timeout);
 			timeoutDialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+			timeoutDialog.setCanceledOnTouchOutside(false);
 
 			Button accept = (Button) timeoutDialog.findViewById(R.id.accept);
 
@@ -192,6 +193,7 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 				public void onClick(View v) {
 					GameActivity.this.OnGameOver();
 					timeoutDialog.dismiss();
+					handler.postDelayed(timeUpdater, 1000);
 				}
 			});
 		}

@@ -118,7 +118,7 @@
         android:background="@drawable/fondo_borde_naranja_redondeado"
         android:gravity="top"
         android:orientation="vertical"
-        android:visibility="invisible" >
+        android:visibility="visible" >
 
         <eu.lapecera.jolastoki.widget.TypographyTextView
             style="@style/normalWhiteText"
@@ -128,7 +128,7 @@
             android:background="@drawable/cabecera_naranja_redondeada_arriba"
             android:gravity="center"
             android:padding="@dimen/activity_ranking_score_list_title_padding"
-            android:text="Las 10 mejores puntuaciones" />
+            android:text="@string/ranking_title" />
 
         <ListView
             android:id="@+id/ranking_list"

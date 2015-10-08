@@ -15,13 +15,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"
         android:background="@drawable/parque_3_1_caja"
         android:orientation="horizontal"
-        android:paddingBottom="20dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="40dp"
-        android:paddingTop="20dp" >
+        android:paddingBottom="@dimen/parque_1_3_box_container_padding_bottom"
+        android:paddingLeft="@dimen/parque_1_3_box_container_padding_left"
+        android:paddingRight="@dimen/parque_1_3_box_container_padding_right"
+        android:paddingTop="@dimen/parque_1_3_box_container_padding_top" >
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -32,13 +31,15 @@
                 android:id="@+id/parque_1_3_target1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/parque_3_1_rectangulo_off" />
+                android:background="@drawable/parque_3_1_rectangulo_off"
+                android:scaleType="fitCenter" />
 
             <ImageView
                 android:id="@+id/parque_1_3_target2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/parque_3_1_triangulo_off" />
+                android:background="@drawable/parque_3_1_triangulo_off"
+                android:scaleType="fitCenter" />
         </LinearLayout>
 
         <LinearLayout
@@ -50,13 +51,15 @@
                 android:id="@+id/parque_1_3_target3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/parque_3_1_cuadrado_off" />
+                android:background="@drawable/parque_3_1_cuadrado_off"
+                android:scaleType="fitCenter" />
 
             <ImageView
                 android:id="@+id/parque_1_3_target4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/parque_3_1_pentagono_off" />
+                android:background="@drawable/parque_3_1_pentagono_off"
+                android:scaleType="fitCenter" />
         </LinearLayout>
 
         <LinearLayout
@@ -74,7 +77,8 @@
                 android:id="@+id/parque_1_3_target6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/parque_3_1_hexagono_off" />
+                android:background="@drawable/parque_3_1_hexagono_off"
+                android:scaleType="fitCenter" />
         </LinearLayout>
     </LinearLayout>
 
@@ -84,8 +88,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/parque_1_3_bt2"
         android:layout_toLeftOf="@id/parque_1_3_box_container"
-        android:background="@drawable/parque_3_1_cuadrado_on"
-        android:rotation="30" />
+        android:rotation="30"
+        android:scaleType="fitCenter"
+        android:src="@drawable/parque_3_1_cuadrado_on" />
 
     <ImageView
         android:id="@+id/parque_1_3_bt2"
@@ -93,8 +98,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/parque_1_3_bt3"
         android:layout_toLeftOf="@id/parque_1_3_box_container"
-        android:background="@drawable/parque_3_1_triangulo_on"
-        android:rotation="-30" />
+        android:rotation="-30"
+        android:scaleType="fitCenter"
+        android:src="@drawable/parque_3_1_triangulo_on" />
 
     <ImageView
         android:id="@+id/parque_1_3_bt3"
@@ -102,8 +108,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@id/parque_1_3_box_container"
-        android:background="@drawable/parque_3_1_rectangulo_on"
-        android:rotation="60" />
+        android:rotation="60"
+        android:scaleType="fitCenter"
+        android:src="@drawable/parque_3_1_rectangulo_on" />
 
     <ImageView
         android:id="@+id/parque_1_3_bt4"
@@ -111,8 +118,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/parque_1_3_bt5"
         android:layout_toRightOf="@id/parque_1_3_box_container"
-        android:background="@drawable/parque_3_1_hexagono_on"
-        android:rotation="15" />
+        android:rotation="15"
+        android:scaleType="fitCenter"
+        android:src="@drawable/parque_3_1_hexagono_on" />
 
     <ImageView
         android:id="@+id/parque_1_3_bt5"
@@ -120,8 +128,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/parque_1_3_bt6"
         android:layout_toRightOf="@id/parque_1_3_box_container"
-        android:background="@drawable/parque_3_1_circulo_on"
-        android:rotation="60" />
+        android:rotation="60"
+        android:scaleType="fitCenter"
+        android:src="@drawable/parque_3_1_circulo_on" />
 
     <ImageView
         android:id="@+id/parque_1_3_bt6"
@@ -129,7 +138,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@id/parque_1_3_box_container"
-        android:background="@drawable/parque_3_1_pentagono_on"
-        android:rotation="25" />
+        android:rotation="25"
+        android:scaleType="fitCenter"
+        android:src="@drawable/parque_3_1_pentagono_on" />
 
 </RelativeLayout>

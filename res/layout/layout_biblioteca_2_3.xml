@@ -9,6 +9,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_header_height"
+        android:layout_toLeftOf="@+id/figures_right"
+        android:layout_toRightOf="@+id/figures_left"
         android:background="@drawable/background_pink_rounded_stroked"
         android:orientation="horizontal"
         android:padding="@dimen/biblioteca_2_3_padding_caja" >
@@ -30,9 +33,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded"
                 android:scaleType="centerInside"
-            android:layout_weight="1"
                 android:src="@drawable/biblioteca_3_2_bt_ojo" />
 
             <ImageView
@@ -40,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-            android:layout_weight="1"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded" />
 
             <ImageView
@@ -48,16 +51,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-            android:layout_weight="1"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded"
                 android:scaleType="centerInside"
-            android:layout_weight="1"
                 android:src="@drawable/biblioteca_3_2_bt_nariz" />
 
             <ImageView
@@ -65,7 +68,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-            android:layout_weight="1"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded" />
         </LinearLayout>
 
@@ -87,17 +90,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-            android:layout_weight="1"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded"
                 android:text="@string/biblioteca_2_3_ikusi" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
-                style="@style/biblioteca_2_3_text_black"
                 android:id="@+id/biblioteca_2_3_target3"
+                style="@style/biblioteca_2_3_text_black"
                 android:layout_width="match_parent"
-            android:layout_weight="1"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -105,17 +108,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-            android:layout_weight="1"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded"
                 android:text="@string/biblioteca_2_3_ukitu" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
-                style="@style/biblioteca_2_3_text_black"
                 android:id="@+id/biblioteca_2_3_target5"
+                style="@style/biblioteca_2_3_text_black"
                 android:layout_width="match_parent"
-            android:layout_weight="1"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -123,7 +126,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-            android:layout_weight="1"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded"
                 android:text="@string/biblioteca_2_3_jan" />
         </LinearLayout>
@@ -146,23 +149,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-            android:layout_weight="1"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded"
                 android:scaleType="centerInside"
-            android:layout_weight="1"
                 android:src="@drawable/biblioteca_3_2_bt_sibato" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-            android:layout_weight="1"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded"
                 android:scaleType="centerInside"
                 android:src="@drawable/biblioteca_3_2_bt_balon" />
@@ -172,7 +175,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-            android:layout_weight="1"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded" />
 
             <ImageView
@@ -180,16 +183,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-            android:layout_weight="1"
+                android:layout_weight="1"
                 android:background="@drawable/background_white_rounded" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/figures_left"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_header_height"
+        android:gravity="center"
         android:orientation="vertical" >
 
         <ImageView
@@ -224,11 +228,12 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/figures_right"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_height="match_parent"
         android:layout_alignParentRight="true"
-        android:layout_margin="20dp"
+        android:layout_marginTop="@dimen/activity_header_height"
+        android:gravity="center"
         android:orientation="vertical" >
 
         <ImageView

@@ -243,26 +243,25 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_above="@+id/targetContainer"
-        android:layout_marginLeft="@dimen/biblioteca_x_1y2_libro_margin"
-        android:layout_marginRight="@dimen/biblioteca_x_1y2_libro_margin"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:layout_marginTop="@dimen/activity_header_height"
         android:orientation="horizontal" >
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/biblioteca_x_1_libro_content_margin"
-            android:layout_weight="1"
+            android:layout_marginRight="@dimen/biblioteca_x_1_libro_content_margin"
             android:gravity="center"
+            android:layout_weight="1"
             android:orientation="vertical" >
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal" >
 
@@ -270,14 +269,13 @@
                     android:id="@+id/biblioteca_1_figure2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_margin="10dp"
                     android:src="@drawable/biblioteca_1_2_22" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal" >
 
@@ -285,7 +283,7 @@
                     android:id="@+id/biblioteca_1_figure1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_margin="10dp"
                     android:rotation="-10"
                     android:src="@drawable/biblioteca_1_2_17" />
 
@@ -293,15 +291,14 @@
                     android:id="@+id/biblioteca_1_figure4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_margin="10dp"
                     android:rotation="20"
                     android:src="@drawable/biblioteca_1_2_48" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal" >
 
@@ -309,14 +306,14 @@
                     android:id="@+id/biblioteca_1_figure8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_margin="10dp"
                     android:src="@drawable/biblioteca_1_2_81" />
 
                 <ImageView
                     android:id="@+id/biblioteca_1_figure9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_margin="10dp"
                     android:rotation="-15"
                     android:src="@drawable/biblioteca_1_2_93" />
             </LinearLayout>
@@ -325,15 +322,14 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/biblioteca_x_1_libro_content_margin"
+            android:layout_marginLeft="@dimen/biblioteca_x_1_libro_content_margin"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical" >
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal" >
 
@@ -341,7 +337,7 @@
                     android:id="@+id/biblioteca_1_figure5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_margin="10dp"
                     android:rotation="20"
                     android:src="@drawable/biblioteca_1_2_52" />
 
@@ -349,15 +345,15 @@
                     android:id="@+id/biblioteca_1_figure6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_margin="10dp"
                     android:rotation="20"
                     android:src="@drawable/biblioteca_1_2_65" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                    android:layout_margin="10dp"
                 android:gravity="center"
                 android:orientation="horizontal" >
 
@@ -365,14 +361,13 @@
                     android:id="@+id/biblioteca_1_figure10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_margin="10dp"
                     android:src="@drawable/biblioteca_1_2_100" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal" >
 
@@ -380,7 +375,7 @@
                     android:id="@+id/biblioteca_1_figure3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_margin="10dp"
                     android:rotation="-30"
                     android:src="@drawable/biblioteca_1_2_30" />
 
@@ -388,7 +383,7 @@
                     android:id="@+id/biblioteca_1_figure7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_margin="10dp"
                     android:rotation="15"
                     android:src="@drawable/biblioteca_1_2_70" />
             </LinearLayout>

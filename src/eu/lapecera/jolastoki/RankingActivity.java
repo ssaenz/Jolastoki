@@ -74,6 +74,7 @@ public class RankingActivity extends BaseActivity implements OnClickListener {
 		final Dialog dialog = new Dialog(this);
 		dialog.setContentView(R.layout.dialog_score);
 		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+		dialog.setCanceledOnTouchOutside(false);
 		Button accept = (Button) dialog.findViewById(R.id.accept);
 
 		final EditText scoreInput = (EditText) dialog.findViewById(R.id.score_name);
