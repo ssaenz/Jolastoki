@@ -16,6 +16,7 @@ public class BaseActivity extends Activity {
 	protected void onPause() {
 		super.onPause();
 		MusicManager.pause();
+		finish();
 	}
 	
 	@Override

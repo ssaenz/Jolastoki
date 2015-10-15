@@ -10,8 +10,12 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.Animation.AnimationListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -46,10 +50,10 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	private int currentGame;
 	private List<GameView> games = new ArrayList<GameView>();
 
-	private Handler handler = new Handler();
+	private Handler handler = new TimeHandler();
 
 	private boolean timeStopped = false;
-	
+
 	private Dialog timeoutDialog;
 
 	@Override
@@ -82,17 +86,9 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 
 		currentGame = 0;
 		loadNextGame();
-		handler.postDelayed(timeUpdater, 1000);
+		handler.sendEmptyMessageDelayed(UPDATE_TIME, 1000);
 
 	}
-
-	Runnable timeUpdater = new Runnable() {
-
-		@Override
-		public void run() {
-			updateTime();
-		}
-	};
 
 	/**
 	 * Carga el siguiente juego si todavía quedan o muestra el escore final.
@@ -114,41 +110,20 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	private synchronized boolean isTimeStopped() {
 		return this.timeStopped;
 	}
-	
+
 	private synchronized void playTime() {
 		this.timeStopped = false;
 	}
 
 	private void startScoreAnimation () {
 		long timeRest = (Long) this.timeView.getTag();
-		handler.postDelayed(new ScoreAnimation(timeRest/100), 1);
+		Message msg = new Message();
+		msg.what = ANIMATE_TIME;
+		Bundle data = new Bundle();
+		data.putLong("time", timeRest/100);
+		msg.setData(data);
+		handler.sendMessage(msg);
 	}
-	
-	private class ScoreAnimation implements Runnable {
-		private long scoreAmount;
-		
-		public ScoreAnimation(long scoreAmount) {
-			this.scoreAmount = scoreAmount;
-		}
-		@Override
-		public void run() {
-			score = score + 5;
-			scoreAmount = scoreAmount - 5;
-			timeView.setText(format.format(new Date(scoreAmount * 100)));
-			scoreView.setText(Long.toString(score));
-			if (scoreAmount <= 0) {
-				if (currentGame < games.size()) {
-					loadNextGame();
-				} else {
-					goToGameOverActivity();
-				}
-			} else {
-				handler.postDelayed(this, 1);
-			}
-		}
-		
-	}
-	
 
 	private void loadNextGame () {
 		gameContent.removeAllViews();
@@ -163,20 +138,6 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 		playTime();
 	}
 
-	private void updateTime () {
-		if (!isTimeStopped()) {
-			long time = (Long) this.timeView.getTag();
-			if (time <= 0) {
-				showTimeoutDialog();
-				return;
-			}
-			time = time - 1000;
-			this.timeView.setText(format.format(new Date(time)));
-			this.timeView.setTag(time);
-		}
-		handler.postDelayed(timeUpdater, 1000);
-	}
-	
 	private void showTimeoutDialog() {
 		if (timeoutDialog == null) {
 
@@ -193,20 +154,82 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 				public void onClick(View v) {
 					GameActivity.this.OnGameOver();
 					timeoutDialog.dismiss();
-					handler.postDelayed(timeUpdater, 1000);
 				}
 			});
 		}
 
 		timeoutDialog.show();
 	}
-	
+
 	private void goToGameOverActivity () {
+		handler.removeMessages(ANIMATE_TIME);
+		handler.removeMessages(UPDATE_TIME);
 		Intent i = new Intent(GameActivity.this, GameOverActivity.class);
 		i.putExtra(Constants.AREA_KEY, GameActivity.this.area);
 		i.putExtra(Constants.LEVEL_KEY, GameActivity.this.level);
 		i.putExtra(Constants.SCORE_KEY, GameActivity.this.score);
 		startActivity(i);
+	}
+
+	private static final int UPDATE_TIME = 1;
+	private static final int ANIMATE_TIME = 2;
+
+	private class TimeHandler extends Handler {
+
+		@Override
+		public void handleMessage(Message msg) {
+			switch (msg.what) {
+			case UPDATE_TIME:
+				if (!isTimeStopped()) {
+					long time = (Long) timeView.getTag();
+					if (time <= 0) {
+						showTimeoutDialog();
+						return;
+					}
+					time = time - 1000;
+					timeView.setText(format.format(new Date(time)));
+					timeView.setTag(time);
+				}
+				this.sendEmptyMessageDelayed(UPDATE_TIME, 1000);
+				break;
+			case ANIMATE_TIME:
+				long count = msg.getData().getLong("time");
+				handler.postDelayed(new CountDown(count), 1);
+								
+				break;
+
+			default:
+				break;
+			}
+		}
+	}
+	
+	private class CountDown implements Runnable {
+		
+		private Long count;
+		
+		public CountDown (Long count) {
+			this.count = count;
+		}
+		
+		@Override
+		public void run() {
+			score = score + 5;
+			count = count - 5;
+			timeView.setText(format.format(new Date(count * 100)));
+			scoreView.setText(Long.toString(score));
+			if (count <= 0) {
+				if (currentGame < games.size()) {
+					loadNextGame();
+				} else {
+					goToGameOverActivity();
+				}
+			} else {
+				handler.postDelayed(this, 1);
+			}
+			
+		}
+		
 	}
 
 }

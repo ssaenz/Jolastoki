@@ -85,11 +85,6 @@ public class AreaActivity extends BaseActivity {
 		}
 	};
 
-	@Override
-	protected void onResume() {
-		super.onResume();
-	}
-
 	private void showLevelDialog () {
 		if (this.dialog == null){
 			this.dialog = new Dialog(this);
@@ -110,6 +105,14 @@ public class AreaActivity extends BaseActivity {
 			levelBtn.setOnClickListener(clickListener);
 		}
 		this.dialog.show();
+	}
+	
+	@Override
+	protected void onPause() {
+		if (this.dialog != null) {
+			dialog.dismiss();
+		}
+		super.onPause();
 	}
 
 }

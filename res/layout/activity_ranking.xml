@@ -106,51 +106,72 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ranking_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ranking_title"
-        android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/activity_ranking_score_container_margin_bottom"
-        android:layout_marginLeft="@dimen/activity_ranking_score_container_margin_left"
-        android:layout_marginRight="@dimen/activity_ranking_score_container_margin_right"
-        android:layout_marginTop="@dimen/activity_ranking_score_container_margin_top"
-        android:background="@drawable/fondo_borde_naranja_redondeado"
-        android:gravity="top"
-        android:orientation="vertical"
-        android:visibility="visible" >
-
-        <eu.lapecera.jolastoki.widget.TypographyTextView
-            style="@style/normalWhiteText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:background="@drawable/cabecera_naranja_redondeada_arriba"
-            android:gravity="center"
-            android:padding="@dimen/activity_ranking_score_list_title_padding"
-            android:text="@string/ranking_title" />
-
-        <ListView
-            android:id="@+id/ranking_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:divider="@drawable/dotted"
-            android:dividerHeight="@dimen/activity_ranking_score_list_divider_height"
-            android:drawingCacheQuality="low"
-            android:layerType="software"
-            android:paddingBottom="@dimen/activity_ranking_score_list_padding_bottom"
-            android:paddingLeft="@dimen/activity_ranking_score_list_padding_left"
-            android:paddingRight="@dimen/activity_ranking_score_list_padding_right"
-            android:paddingTop="@dimen/activity_ranking_score_list_padding_top" >
-        </ListView>
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/go_back_btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/top_icon_margin"
-        android:background="@drawable/portada_bt_atras" />
+        android:layout_height="match_parent"
+        android:layout_below="@id/ranking_title"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/activity_ranking_score_container_margin_top"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+        android:layout_margin="@dimen/activity_ranking_score_container_margin_top"
+        android:layout_weight="1"
+            android:id="@+id/ranking_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/fondo_borde_naranja_redondeado"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                style="@style/normalWhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@drawable/cabecera_naranja_redondeada_arriba"
+                android:gravity="center"
+                android:padding="@dimen/activity_ranking_score_list_title_padding"
+                android:text="@string/ranking_title" />
+
+            <ListView
+                android:id="@+id/ranking_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/dotted"
+                android:dividerHeight="@dimen/activity_ranking_score_list_divider_height"
+                android:drawingCacheQuality="low"
+                android:layerType="software"
+                android:paddingBottom="@dimen/activity_ranking_score_list_padding_bottom"
+                android:paddingLeft="@dimen/activity_ranking_score_list_padding_left"
+                android:paddingRight="@dimen/activity_ranking_score_list_padding_right"
+                android:paddingTop="@dimen/activity_ranking_score_list_padding_top" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/play_again_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/top_icon_margin"
+                android:background="@drawable/ranking_bt_jugar" />
+
+            <Button
+                android:id="@+id/go_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/top_icon_margin"
+                android:background="@drawable/ranking_bt_salir" />
+        </LinearLayout>
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/game_icon"

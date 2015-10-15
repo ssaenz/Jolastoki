@@ -12,10 +12,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import eu.lapecera.jolastoki.R;
 import eu.lapecera.jolastoki.common.BaseActivity;
 import eu.lapecera.jolastoki.common.Constants;
 import eu.lapecera.jolastoki.common.ScoreAdapter;
@@ -29,6 +29,8 @@ public class RankingActivity extends BaseActivity implements OnClickListener {
 	private GameLevel level;
 	private GameArea area;
 	private Integer score;
+	
+	private ImageView gameIcon;
 	
 	private ListView scoreList;
 	
@@ -44,6 +46,9 @@ public class RankingActivity extends BaseActivity implements OnClickListener {
 		area = (GameArea) extras.get(Constants.AREA_KEY);
 		score = (Integer) extras.get(Constants.SCORE_KEY);
 		
+		gameIcon = (ImageView) findViewById(R.id.game_icon);
+		gameIcon.setImageResource(area.getIcon());
+		
 		TextView levelView = (TextView) findViewById(R.id.header_icon_level);
 		levelView.setText(Integer.toString(level.ordinal() + 1));
 
@@ -51,8 +56,10 @@ public class RankingActivity extends BaseActivity implements OnClickListener {
 		
 		rankingContainer = (LinearLayout) findViewById(R.id.ranking_container);
 
-		Button goBackBtn = (Button) findViewById(R.id.go_back_btn);
-		goBackBtn.setOnClickListener(this);
+		Button button = (Button) findViewById(R.id.go_back_btn);
+		button.setOnClickListener(this);
+		button = (Button) findViewById(R.id.play_again_btn);
+		button.setOnClickListener(this);
 		showScore();
 
 	}
@@ -61,8 +68,12 @@ public class RankingActivity extends BaseActivity implements OnClickListener {
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.go_back_btn:
-			Intent i = new Intent(RankingActivity.this, AreaActivity.class);
-			startActivity(i);
+			Intent exit = new Intent(RankingActivity.this, PortadaActivity.class);
+			startActivity(exit);
+			break;
+		case R.id.play_again_btn:
+			Intent playAgain = new Intent(RankingActivity.this, AreaActivity.class);
+			startActivity(playAgain);
 			break;
 
 		default:
