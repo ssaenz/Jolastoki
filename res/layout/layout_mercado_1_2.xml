@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jolastoki="http://schemas.android.com/apk/res/eu.lapecera.jolastoki"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue" >
+
+    <eu.lapecera.jolastoki.widget.MultiLayerView
+        android:id="@+id/interactiveView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        jolastoki:assets_dir="pictures"
+        jolastoki:first_layer="@drawable/mercado_base" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/mercado_x_2_figure_container_margin"
+        android:background="@drawable/fondo_borde_naranja_redondeado"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/mercado_x_2_figure_margin" >
+
+        <ToggleButton
+            android:id="@+id/mercado_x_2_bt10"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_selector_gris"
+            android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
+            android:tag="9" />
+
+        <ToggleButton
+            android:id="@+id/mercado_x_2_bt1"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_selector_verde"
+            android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
+            android:tag="0" />
+
+        <ToggleButton
+            android:id="@+id/mercado_x_2_bt5"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_selector_naranja"
+            android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
+            android:tag="4" />
+
+        <ToggleButton
+            android:id="@+id/mercado_x_2_bt3"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_selector_rosa"
+            android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
+            android:tag="2" />
+
+        <ToggleButton
+            android:id="@+id/mercado_x_2_bt4"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_selector_amarillo"
+            android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
+            android:tag="3" />
+
+        <ToggleButton
+            android:id="@+id/mercado_x_2_bt8"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_selector_caqui"
+            android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
+            android:tag="7" />
+
+        <ToggleButton
+            android:id="@+id/mercado_x_2_bt6"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_selector_cielo"
+            android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
+            android:tag="5" />
+
+        <ToggleButton
+            android:id="@+id/mercado_x_2_bt7"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_selector_pistacho"
+            android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
+            android:tag="6" />
+
+        <ToggleButton
+            android:id="@+id/mercado_x_2_bt2"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_selector_rojo"
+            android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
+            android:tag="1" />
+
+        <ToggleButton
+            android:id="@+id/mercado_x_2_bt9"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_selector_pino"
+            android:padding="@dimen/mercado_x_2_figure_padding"
+            android:singleLine="true"
+            android:tag="8" />
+    </LinearLayout>
+
+</RelativeLayout>

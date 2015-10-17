@@ -8,7 +8,6 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
-import android.util.Log;
 import android.view.DragEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -43,6 +42,7 @@ public abstract class DragNDropGameView extends GameView implements OnTouchListe
 	private int endTargetBackground;
 	
 	private boolean movingBack = false;
+	private boolean dragDisabled = false;
 	
 	@Override
 	protected void onCreateView(GameViewConfig config) {
@@ -101,7 +101,7 @@ public abstract class DragNDropGameView extends GameView implements OnTouchListe
 			}
 			return true;
 		case MotionEvent.ACTION_DOWN:
-			if (movingBack)
+			if (!canDrag())
 				return false;
 			if (!gameOver) {
 				draggingView = view;
@@ -147,7 +147,6 @@ public abstract class DragNDropGameView extends GameView implements OnTouchListe
 		float yFrom = _yFrom  - shadowImage.getHeight() / 2;
 		float xTo = getRelativeX(draggingView);
 		float yTo = getRelativeY(draggingView);
-		Log.i("objetive position", "xTo: " + xTo + ", yTo: " + yTo);
 		shadowImage.setX(xFrom);
 		shadowImage.setY(yFrom);
 		shadowImage.setVisibility(View.VISIBLE);
@@ -187,8 +186,15 @@ public abstract class DragNDropGameView extends GameView implements OnTouchListe
 		}
 	}
 	
+	protected synchronized void disableDrag() {
+		dragDisabled = true;
+	}
+	
+	protected synchronized void enableDrag () {
+		dragDisabled = false;
+	}
+	
 	private float getRelativeX(View myView) {
-		Log.i("relativeX", "x: " + myView.getX());
 	    if (myView.getParent() == myView.getRootView())
 	        return myView.getX();
 	    else
@@ -200,6 +206,10 @@ public abstract class DragNDropGameView extends GameView implements OnTouchListe
 	        return myView.getY();
 	    else
 	        return myView.getY() + getRelativeY((View) myView.getParent());
+	}
+	
+	private boolean canDrag () {
+		return !movingBack && !dragDisabled;
 	}
 
 

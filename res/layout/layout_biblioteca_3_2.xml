@@ -20,19 +20,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
+            android:background="@drawable/biblioteca_1_cinta"
             android:gravity="center"
             android:orientation="horizontal"
             android:paddingLeft="@dimen/biblioteca_x_2_padding_cinta"
-            android:paddingRight="@dimen/biblioteca_x_2_padding_cinta"
-            android:background="@drawable/biblioteca_1_cinta" >
+            android:paddingRight="@dimen/biblioteca_x_2_padding_cinta" >
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure1"
                 android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
                 android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
-                android:layout_height="match_parent"
-                android:src="@drawable/biblioteca_2_3_bt1_off" />
+                android:layout_weight="1"
+                android:src="@drawable/biblioteca_2_3_bt1_colocado" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure2"
@@ -40,7 +41,8 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
                 android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
-                android:src="@drawable/biblioteca_2_3_bt2_off" />
+                android:layout_weight="1"
+                android:src="@drawable/biblioteca_2_3_bt2_colocado" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure3"
@@ -48,7 +50,8 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
                 android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
-                android:src="@drawable/biblioteca_2_3_bt3_off" />
+                android:layout_weight="1"
+                android:src="@drawable/biblioteca_2_3_bt3_colocado" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure4"
@@ -56,31 +59,35 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
                 android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
-                android:src="@drawable/biblioteca_2_3_bt4_off" />
+                android:layout_weight="1"
+                android:src="@drawable/biblioteca_2_3_bt4_colocado" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure5"
                 android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
                 android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
-                android:layout_height="match_parent"
-                android:src="@drawable/biblioteca_2_3_bt5_off" />
+                android:layout_weight="1"
+                android:src="@drawable/biblioteca_2_3_bt5_colocado" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure6"
                 android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
                 android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
-                android:layout_height="match_parent"
-                android:src="@drawable/biblioteca_2_3_bt6_off" />
+                android:layout_weight="1"
+                android:src="@drawable/biblioteca_2_3_bt6_colocado" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure7"
                 android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
                 android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
-                android:layout_height="match_parent"
-                android:src="@drawable/biblioteca_2_3_bt7_off" />
+                android:layout_weight="1"
+                android:src="@drawable/biblioteca_2_3_bt7_colocado" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure8"
@@ -88,7 +95,8 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
                 android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
-                android:src="@drawable/biblioteca_2_3_bt8_off" />
+                android:layout_weight="1"
+                android:src="@drawable/biblioteca_2_3_bt8_colocado" />
         </LinearLayout>
     </RelativeLayout>
 
@@ -96,14 +104,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/targetContainer"
-        android:gravity="center"
         android:layout_marginTop="@dimen/activity_header_height"
+        android:gravity="center"
         android:orientation="horizontal" >
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_marginRight="@dimen/biblioteca_x_1_libro_content_margin"
             android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/biblioteca_x_1_libro_content_margin"
             android:gravity="center"
             android:orientation="vertical" >
 
@@ -213,8 +221,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:layout_marginRight="@dimen/biblioteca_x_1_libro_content_margin"
+            android:gravity="center"
             android:orientation="vertical" >
 
             <LinearLayout

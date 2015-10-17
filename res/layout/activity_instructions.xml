@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <eu.lapecera.jolastoki.widget.TypographyTextView
+        style="@style/bigWhiteText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_header_height"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:text="@string/activity_instructions_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_instructions_margin_left"
+        android:layout_marginRight="@dimen/activity_instructions_margin_right"
+        android:layout_marginTop="@dimen/activity_header_height" >
+
+        <eu.lapecera.jolastoki.widget.TypographyTextView
+            android:id="@+id/instructionsText"
+			android:textSize="@dimen/normal_text_size"
+			android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_header_height"
+            android:layout_marginTop="@dimen/activity_instructions_margin_top"
+            android:gravity="left"
+            android:text="@string/texto_instrucciones" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/top_icon_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/portada_bt_cerrar" />
+
+</RelativeLayout>

@@ -13,9 +13,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.view.animation.Animation.AnimationListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -31,7 +28,11 @@ import eu.lapecera.jolastoki.widget.GameNumber;
 
 public class GameActivity extends BaseActivity implements OnGameOverListener {
 
-	private SimpleDateFormat format = new SimpleDateFormat("mm:ss");
+
+
+	private static final int UPDATE_TIME = 1;
+	private static final int ANIMATE_TIME = 2;
+	private static final SimpleDateFormat timeFormat = new SimpleDateFormat("mm:ss");
 
 	private GameLevel level;
 	private GameArea area;
@@ -55,6 +56,8 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	private boolean timeStopped = false;
 
 	private Dialog timeoutDialog;
+	
+	private Dialog exitDialog;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -102,7 +105,18 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	public void OnStopTime() {
 		stopTime();
 	}
-
+	
+	@Override
+	protected void onPause() {
+		clearHandler();
+		super.onPause();
+	}
+	
+	@Override
+	public void onBackPressed() {
+		showExitDialog();
+	}
+	
 	private synchronized void stopTime() {
 		this.timeStopped = true;
 	}
@@ -131,7 +145,7 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 		gameContent.addView(game);
 		currentGame ++;
 		gameTime = game.getTime();
-		this.timeView.setText(format.format(new Date(gameTime)));
+		this.timeView.setText(timeFormat.format(new Date(gameTime)));
 		this.timeView.setTag(gameTime);
 		this.gameTitle.setText(game.getTitle());
 		this.gameNumber.setGameNumber(currentGame);
@@ -160,19 +174,54 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 
 		timeoutDialog.show();
 	}
+	
+	private void showExitDialog () {
+		if (exitDialog == null) {
+			exitDialog = new Dialog(this);
+			exitDialog.setContentView(R.layout.dialog_exit);
+			exitDialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+			exitDialog.setCanceledOnTouchOutside(false);
+
+			exitDialog.findViewById(R.id.play_again_btn).setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+					clearHandler();
+					Intent playAgainIntent = new Intent(GameActivity.this, AreaActivity.class);
+					startActivity(playAgainIntent);
+				}
+			});
+			
+			exitDialog.findViewById(R.id.exit_btn).setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+					clearHandler();
+					Intent exitIntent = new Intent(GameActivity.this, PortadaActivity.class);
+					startActivity(exitIntent);
+				}
+			});
+		}
+		
+		if (!exitDialog.isShowing()) {
+			exitDialog.show();
+		}
+	}
 
 	private void goToGameOverActivity () {
-		handler.removeMessages(ANIMATE_TIME);
-		handler.removeMessages(UPDATE_TIME);
+		clearHandler();
 		Intent i = new Intent(GameActivity.this, GameOverActivity.class);
 		i.putExtra(Constants.AREA_KEY, GameActivity.this.area);
 		i.putExtra(Constants.LEVEL_KEY, GameActivity.this.level);
 		i.putExtra(Constants.SCORE_KEY, GameActivity.this.score);
 		startActivity(i);
 	}
-
-	private static final int UPDATE_TIME = 1;
-	private static final int ANIMATE_TIME = 2;
+	
+	private void clearHandler () {
+		handler.removeMessages(ANIMATE_TIME);
+		handler.removeMessages(UPDATE_TIME);
+		
+	}
 
 	private class TimeHandler extends Handler {
 
@@ -187,15 +236,15 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 						return;
 					}
 					time = time - 1000;
-					timeView.setText(format.format(new Date(time)));
+					timeView.setText(timeFormat.format(new Date(time)));
 					timeView.setTag(time);
 				}
 				this.sendEmptyMessageDelayed(UPDATE_TIME, 1000);
 				break;
+				
 			case ANIMATE_TIME:
 				long count = msg.getData().getLong("time");
 				handler.postDelayed(new CountDown(count), 1);
-								
 				break;
 
 			default:
@@ -203,20 +252,20 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 			}
 		}
 	}
-	
+
 	private class CountDown implements Runnable {
-		
+
 		private Long count;
-		
+
 		public CountDown (Long count) {
 			this.count = count;
 		}
-		
+
 		@Override
 		public void run() {
 			score = score + 5;
 			count = count - 5;
-			timeView.setText(format.format(new Date(count * 100)));
+			timeView.setText(timeFormat.format(new Date(count * 100)));
 			scoreView.setText(Long.toString(score));
 			if (count <= 0) {
 				if (currentGame < games.size()) {
@@ -227,9 +276,9 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 			} else {
 				handler.postDelayed(this, 1);
 			}
-			
+
 		}
-		
+
 	}
 
 }

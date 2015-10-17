@@ -31,56 +31,56 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/biblioteca_2_1_bt1_on" />
+                android:src="@drawable/biblioteca_2_1_bt1_off" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/biblioteca_2_1_bt2_on" />
+                android:src="@drawable/biblioteca_2_1_bt2_off" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/biblioteca_2_1_bt3_on" />
+                android:src="@drawable/biblioteca_2_1_bt3_off" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/biblioteca_2_1_bt4_on" />
+                android:src="@drawable/biblioteca_2_1_bt4_off" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/biblioteca_2_1_bt5_on" />
+                android:src="@drawable/biblioteca_2_1_bt5_off" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure6"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/biblioteca_2_1_bt6_on" />
+                android:src="@drawable/biblioteca_2_1_bt6_off" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure7"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/biblioteca_2_1_bt7_on" />
+                android:src="@drawable/biblioteca_2_1_bt7_off" />
 
             <ImageView
                 android:id="@+id/biblioteca_2_figure8"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/biblioteca_2_1_bt8_on" />
+                android:src="@drawable/biblioteca_2_1_bt8_off" />
         </LinearLayout>
     </RelativeLayout>
 

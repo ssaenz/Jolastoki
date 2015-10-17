@@ -29,6 +29,7 @@
     <dimen name="small_text_size">15sp</dimen>
     <dimen name="extra_small_text_size">11sp</dimen>
     <dimen name="tiny_text_size">10sp</dimen>
+    <dimen name="header_title_text_size">13sp</dimen>
     
     <!-- General sizes -->
     

@@ -6,8 +6,6 @@ import eu.lapecera.jolastoki.util.MusicManager;
 
 public class BaseActivity extends Activity {
 	
-//	private static final String TAG = "BaseActivity";
-	
 	@Override
 	public void onBackPressed() {
 	}

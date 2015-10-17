@@ -85,14 +85,13 @@
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:text="@string/biblioteca_2_3_title2" />
 
-            <eu.lapecera.jolastoki.widget.TypographyTextView
-                style="@style/biblioteca_2_3_text_black"
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_white_rounded"
-                android:text="@string/biblioteca_2_3_ikusi" />
+                android:scaleType="fitXY"
+                android:src="@drawable/biblioteca_3_2_bt_ikusi" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 android:id="@+id/biblioteca_2_3_target3"
@@ -103,14 +102,13 @@
                 android:layout_weight="1"
                 android:background="@drawable/background_white_rounded" />
 
-            <eu.lapecera.jolastoki.widget.TypographyTextView
-                style="@style/biblioteca_2_3_text_black"
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_white_rounded"
-                android:text="@string/biblioteca_2_3_ukitu" />
+                android:scaleType="fitXY"
+                android:src="@drawable/biblioteca_3_2_bt_ukitu" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 android:id="@+id/biblioteca_2_3_target5"
@@ -121,14 +119,13 @@
                 android:layout_weight="1"
                 android:background="@drawable/background_white_rounded" />
 
-            <eu.lapecera.jolastoki.widget.TypographyTextView
-                style="@style/biblioteca_2_3_text_black"
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_white_rounded"
-                android:text="@string/biblioteca_2_3_jan" />
+                android:scaleType="fitXY"
+                android:src="@drawable/biblioteca_3_2_bt_jan" />
         </LinearLayout>
 
         <LinearLayout
@@ -203,14 +200,12 @@
             android:layout_margin="5dp"
             android:src="@drawable/biblioteca_3_2_bt_flor" />
 
-        <eu.lapecera.jolastoki.widget.TypographyTextView
+        <ImageView
             android:id="@+id/biblioteca_2_3_figure2"
-            style="@style/biblioteca_2_3_text_black"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/biblioteca_2_3_element_height"
-            android:layout_margin="5dp"
-            android:background="@drawable/background_white_rounded_stroked"
-            android:text="@string/biblioteca_2_3_entzun" />
+                android:layout_height="@dimen/biblioteca_2_3_element_height"
+                android:layout_margin="5dp"
+                android:src="@drawable/biblioteca_3_2_bt_entzun"/>
 
         <ImageView
             android:id="@+id/biblioteca_2_3_figure3"
@@ -250,14 +245,12 @@
             android:layout_margin="5dp"
             android:src="@drawable/biblioteca_3_2_bt_tv" />
 
-        <eu.lapecera.jolastoki.widget.TypographyTextView
+        <ImageView
             android:id="@+id/biblioteca_2_3_figure7"
-            style="@style/biblioteca_2_3_text_black"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/biblioteca_2_3_element_height"
-            android:layout_margin="5dp"
-            android:background="@drawable/background_white_rounded_stroked"
-            android:text="@string/biblioteca_2_3_usaindu" />
+                android:layout_height="@dimen/biblioteca_2_3_element_height"
+                android:layout_margin="5dp"
+                android:src="@drawable/biblioteca_3_2_bt_usaindu" />
 
         <ImageView
             android:id="@+id/biblioteca_2_3_figure8"

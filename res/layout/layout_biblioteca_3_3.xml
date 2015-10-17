@@ -133,7 +133,7 @@
             android:orientation="vertical" >
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
-                android:id="@+id/biblioteca_3_3_figure1"
+                android:id="@+id/biblioteca_3_3_figure4"
                 style="@style/normalText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -142,10 +142,10 @@
                 android:gravity="center"
                 android:paddingLeft="@dimen/biblioteca_3_3_figure_padding"
                 android:paddingRight="@dimen/biblioteca_3_3_figure_padding"
-                android:text="LEPOA" />
+                android:text="ESKUMUTURRA" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
-                android:id="@+id/biblioteca_3_3_figure2"
+                android:id="@+id/biblioteca_3_3_figure7"
                 style="@style/normalText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
                 android:gravity="center"
                 android:paddingLeft="@dimen/biblioteca_3_3_figure_padding"
                 android:paddingRight="@dimen/biblioteca_3_3_figure_padding"
-                android:text="SORBALDA" />
+                android:text="ORKATILA" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 android:id="@+id/biblioteca_3_3_figure3"
@@ -169,18 +169,6 @@
                 android:text="UKALONDOA" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
-                android:id="@+id/biblioteca_3_3_figure4"
-                style="@style/normalText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/biblioteca_3_3_figure_margin"
-                android:background="@drawable/biblioteca_3_3_baseboton"
-                android:gravity="center"
-                android:paddingLeft="@dimen/biblioteca_3_3_figure_padding"
-                android:paddingRight="@dimen/biblioteca_3_3_figure_padding"
-                android:text="ESKUMUTURRA" />
-
-            <eu.lapecera.jolastoki.widget.TypographyTextView
                 android:id="@+id/biblioteca_3_3_figure5"
                 style="@style/normalText"
                 android:layout_width="match_parent"
@@ -191,6 +179,18 @@
                 android:paddingLeft="@dimen/biblioteca_3_3_figure_padding"
                 android:paddingRight="@dimen/biblioteca_3_3_figure_padding"
                 android:text="ALDAKA" />
+
+            <eu.lapecera.jolastoki.widget.TypographyTextView
+                android:id="@+id/biblioteca_3_3_figure2"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/biblioteca_3_3_figure_margin"
+                android:background="@drawable/biblioteca_3_3_baseboton"
+                android:gravity="center"
+                android:paddingLeft="@dimen/biblioteca_3_3_figure_padding"
+                android:paddingRight="@dimen/biblioteca_3_3_figure_padding"
+                android:text="SORBALDA" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 android:id="@+id/biblioteca_3_3_figure6"
@@ -205,7 +205,7 @@
                 android:text="BELAUNA" />
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
-                android:id="@+id/biblioteca_3_3_figure7"
+                android:id="@+id/biblioteca_3_3_figure1"
                 style="@style/normalText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -214,7 +214,7 @@
                 android:gravity="center"
                 android:paddingLeft="@dimen/biblioteca_3_3_figure_padding"
                 android:paddingRight="@dimen/biblioteca_3_3_figure_padding"
-                android:text="ORKATILA" />
+                android:text="LEPOA" />
         </LinearLayout>
     </RelativeLayout>
 

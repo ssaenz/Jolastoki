@@ -17,6 +17,9 @@
     <dimen name="activity_ranking_score_list_divider_height">5dp</dimen>
     <dimen name="activity_ranking_score_list_title_padding">5dp</dimen>
     
+    <dimen name="activity_instructions_margin_top">30dp</dimen>
+    <dimen name="activity_instructions_margin_left">20dp</dimen>
+    <dimen name="activity_instructions_margin_right">20dp</dimen>
     
     <dimen name="activity_game_score_and_time_width">120dp</dimen>
     <dimen name="activity_game_title_margin_left">5dp</dimen>
@@ -29,6 +32,7 @@
     <dimen name="small_text_size">15sp</dimen>
     <dimen name="extra_small_text_size">11sp</dimen>
     <dimen name="tiny_text_size">10sp</dimen>
+    <dimen name="header_title_text_size">13sp</dimen>
     
     <!-- General sizes -->
     

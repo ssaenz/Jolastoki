@@ -1,5 +1,6 @@
 package eu.lapecera.jolastoki;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
@@ -10,12 +11,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 import eu.lapecera.jolastoki.common.AudibleOnClickListener;
-import eu.lapecera.jolastoki.common.BaseActivity;
 import eu.lapecera.jolastoki.common.Constants;
 import eu.lapecera.jolastoki.domain.GameArea;
 import eu.lapecera.jolastoki.domain.GameLevel;
+import eu.lapecera.jolastoki.util.MusicManager;
 
-public class AreaActivity extends BaseActivity {
+public class AreaActivity extends Activity {
 
 	GameLevel level = GameLevel.ONE;
 	Dialog dialog;
@@ -49,6 +50,21 @@ public class AreaActivity extends BaseActivity {
 		btn = (ImageButton) findViewById(R.id.go_back_btn);
 		btn.setOnClickListener(clickListener);
 	}
+	
+	@Override
+	protected void onPause() {
+		if (this.dialog != null) {
+			dialog.dismiss();
+		}
+		super.onPause();
+		MusicManager.pause();
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		MusicManager.start(this, R.raw.musica_fondo);
+	}
 
 	private AudibleOnClickListener clickListener = new AudibleOnClickListener(this, R.raw.seleccion) {
 
@@ -56,10 +72,10 @@ public class AreaActivity extends BaseActivity {
 		public void onAudibleClick(View v) {
 			switch (v.getId()) {
 			case R.id.go_back_btn:
-				Intent backIntent = new Intent (AreaActivity.this, PortadaActivity.class);
-				startActivity(backIntent);
+				exit();
 				break;
 			case R.id.instructions_btn:
+				goToInstructions();
 				break;
 			case R.id.mercado_area_btn:
 			case R.id.charca_area_btn:
@@ -71,15 +87,8 @@ public class AreaActivity extends BaseActivity {
 			case R.id.level_one_btn:
 			case R.id.level_two_btn:
 			case R.id.level_three_btn:
-				if (selectedArea.getGames().length == 0) {
-					Toast.makeText(AreaActivity.this, "Comming soon", Toast.LENGTH_SHORT).show();
-					return;
-				}
-				AreaActivity.this.dialog.dismiss();
-				Intent i = new Intent (AreaActivity.this, GameActivity.class);
-				i.putExtra(Constants.AREA_KEY, AreaActivity.this.selectedArea);
-				i.putExtra(Constants.LEVEL_KEY, (GameLevel) v.getTag());
-				startActivity(i);
+				level = (GameLevel) v.getTag();
+				goToGame();
 				break;
 			}
 		}
@@ -107,12 +116,36 @@ public class AreaActivity extends BaseActivity {
 		this.dialog.show();
 	}
 	
-	@Override
-	protected void onPause() {
-		if (this.dialog != null) {
-			dialog.dismiss();
+	private void goToGame() {
+		if (selectedArea.getGames().length == 0) {
+			Toast.makeText(AreaActivity.this, "Comming soon", Toast.LENGTH_SHORT).show();
+			return;
 		}
-		super.onPause();
+		AreaActivity.this.dialog.dismiss();
+		Intent i = new Intent (AreaActivity.this, GameActivity.class);
+		i.putExtra(Constants.AREA_KEY, AreaActivity.this.selectedArea);
+		i.putExtra(Constants.LEVEL_KEY, level);
+		startActivity(i);
+		finish();
 	}
+	
+	private void goToInstructions () {
+
+		Intent instructionsIntent = new Intent (AreaActivity.this, InstructionsActivity.class);
+		startActivity(instructionsIntent);
+	}
+	
+	private void exit () {
+		Intent backIntent = new Intent (AreaActivity.this, PortadaActivity.class);
+		startActivity(backIntent);
+		finish();
+	}
+
+	@Override
+	public void onBackPressed() {
+		exit();
+	}
+	
+	
 
 }

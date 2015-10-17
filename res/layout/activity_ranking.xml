@@ -114,16 +114,16 @@
         android:orientation="horizontal" >
 
         <LinearLayout
-        android:layout_margin="@dimen/activity_ranking_score_container_margin_top"
-        android:layout_weight="1"
             android:id="@+id/ranking_container"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_margin="@dimen/activity_ranking_score_container_margin_top"
+            android:layout_weight="1"
             android:background="@drawable/fondo_borde_naranja_redondeado"
             android:gravity="top"
             android:orientation="vertical"
-            android:visibility="visible" >
+            android:visibility="invisible" >
 
             <eu.lapecera.jolastoki.widget.TypographyTextView
                 style="@style/normalWhiteText"

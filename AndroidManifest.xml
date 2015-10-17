@@ -35,6 +35,10 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
+            android:name=".InstructionsActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
             android:name=".GameActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape" >

@@ -91,6 +91,7 @@ public class ModOneDragNDropGameView extends DragNDropGameView {
 			} else {
 				endGame();
 			}
+			enableDrag();
 		}
 	};
 
@@ -101,6 +102,7 @@ public class ModOneDragNDropGameView extends DragNDropGameView {
 			placeFigureOnTarget(getDraggingView(), targetButton);
 			
 			MusicManager.playSingle(getContext(), R.raw.acierto);
+			disableDrag();
 			handler.postDelayed(resetRunnable, 1000);
 		} else {
 			if (screensTarget.get(currentScreen) != getDraggingView().getId()) {

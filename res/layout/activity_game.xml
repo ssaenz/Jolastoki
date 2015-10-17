@@ -42,12 +42,13 @@
 
     <ImageView
         android:id="@+id/game_icon"
-        android:layout_width="@dimen/game_icon_small"
-        android:layout_height="@dimen/game_icon_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_margin="@dimen/top_icon_margin"
         android:background="@drawable/game_icon_background_green"
         android:padding="@dimen/game_icon_small_padding"
+        android:scaleType="centerCrop"
         android:src="@drawable/cabecera_juegos_ico_charca" />
 
     <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -73,7 +74,7 @@
 
     <eu.lapecera.jolastoki.widget.TypographyTextView
         android:id="@+id/game_title"
-        style="@style/smallText"
+        style="@style/header_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/header"
@@ -82,6 +83,6 @@
         android:layout_marginLeft="@dimen/activity_game_title_margin_left"
         android:layout_toLeftOf="@+id/game_number"
         android:gravity="left|center_vertical"
-        android:text="Un titulo largo para ver cuánto ocupa el texto" />
+        android:text="@string/biblioteca_1_title" />
 
 </RelativeLayout>

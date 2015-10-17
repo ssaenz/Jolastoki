@@ -24,26 +24,14 @@
             android:scaleType="fitCenter"
             android:src="@drawable/mercado_3_2_pieza1base" />
 
-        <TextView
-            style="@style/tinyText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/mercado_2_3_target1"
-            android:layout_alignLeft="@+id/mercado_2_3_target1"
-            android:layout_alignRight="@+id/mercado_2_3_target1"
-            android:layout_alignTop="@+id/mercado_2_3_target1"
-            android:layout_marginTop="@dimen/mercado_2_3_target1_margin_top"
-            android:gravity="center"
-            android:text="KOIPEA \nETA AZUDREA" />
-
         <ImageView
             android:id="@+id/mercado_2_3_figure1target"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza1"
-            android:visibility="invisible" />
+            android:src="@drawable/mercado_3_2_chocolate"
+            android:visibility="visible" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -58,16 +46,16 @@
                 android:id="@+id/mercado_2_3_figure2target"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/mercado_3_2_pieza2"
-                android:visibility="invisible" />
+                android:src="@drawable/mercado_3_2_dulces"
+                android:visibility="visible" />
 
             <ImageView
                 android:id="@+id/mercado_2_3_figure3target"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_2_pieza3"
-                android:visibility="invisible" />
+                android:src="@drawable/mercado_3_2_galletas"
+                android:visibility="visible" />
         </LinearLayout>
     </RelativeLayout>
 
@@ -90,35 +78,23 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/mercado_3_2_pieza2base" />
 
-            <TextView
-                android:id="@+id/mercado_2_3_target2text"
-                style="@style/tinyText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/mercado_2_3_target2"
-                android:layout_alignLeft="@+id/mercado_2_3_target2"
-                android:layout_alignRight="@+id/mercado_2_3_target2"
-                android:layout_alignTop="@+id/mercado_2_3_target2"
-                android:layout_marginLeft="@dimen/mercado_2_3_target2_margin_left"
-                android:gravity="center"
-                android:text="PROTEINAK" />
 
             <ImageView
                 android:id="@+id/mercado_2_3_figure4target"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@+id/mercado_2_3_target2text"
+                android:layout_alignRight="@+id/mercado_2_3_target2"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="5dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_2_pieza4"
-                android:visibility="invisible" />
+                android:src="@drawable/mercado_3_2_pescado"
+                android:visibility="visible" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/mercado_2_3_target2"
-                android:layout_alignRight="@+id/mercado_2_3_target2text"
+                android:layout_alignRight="@+id/mercado_2_3_target2"
                 android:layout_below="@+id/mercado_2_3_figure4target"
                 android:gravity="center"
                 android:orientation="horizontal" >
@@ -128,16 +104,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/mercado_3_2_pieza5"
-                    android:visibility="invisible" />
+                    android:src="@drawable/mercado_3_2_carne"
+                    android:visibility="visible" />
 
                 <ImageView
                     android:id="@+id/mercado_2_3_figure6target"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/mercado_3_2_pieza6"
-                    android:visibility="invisible" />
+                    android:src="@drawable/mercado_3_2_huevo"
+                    android:visibility="visible" />
             </LinearLayout>
         </RelativeLayout>
 
@@ -152,28 +128,16 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/mercado_3_2_pieza3base" />
 
-            <TextView
-                android:id="@+id/mercado_2_3_target3text"
-                style="@style/tinyText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/mercado_2_3_target3"
-                android:layout_alignLeft="@+id/mercado_2_3_target3"
-                android:layout_alignRight="@+id/mercado_2_3_target3"
-                android:layout_alignTop="@+id/mercado_2_3_target3"
-                android:layout_marginRight="@dimen/mercado_2_3_target3_margin_right"
-                android:gravity="center"
-                android:text="ESNEKIAK" />
 
             <ImageView
                 android:id="@+id/mercado_2_3_figure8target"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/mercado_2_3_target3text"
+                android:layout_alignBottom="@+id/mercado_2_3_target3"
                 android:layout_margin="5dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_2_pieza8"
-                android:visibility="invisible" />
+                android:src="@drawable/mercado_3_2_yogur"
+                android:visibility="visible" />
 
             <ImageView
                 android:id="@+id/mercado_2_3_figure7target"
@@ -183,8 +147,8 @@
                 android:layout_margin="5dp"
                 android:layout_toRightOf="@+id/mercado_2_3_figure8target"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_2_pieza7"
-                android:visibility="invisible" />
+                android:src="@drawable/mercado_3_2_leche"
+                android:visibility="visible" />
 
             <ImageView
                 android:id="@+id/mercado_2_3_figure9target"
@@ -194,8 +158,8 @@
                 android:layout_margin="5dp"
                 android:layout_toRightOf="@+id/mercado_2_3_figure8target"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_2_pieza9"
-                android:visibility="invisible" />
+                android:src="@drawable/mercado_3_2_queso"
+                android:visibility="visible" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -238,8 +202,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_margin="5dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_2_pieza10"
-                android:visibility="invisible" />
+                android:src="@drawable/mercado_3_2_zanahoria"
+                android:visibility="visible" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -255,16 +219,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/mercado_3_2_pieza11"
-                    android:visibility="invisible" />
+                    android:src="@drawable/mercado_3_2_guisantes"
+                    android:visibility="visible" />
 
                 <ImageView
                     android:id="@+id/mercado_2_3_figure12target"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/mercado_3_2_pieza12"
-                    android:visibility="invisible" />
+                    android:src="@drawable/mercado_3_2_brocoli"
+                    android:visibility="visible" />
             </LinearLayout>
         </RelativeLayout>
 
@@ -298,8 +262,8 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_2_pieza13"
-                android:visibility="invisible" />
+                android:src="@drawable/mercado_3_2_uvas"
+                android:visibility="visible" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -315,8 +279,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/mercado_3_2_pieza14"
-                    android:visibility="invisible" />
+                    android:src="@drawable/mercado_3_2_naranja"
+                    android:visibility="visible" />
 
                 <ImageView
                     android:id="@+id/mercado_2_3_figure15target"
@@ -324,8 +288,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/mercado_3_2_pieza15"
-                    android:visibility="invisible" />
+                    android:src="@drawable/mercado_3_2_sandia"
+                    android:visibility="visible" />
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
@@ -368,8 +332,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_2_pieza16"
-                android:visibility="invisible" />
+                android:src="@drawable/mercado_3_2_cereales"
+                android:visibility="visible" />
 
             <ImageView
                 android:id="@+id/mercado_2_3_figure17target"
@@ -377,8 +341,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_2_pieza17"
-                android:visibility="invisible" />
+                android:src="@drawable/mercado_3_2_pan"
+                android:visibility="visible" />
 
             <ImageView
                 android:id="@+id/mercado_2_3_figure18target"
@@ -386,8 +350,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mercado_3_2_pieza18"
-                android:visibility="invisible" />
+                android:src="@drawable/mercado_3_2_arroz"
+                android:visibility="visible" />
         </LinearLayout>
     </RelativeLayout>
 
@@ -404,7 +368,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/mercado_2_3_piezas_margin"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza10g"
+            android:src="@drawable/mercado_3_2_zanahoria_g"
             android:tag="@id/mercado_2_3_figure10target" />
 
         <ImageView
@@ -412,7 +376,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza9g"
+            android:src="@drawable/mercado_3_2_queso_g"
             android:tag="@id/mercado_2_3_figure9target" />
 
         <ImageView
@@ -420,7 +384,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza15g"
+            android:src="@drawable/mercado_3_2_sandia_g"
             android:tag="@id/mercado_2_3_figure15target" />
     </LinearLayout>
 
@@ -438,7 +402,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza3g"
+            android:src="@drawable/mercado_3_2_galletas_g"
             android:tag="@id/mercado_2_3_figure3target" />
 
         <ImageView
@@ -447,7 +411,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/mercado_2_3_piezas_margin"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza1g"
+            android:src="@drawable/mercado_3_2_chocolate_g"
             android:tag="@id/mercado_2_3_figure1target" />
 
         <ImageView
@@ -455,7 +419,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza5g"
+            android:src="@drawable/mercado_3_2_carne_g"
             android:tag="@id/mercado_2_3_figure5target" />
     </LinearLayout>
 
@@ -473,7 +437,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza16g"
+            android:src="@drawable/mercado_3_2_cereales_g"
             android:tag="@id/mercado_2_3_figure16target" />
 
         <ImageView
@@ -481,7 +445,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza6g"
+            android:src="@drawable/mercado_3_2_huevo_g"
             android:tag="@id/mercado_2_3_figure6target" />
     </LinearLayout>
 
@@ -499,7 +463,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza11g"
+            android:src="@drawable/mercado_3_2_guisantes_g"
             android:tag="@id/mercado_2_3_figure11target" />
     </LinearLayout>
 
@@ -517,7 +481,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza8g"
+            android:src="@drawable/mercado_3_2_yogur_g"
             android:tag="@id/mercado_2_3_figure8target" />
 
         <ImageView
@@ -525,7 +489,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza13g"
+            android:src="@drawable/mercado_3_2_uvas_g"
             android:tag="@id/mercado_2_3_figure13target" />
 
         <ImageView
@@ -533,7 +497,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza4g"
+            android:src="@drawable/mercado_3_2_pescado_g"
             android:tag="@id/mercado_2_3_figure4target" />
 
         <ImageView
@@ -541,7 +505,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza2g"
+            android:src="@drawable/mercado_3_2_dulces_g"
             android:tag="@id/mercado_2_3_figure2target" />
 
         
@@ -562,7 +526,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza12g"
+            android:src="@drawable/mercado_3_2_brocoli_g"
             android:tag="@id/mercado_2_3_figure12target" />
 
         <ImageView
@@ -570,7 +534,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza17g"
+            android:src="@drawable/mercado_3_2_pan_g"
             android:tag="@id/mercado_2_3_figure17target" />
     </LinearLayout>
 
@@ -590,14 +554,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza18g"
+            android:src="@drawable/mercado_3_2_arroz_g"
             android:tag="@id/mercado_2_3_figure18target" />
         <ImageView
             android:id="@+id/mercado_2_3_figure14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza14g"
+            android:src="@drawable/mercado_3_2_naranja_g"
             android:tag="@id/mercado_2_3_figure14target" />
     </LinearLayout>
 
@@ -614,7 +578,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/mercado_2_3_piezas_margin"
             android:scaleType="fitCenter"
-            android:src="@drawable/mercado_3_2_pieza7g"
+            android:src="@drawable/mercado_3_2_leche_g"
             android:tag="@id/mercado_2_3_figure7target" />
     </LinearLayout>
 
