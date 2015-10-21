@@ -6,6 +6,8 @@ import eu.lapecera.jolastoki.util.MusicManager;
 
 public class BaseActivity extends Activity {
 	
+	private static boolean finish = false;
+	
 	@Override
 	public void onBackPressed() {
 	}
@@ -14,13 +16,20 @@ public class BaseActivity extends Activity {
 	protected void onPause() {
 		super.onPause();
 		MusicManager.pause();
-		finish();
 	}
 	
 	@Override
 	protected void onResume() {
 		super.onResume();
+		if (BaseActivity.finish) {
+			finish();
+			return;
+		}
 		MusicManager.start(this, R.raw.musica_fondo);
+	}
+	
+	public static void setFinish (Boolean finish) {
+		BaseActivity.finish = finish;
 	}
 
 }

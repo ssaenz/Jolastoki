@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import eu.lapecera.jolastoki.common.AudibleOnClickListener;
+import eu.lapecera.jolastoki.common.BaseActivity;
 import eu.lapecera.jolastoki.util.MusicManager;
 
 
@@ -21,18 +22,6 @@ public class PortadaActivity extends Activity {
 
 	}
 	
-	@Override
-	protected void onPause() {
-		super.onPause();
-		MusicManager.pause();
-	}
-	
-	@Override
-	protected void onResume() {
-		super.onResume();
-		MusicManager.start(this, R.raw.musica_fondo);
-	}
-	
 	private AudibleOnClickListener clickListener = new AudibleOnClickListener(this, R.raw.seleccion) {
 		
 		@Override
@@ -43,6 +32,7 @@ public class PortadaActivity extends Activity {
 				startActivity(i);
 				break;
 			case R.id.exit_btn:
+				BaseActivity.setFinish(true);
 				finish();
 				break;
 
@@ -52,5 +42,18 @@ public class PortadaActivity extends Activity {
 
 		}
 	};
+	
+	@Override
+	protected void onPause() {
+		super.onPause();
+		MusicManager.pause();
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		BaseActivity.setFinish(false);
+		MusicManager.start(this, R.raw.musica_fondo);
+	}
 
 }

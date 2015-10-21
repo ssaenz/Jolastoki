@@ -181,7 +181,7 @@
         android:layout_margin="@dimen/top_icon_margin"
         android:background="@drawable/game_icon_background_blue"
         android:padding="@dimen/game_icon_small_padding"
-        android:src="@drawable/cabecera_juegos_ico_charca" />
+        android:src="@drawable/portada_ico_charca" />
 
     <eu.lapecera.jolastoki.widget.TypographyTextView
         android:id="@+id/header_icon_level"

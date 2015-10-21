@@ -7,7 +7,6 @@ import java.util.Map;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import eu.lapecera.jolastoki.R;
 import eu.lapecera.jolastoki.config.GameViewConfig;

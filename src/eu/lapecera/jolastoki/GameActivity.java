@@ -28,8 +28,6 @@ import eu.lapecera.jolastoki.widget.GameNumber;
 
 public class GameActivity extends BaseActivity implements OnGameOverListener {
 
-
-
 	private static final int UPDATE_TIME = 1;
 	private static final int ANIMATE_TIME = 2;
 	private static final SimpleDateFormat timeFormat = new SimpleDateFormat("mm:ss");

@@ -1,14 +1,13 @@
 package eu.lapecera.jolastoki;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
-import eu.lapecera.jolastoki.util.MusicManager;
+import eu.lapecera.jolastoki.common.BaseActivity;
 
-public class InstructionsActivity extends Activity implements OnClickListener {
+public class InstructionsActivity extends BaseActivity implements OnClickListener {
 
 	
 	@Override
@@ -35,16 +34,4 @@ public class InstructionsActivity extends Activity implements OnClickListener {
 		}
 	}
 	
-	@Override
-	protected void onPause() {
-		super.onPause();
-		MusicManager.pause();
-	}
-	
-	@Override
-	protected void onResume() {
-		super.onResume();
-		MusicManager.start(this, R.raw.musica_fondo);
-	}
-
 }

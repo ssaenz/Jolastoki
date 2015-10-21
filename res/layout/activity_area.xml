@@ -63,7 +63,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/cabecera_juegos_ico_charca" />
+            android:src="@drawable/portada_ico_charca" />
 
         <ImageButton
             android:id="@+id/parque_area_btn"
