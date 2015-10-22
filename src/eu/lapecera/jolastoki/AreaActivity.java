@@ -47,10 +47,8 @@ public class AreaActivity extends Activity {
 		btn = (ImageButton) findViewById(R.id.instructions_btn);
 		btn.setOnClickListener(clickListener);
 
-		btn = (ImageButton) findViewById(R.id.go_back_btn);
-		btn.setOnClickListener(clickListener);
 	}
-	
+
 	@Override
 	protected void onPause() {
 		if (this.dialog != null) {
@@ -59,7 +57,7 @@ public class AreaActivity extends Activity {
 		super.onPause();
 		MusicManager.pause();
 	}
-	
+
 	@Override
 	protected void onResume() {
 		super.onResume();
@@ -71,9 +69,6 @@ public class AreaActivity extends Activity {
 		@Override
 		public void onAudibleClick(View v) {
 			switch (v.getId()) {
-			case R.id.go_back_btn:
-				exit();
-				break;
 			case R.id.instructions_btn:
 				goToInstructions();
 				break;
@@ -115,7 +110,7 @@ public class AreaActivity extends Activity {
 		}
 		this.dialog.show();
 	}
-	
+
 	private void goToGame() {
 		if (selectedArea.getGames().length == 0) {
 			Toast.makeText(AreaActivity.this, "Comming soon", Toast.LENGTH_SHORT).show();
@@ -128,13 +123,13 @@ public class AreaActivity extends Activity {
 		startActivity(i);
 		finish();
 	}
-	
+
 	private void goToInstructions () {
 
 		Intent instructionsIntent = new Intent (AreaActivity.this, InstructionsActivity.class);
 		startActivity(instructionsIntent);
 	}
-	
+
 	private void exit () {
 		Intent backIntent = new Intent (AreaActivity.this, PortadaActivity.class);
 		startActivity(backIntent);
@@ -145,7 +140,7 @@ public class AreaActivity extends Activity {
 	public void onBackPressed() {
 		exit();
 	}
-	
-	
+
+
 
 }

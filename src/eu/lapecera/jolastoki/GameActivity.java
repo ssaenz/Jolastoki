@@ -87,8 +87,6 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 
 		currentGame = 0;
 		loadNextGame();
-		handler.sendEmptyMessageDelayed(UPDATE_TIME, 1000);
-
 	}
 
 	/**
@@ -108,6 +106,13 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	protected void onPause() {
 		clearHandler();
 		super.onPause();
+	}
+	
+	@Override
+	protected void onResume() {
+		clearHandler();
+		handler.sendEmptyMessageDelayed(UPDATE_TIME, 1000);
+		super.onResume();
 	}
 	
 	@Override
@@ -147,6 +152,8 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 		this.timeView.setTag(gameTime);
 		this.gameTitle.setText(game.getTitle());
 		this.gameNumber.setGameNumber(currentGame);
+		clearHandler();
+		handler.sendEmptyMessageDelayed(UPDATE_TIME, 1000);
 		playTime();
 	}
 
@@ -174,28 +181,28 @@ public class GameActivity extends BaseActivity implements OnGameOverListener {
 	}
 	
 	private void showExitDialog () {
+		stopTime();
 		if (exitDialog == null) {
 			exitDialog = new Dialog(this);
 			exitDialog.setContentView(R.layout.dialog_exit);
 			exitDialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-			exitDialog.setCanceledOnTouchOutside(false);
+			exitDialog.setCancelable(false);
 
-			exitDialog.findViewById(R.id.play_again_btn).setOnClickListener(new OnClickListener() {
+			exitDialog.findViewById(R.id.button_exit_no).setOnClickListener(new OnClickListener() {
 
 				@Override
 				public void onClick(View v) {
-					clearHandler();
-					Intent playAgainIntent = new Intent(GameActivity.this, AreaActivity.class);
-					startActivity(playAgainIntent);
+					playTime();
+					exitDialog.dismiss();
+					
 				}
 			});
 			
-			exitDialog.findViewById(R.id.exit_btn).setOnClickListener(new OnClickListener() {
+			exitDialog.findViewById(R.id.button_exit_si).setOnClickListener(new OnClickListener() {
 
 				@Override
 				public void onClick(View v) {
-					clearHandler();
-					Intent exitIntent = new Intent(GameActivity.this, PortadaActivity.class);
+					Intent exitIntent = new Intent(GameActivity.this, AreaActivity.class);
 					startActivity(exitIntent);
 				}
 			});

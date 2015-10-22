@@ -24,4 +24,7 @@
     <color name="biblioteca_morado">#a25e86</color>
     <color name="biblioteca_verde">#346732</color>
     
+    <color name="morado_boton_salir">#662C91</color>
+    <color name="rosa_boton_jugar">#ED2A7A</color>
+    
 </resources>

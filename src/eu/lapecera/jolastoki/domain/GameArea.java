@@ -48,12 +48,12 @@ public enum GameArea {
 																				QuizGameViewConfig.PARQUE_3_3}),
 	
 	BIBLIOTECA		(R.drawable.cabecera_juegos_ico_colegio, new GameViewConfig[]{	
-																					StandardDragNDropGameViewConfig.biblioteca_1_1,
-																					StandardDragNDropGameViewConfig.biblioteca_2_1,
-																					StandardDragNDropGameViewConfig.biblioteca_3_1,
-																					StandardDragNDropGameViewConfig.biblioteca_1_2,
-																					StandardDragNDropGameViewConfig.biblioteca_2_2,
-																					StandardDragNDropGameViewConfig.biblioteca_3_2,
+//																					StandardDragNDropGameViewConfig.biblioteca_1_1,
+//																					StandardDragNDropGameViewConfig.biblioteca_2_1,
+//																					StandardDragNDropGameViewConfig.biblioteca_3_1,
+//																					StandardDragNDropGameViewConfig.biblioteca_1_2,
+//																					StandardDragNDropGameViewConfig.biblioteca_2_2,
+//																					StandardDragNDropGameViewConfig.biblioteca_3_2,
 																					StandardDragNDropGameViewConfig.biblioteca_1_3,
 																					StandardDragNDropGameViewConfig.biblioteca_2_3,
 																					StandardDragNDropGameViewConfig.biblioteca_3_3});

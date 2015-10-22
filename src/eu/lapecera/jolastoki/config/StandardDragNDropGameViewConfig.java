@@ -313,6 +313,19 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 			new HashMap<Integer, Integer>() {
 		private static final long serialVersionUID = 1L;
 		{
+			put(R.id.biblioteca_2_3_figure1, R.id.biblioteca_2_3_target6container);
+			put(R.id.biblioteca_2_3_figure2, R.id.biblioteca_2_3_target3container);
+			put(R.id.biblioteca_2_3_figure3, R.id.biblioteca_2_3_target2container);
+			put(R.id.biblioteca_2_3_figure4, R.id.biblioteca_2_3_target7container);
+			put(R.id.biblioteca_2_3_figure5, R.id.biblioteca_2_3_target4container);
+			put(R.id.biblioteca_2_3_figure6, R.id.biblioteca_2_3_target1container);
+			put(R.id.biblioteca_2_3_figure7, R.id.biblioteca_2_3_target5container);
+			put(R.id.biblioteca_2_3_figure8, R.id.biblioteca_2_3_target8container);
+		}
+
+	}, new HashMap<Integer, Integer>() {
+		private static final long serialVersionUID = 1L;
+		{
 			put(R.id.biblioteca_2_3_figure1, R.id.biblioteca_2_3_target6);
 			put(R.id.biblioteca_2_3_figure2, R.id.biblioteca_2_3_target3);
 			put(R.id.biblioteca_2_3_figure3, R.id.biblioteca_2_3_target2);
@@ -323,7 +336,7 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 			put(R.id.biblioteca_2_3_figure8, R.id.biblioteca_2_3_target8);
 		}
 
-	}, null),
+	}),
 	biblioteca_3_3 (GameLevel.THREE, R.layout.layout_biblioteca_3_3, R.string.biblioteca_3_3_title, 60000l, -1,
 			Arrays.asList(R.id.biblioteca_3_3_figure1, R.id.biblioteca_3_3_figure2, R.id.biblioteca_3_3_figure3,
 							R.id.biblioteca_3_3_figure4, R.id.biblioteca_3_3_figure5, R.id.biblioteca_3_3_figure6,

@@ -27,12 +27,12 @@
     <eu.lapecera.jolastoki.widget.TypographyTextView
         android:id="@+id/score_amount"
         style="@style/smallText"
-        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:drawableLeft="@drawable/ranking_ico_estrella"
         android:drawablePadding="@dimen/score_view_drawable_padding"
-        android:gravity="left"
         android:text="123" />
 
 </LinearLayout>

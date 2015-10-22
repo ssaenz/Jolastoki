@@ -1,6 +1,8 @@
 package eu.lapecera.jolastoki.database;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import android.content.ContentValues;
@@ -63,6 +65,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 			position ++;
 		}
 		cursor.close();
+		Collections.sort(scores, new ScoreComparator());
+		position = 1;
+		for (Score s : scores) {
+			s.setPosition(position);
+			position ++;
+		}
 		return scores;
 	}
 	
@@ -76,6 +84,21 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		score.setScore(cursor.getInt(cursor.getColumnIndex(Score.KEY_SCORE)));
 		score.setPosition(position);
 		return score;
+	}
+	
+	private class ScoreComparator implements Comparator<Score> {
+
+		@Override
+		public int compare(Score lhs, Score rhs) {
+			if (lhs.getScore() > rhs.getScore()) {
+				return -1;
+			} else if (lhs.getScore() < rhs.getScore()) {
+				return 1;
+			} else {
+				return 0;
+			}
+		}
+		
 	}
 
 }

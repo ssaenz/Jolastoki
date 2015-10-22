@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:gravity="center"
     android:background="@drawable/background_white_rounded_green_stroked"
+    android:gravity="center"
     android:orientation="vertical" >
 
     <eu.lapecera.jolastoki.widget.TypographyTextView
@@ -15,18 +15,35 @@
         android:padding="@dimen/dialog_score_padding"
         android:text="@string/dialog_exit_title" />
 
-    <Button
-        android:id="@+id/play_again_btn"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/top_icon_margin"
-        android:background="@drawable/ranking_bt_jugar" />
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/top_icon_margin" >
 
-    <Button
-        android:id="@+id/exit_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/top_icon_margin"
-        android:background="@drawable/ranking_bt_salir" />
+        <eu.lapecera.jolastoki.widget.TypographyTextView
+            android:id="@+id/button_exit_si"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/top_icon_margin"
+            android:background="@drawable/background_pink_rounded_white_stroked"
+            android:text="@string/dialog_exit_si" />
+
+        <eu.lapecera.jolastoki.widget.TypographyTextView
+            android:id="@+id/button_exit_no"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_margin="@dimen/top_icon_margin"
+            android:background="@drawable/background_morado_rounded_white_stroked"
+            android:text="@string/dialog_exit_no" />
+    </LinearLayout>
 
 </LinearLayout>

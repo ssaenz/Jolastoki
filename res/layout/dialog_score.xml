@@ -25,7 +25,7 @@
         android:layout_below="@id/score"
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/dialog_score_name_input_margin"
-        android:hint="Inserta tu nombre" />
+        android:hint="@string/dialog_score_hint" />
 
     <Button
         android:id="@+id/accept"
@@ -44,6 +44,6 @@
         android:padding="@dimen/dialog_score_padding"
         android:background="@drawable/cabecera_naranja_redondeada_arriba"
         android:gravity="center"
-        android:text="Tu puntuación" />
+        android:text="@string/dialog_score_title" />
 
 </RelativeLayout>

@@ -69,6 +69,7 @@ public class RankingActivity extends BaseActivity implements OnClickListener {
 		switch (v.getId()) {
 		case R.id.go_back_btn:
 			Intent exit = new Intent(RankingActivity.this, PortadaActivity.class);
+			exit.putExtra("exit", true);
 			startActivity(exit);
 			break;
 		case R.id.play_again_btn:
@@ -85,7 +86,7 @@ public class RankingActivity extends BaseActivity implements OnClickListener {
 		final Dialog dialog = new Dialog(this);
 		dialog.setContentView(R.layout.dialog_score);
 		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-		dialog.setCanceledOnTouchOutside(false);
+		dialog.setCancelable(false);
 		Button accept = (Button) dialog.findViewById(R.id.accept);
 
 		final EditText scoreInput = (EditText) dialog.findViewById(R.id.score_name);

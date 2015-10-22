@@ -14,6 +14,10 @@ public class PortadaActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		if (getIntent().getExtras() != null && getIntent().getExtras().get("exit") !=null ) {
+			BaseActivity.setFinish(true);
+			finish();
+		}
 		setContentView(R.layout.activity_portada);
 		View button = findViewById(R.id.exit_btn);
 		button.setOnClickListener(clickListener);

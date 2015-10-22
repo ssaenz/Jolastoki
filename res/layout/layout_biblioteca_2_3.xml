@@ -38,21 +38,45 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/biblioteca_3_2_bt_ojo" />
 
-            <ImageView
-                android:id="@+id/biblioteca_2_3_target2"
+            <RelativeLayout
+                android:id="@+id/biblioteca_2_3_target2container"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/background_white_rounded" />
+                android:layout_weight="1" >
 
-            <ImageView
-                android:id="@+id/biblioteca_2_3_target4"
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_white_rounded" />
+
+                <ImageView
+                    android:id="@+id/biblioteca_2_3_target2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/biblioteca_3_2_bt_oreja"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/biblioteca_2_3_target4container"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/background_white_rounded" />
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_white_rounded" />
+
+                <ImageView
+                    android:id="@+id/biblioteca_2_3_target4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/biblioteca_3_2_bt_mano"
+                    android:visibility="invisible" />
+            </RelativeLayout>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -63,13 +87,25 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/biblioteca_3_2_bt_nariz" />
 
-            <ImageView
-                android:id="@+id/biblioteca_2_3_target7"
+            <RelativeLayout
+                    android:id="@+id/biblioteca_2_3_target7container"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/background_white_rounded" />
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_white_rounded" />
+
+                <ImageView
+                    android:id="@+id/biblioteca_2_3_target7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/biblioteca_3_2_bt_boca"
+                    android:visibility="invisible" />
+            </RelativeLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -93,14 +129,26 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/biblioteca_3_2_bt_ikusi" />
 
-            <eu.lapecera.jolastoki.widget.TypographyTextView
-                android:id="@+id/biblioteca_2_3_target3"
-                style="@style/biblioteca_2_3_text_black"
+            <RelativeLayout
+                    android:id="@+id/biblioteca_2_3_target3container"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/background_white_rounded" />
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_white_rounded" />
+
+                <ImageView
+                    android:id="@+id/biblioteca_2_3_target3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/biblioteca_3_2_bt_entzun"
+                    android:visibility="invisible" />
+            </RelativeLayout>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -110,14 +158,26 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/biblioteca_3_2_bt_ukitu" />
 
-            <eu.lapecera.jolastoki.widget.TypographyTextView
-                android:id="@+id/biblioteca_2_3_target5"
-                style="@style/biblioteca_2_3_text_black"
+            <RelativeLayout
+                    android:id="@+id/biblioteca_2_3_target5container"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/background_white_rounded" />
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_white_rounded" />
+
+                <ImageView
+                    android:id="@+id/biblioteca_2_3_target5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/biblioteca_3_2_bt_usaindu"
+                    android:visibility="invisible" />
+            </RelativeLayout>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -141,13 +201,25 @@
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:text="@string/biblioteca_2_3_title3" />
 
-            <ImageView
-                android:id="@+id/biblioteca_2_3_target1"
+            <RelativeLayout
+                    android:id="@+id/biblioteca_2_3_target1container"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/background_white_rounded" />
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_white_rounded" />
+
+                <ImageView
+                    android:id="@+id/biblioteca_2_3_target1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/biblioteca_3_2_bt_tv"
+                    android:visibility="invisible" />
+            </RelativeLayout>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -167,21 +239,45 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/biblioteca_3_2_bt_balon" />
 
-            <ImageView
-                android:id="@+id/biblioteca_2_3_target6"
+            <RelativeLayout
+                    android:id="@+id/biblioteca_2_3_target6container"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/background_white_rounded" />
+                android:layout_weight="1" >
 
-            <ImageView
-                android:id="@+id/biblioteca_2_3_target8"
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_white_rounded" />
+
+                <ImageView
+                    android:id="@+id/biblioteca_2_3_target6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/biblioteca_3_2_bt_flor"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/biblioteca_2_3_target8container"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
                 android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/background_white_rounded" />
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_white_rounded" />
+
+                <ImageView
+                    android:id="@+id/biblioteca_2_3_target8"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/biblioteca_2_3_element_height"
+                    android:src="@drawable/biblioteca_3_2_bt_manzan"
+                    android:visibility="invisible" />
+            </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
 
@@ -203,9 +299,9 @@
         <ImageView
             android:id="@+id/biblioteca_2_3_figure2"
             android:layout_width="match_parent"
-                android:layout_height="@dimen/biblioteca_2_3_element_height"
-                android:layout_margin="5dp"
-                android:src="@drawable/biblioteca_3_2_bt_entzun"/>
+            android:layout_height="@dimen/biblioteca_2_3_element_height"
+            android:layout_margin="5dp"
+            android:src="@drawable/biblioteca_3_2_bt_entzun" />
 
         <ImageView
             android:id="@+id/biblioteca_2_3_figure3"
@@ -248,9 +344,9 @@
         <ImageView
             android:id="@+id/biblioteca_2_3_figure7"
             android:layout_width="match_parent"
-                android:layout_height="@dimen/biblioteca_2_3_element_height"
-                android:layout_margin="5dp"
-                android:src="@drawable/biblioteca_3_2_bt_usaindu" />
+            android:layout_height="@dimen/biblioteca_2_3_element_height"
+            android:layout_margin="5dp"
+            android:src="@drawable/biblioteca_3_2_bt_usaindu" />
 
         <ImageView
             android:id="@+id/biblioteca_2_3_figure8"

@@ -10,7 +10,11 @@
     <string name="area_color_title">Juego de colorear</string>
     <string name="dialog_level_title">AUKERATU MAILA</string>
     <string name="ranking_title">10 ONENAK</string>
-    <string name="dialog_exit_title">EGIN NAHI DUZULA?</string>
+    <string name="dialog_score_title">Zure puntuazioa</string>
+    <string name="dialog_score_hint">zure izena</string>
+    <string name="dialog_exit_title">Ziur zaude irten nahi duzula?</string>
+    <string name="dialog_exit_si">BAI</string>
+    <string name="dialog_exit_no">EZ</string>
     <string name="mercado_1_1_title">AUKERATU ERANTZUN ZUZENA</string>
     <string name="mercado_1_1_question">ZEIN JANARIK DITU PROTEINAK?</string>
     <string name="mercado_1_1_answer_1">DILISTAK</string>
@@ -123,7 +127,7 @@
     <string name="biblioteca_1_title">ZENBAKIAK TXIKIENETIK HANDIENERA ANTOLATU</string>
     <string name="biblioteca_2_title">MARRAZKI BAKOITZA DAGOKION TOKIAN KOKATU</string>
     <string name="biblioteca_1_3_title">LETRAK LEKU EGOKIAN IPINI</string>
-    <string name="biblioteca_1_2_target4">EGUIZKITAKO \nBETAURREKOAK</string>
+    <string name="biblioteca_1_2_target4">EGUZKITAKO \nBETAURREKOAK</string>
     <string name="biblioteca_1_2_target6">SANDALIAK</string>
     <string name="biblioteca_1_2_target2">BAINUJANTZIA</string>
     <string name="biblioteca_1_2_target3">ELASTIKOA</string>
