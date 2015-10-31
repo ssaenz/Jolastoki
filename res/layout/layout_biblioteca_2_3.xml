@@ -27,6 +27,7 @@
                 style="@style/biblioteca_2_3_text_white"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/biblioteca_2_3_element_height"
+                android:singleLine="true"
                 android:text="@string/biblioteca_2_3_title1" />
 
             <ImageView

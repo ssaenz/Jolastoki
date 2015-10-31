@@ -121,49 +121,82 @@
                 android:gravity="center"
                 android:orientation="horizontal" >
 
-                <LinearLayout
+                <RelativeLayout
+                    android:id="@+id/biblioteca_2_target2container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
+                    android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical" >
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/biblioteca_2_target2reference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/biblioteca_2_2_pieza_base"
+                        android:scaleType="centerInside" />
 
                     <ImageView
                         android:id="@+id/biblioteca_2_target2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/biblioteca_2_2_pieza_base"
-                        android:scaleType="centerInside" />
+                        android:layout_alignBottom="@+id/biblioteca_2_target2reference"
+                        android:layout_alignLeft="@+id/biblioteca_2_target2reference"
+                        android:layout_alignRight="@+id/biblioteca_2_target2reference"
+                        android:layout_alignTop="@+id/biblioteca_2_target2reference"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/biblioteca_2_3_bt2_colocado"
+                        android:visibility="invisible" />
 
                     <TextView
                         style="@style/extraSmallText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/biblioteca_2_target2reference"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
                         android:text="@string/biblioteca_3_2_target2" />
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
+                    android:id="@+id/biblioteca_2_target3container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
+                    android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
+                    android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical" >
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/biblioteca_2_target3reference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/biblioteca_2_2_pieza_base"
+                        android:scaleType="centerInside" />
 
                     <ImageView
                         android:id="@+id/biblioteca_2_target3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/biblioteca_2_2_pieza_base"
-                        android:scaleType="centerInside" />
+                        android:layout_alignBottom="@+id/biblioteca_2_target3reference"
+                        android:layout_alignLeft="@+id/biblioteca_2_target3reference"
+                        android:layout_alignRight="@+id/biblioteca_2_target3reference"
+                        android:layout_alignTop="@+id/biblioteca_2_target3reference"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/biblioteca_2_3_bt3_colocado"
+                        android:visibility="invisible" />
 
                     <TextView
                         style="@style/extraSmallText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/biblioteca_2_target3reference"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
                         android:text="@string/biblioteca_3_2_target3" />
-                </LinearLayout>
+                </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -172,49 +205,82 @@
                 android:gravity="center"
                 android:orientation="horizontal" >
 
-                <LinearLayout
+                <RelativeLayout
+                    android:id="@+id/biblioteca_2_target7container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
+                    android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical" >
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/biblioteca_2_target7reference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/biblioteca_2_2_pieza_base"
+                        android:scaleType="centerInside" />
 
                     <ImageView
                         android:id="@+id/biblioteca_2_target7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/biblioteca_2_2_pieza_base"
-                        android:scaleType="centerInside" />
+                        android:layout_alignBottom="@+id/biblioteca_2_target7reference"
+                        android:layout_alignLeft="@+id/biblioteca_2_target7reference"
+                        android:layout_alignRight="@+id/biblioteca_2_target7reference"
+                        android:layout_alignTop="@+id/biblioteca_2_target7reference"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/biblioteca_2_3_bt7_colocado"
+                        android:visibility="invisible" />
 
                     <TextView
                         style="@style/extraSmallText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/biblioteca_2_target7reference"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
                         android:text="@string/biblioteca_3_2_target7" />
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
+                    android:id="@+id/biblioteca_2_target5container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
+                    android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
+                    android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical" >
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/biblioteca_2_target5reference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/biblioteca_2_2_pieza_base"
+                        android:scaleType="centerInside" />
 
                     <ImageView
                         android:id="@+id/biblioteca_2_target5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/biblioteca_2_2_pieza_base"
-                        android:scaleType="centerInside" />
+                        android:layout_alignBottom="@+id/biblioteca_2_target5reference"
+                        android:layout_alignLeft="@+id/biblioteca_2_target5reference"
+                        android:layout_alignRight="@+id/biblioteca_2_target5reference"
+                        android:layout_alignTop="@+id/biblioteca_2_target5reference"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/biblioteca_2_3_bt5_colocado"
+                        android:visibility="invisible" />
 
                     <TextView
                         style="@style/extraSmallText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/biblioteca_2_target5reference"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
                         android:text="@string/biblioteca_3_2_target5" />
-                </LinearLayout>
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
 
@@ -231,49 +297,82 @@
                 android:gravity="center"
                 android:orientation="horizontal" >
 
-                <LinearLayout
+                <RelativeLayout
+                    android:id="@+id/biblioteca_2_target8container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
+                    android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
+                    android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical" >
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/biblioteca_2_target8reference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/biblioteca_2_2_pieza_base"
+                        android:scaleType="centerInside" />
 
                     <ImageView
                         android:id="@+id/biblioteca_2_target8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/biblioteca_2_2_pieza_base"
-                        android:scaleType="centerInside" />
+                        android:layout_alignBottom="@+id/biblioteca_2_target8reference"
+                        android:layout_alignLeft="@+id/biblioteca_2_target8reference"
+                        android:layout_alignRight="@+id/biblioteca_2_target8reference"
+                        android:layout_alignTop="@+id/biblioteca_2_target8reference"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/biblioteca_2_3_bt8_colocado"
+                        android:visibility="invisible" />
 
                     <TextView
                         style="@style/extraSmallText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/biblioteca_2_target8reference"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
                         android:text="@string/biblioteca_3_2_target8" />
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
+                    android:id="@+id/biblioteca_2_target1container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
+                    android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical" >
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/biblioteca_2_target1reference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/biblioteca_2_2_pieza_base"
+                        android:scaleType="centerInside" />
 
                     <ImageView
                         android:id="@+id/biblioteca_2_target1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/biblioteca_2_2_pieza_base"
-                        android:scaleType="centerInside" />
+                        android:layout_alignBottom="@+id/biblioteca_2_target1reference"
+                        android:layout_alignLeft="@+id/biblioteca_2_target1reference"
+                        android:layout_alignRight="@+id/biblioteca_2_target1reference"
+                        android:layout_alignTop="@+id/biblioteca_2_target1reference"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/biblioteca_2_3_bt1_colocado"
+                        android:visibility="invisible" />
 
                     <TextView
                         style="@style/extraSmallText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/biblioteca_2_target1reference"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
                         android:text="@string/biblioteca_3_2_target1" />
-                </LinearLayout>
+                </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -282,49 +381,82 @@
                 android:gravity="center"
                 android:orientation="horizontal" >
 
-                <LinearLayout
+                <RelativeLayout
+                    android:id="@+id/biblioteca_2_target4container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
+                    android:layout_marginRight="@dimen/biblioteca_x_2_target_margin"
+                    android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical" >
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/biblioteca_2_target4reference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/biblioteca_2_2_pieza_base"
+                        android:scaleType="centerInside" />
 
                     <ImageView
                         android:id="@+id/biblioteca_2_target4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/biblioteca_2_2_pieza_base"
-                        android:scaleType="centerInside" />
+                        android:layout_alignBottom="@+id/biblioteca_2_target4reference"
+                        android:layout_alignLeft="@+id/biblioteca_2_target4reference"
+                        android:layout_alignRight="@+id/biblioteca_2_target4reference"
+                        android:layout_alignTop="@+id/biblioteca_2_target4reference"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/biblioteca_2_3_bt4_colocado"
+                        android:visibility="invisible" />
 
                     <TextView
                         style="@style/extraSmallText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/biblioteca_2_target4reference"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
                         android:text="@string/biblioteca_3_2_target4" />
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
+                    android:id="@+id/biblioteca_2_target6container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/biblioteca_x_2_target_margin"
+                    android:layout_marginLeft="@dimen/biblioteca_x_2_target_margin"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical" >
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/biblioteca_2_target6reference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/biblioteca_2_2_pieza_base"
+                        android:scaleType="centerInside" />
 
                     <ImageView
                         android:id="@+id/biblioteca_2_target6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/biblioteca_2_2_pieza_base"
-                        android:scaleType="centerInside" />
+                        android:layout_alignBottom="@+id/biblioteca_2_target6reference"
+                        android:layout_alignLeft="@+id/biblioteca_2_target6reference"
+                        android:layout_alignRight="@+id/biblioteca_2_target6reference"
+                        android:layout_alignTop="@+id/biblioteca_2_target6reference"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/biblioteca_2_3_bt6_colocado"
+                        android:visibility="invisible" />
 
                     <TextView
                         style="@style/extraSmallText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/biblioteca_2_target6reference"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
                         android:text="@string/biblioteca_3_2_target6" />
-                </LinearLayout>
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

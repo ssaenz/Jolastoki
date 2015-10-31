@@ -19,7 +19,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
             android:src="@drawable/biblioteca_1_cinta" />
 
         <LinearLayout
@@ -263,6 +263,7 @@
                 android:id="@+id/biblioteca_1_figure1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+            android:layout_weight="1"
                 android:layout_margin="10dp"
                 android:rotation="-30"
                 android:src="@drawable/biblioteca_1_1_1" />
@@ -271,6 +272,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+            android:layout_weight="1"
                 android:orientation="horizontal" >
 
                 <ImageView
@@ -294,6 +296,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+            android:layout_weight="1"
                 android:orientation="horizontal" >
 
                 <ImageView
@@ -326,6 +329,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+            android:layout_weight="1"
                 android:orientation="horizontal" >
 
                 <ImageView
@@ -347,6 +351,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+            android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal" >
 
@@ -363,6 +368,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+            android:layout_weight="1"
                 android:orientation="horizontal" >
 
                 <ImageView

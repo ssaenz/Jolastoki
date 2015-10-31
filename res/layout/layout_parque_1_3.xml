@@ -10,6 +10,7 @@
         android:src="@drawable/parque_3_1_fondo" />
 
     <LinearLayout
+        android:layout_marginTop="@dimen/activity_header_height"
         android:id="@+id/parque_1_3_box_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -83,6 +84,7 @@
     </LinearLayout>
 
     <ImageView
+        android:layout_marginTop="@dimen/activity_header_height"
         android:id="@+id/parque_1_3_bt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -116,6 +118,7 @@
         android:id="@+id/parque_1_3_bt4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_header_height"
         android:layout_above="@+id/parque_1_3_bt5"
         android:layout_toRightOf="@id/parque_1_3_box_container"
         android:rotation="15"

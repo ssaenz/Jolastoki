@@ -275,6 +275,19 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 			new HashMap<Integer, Integer>() {
 		private static final long serialVersionUID = 1L;
 		{
+			put(R.id.biblioteca_2_figure1, R.id.biblioteca_2_target1container);
+			put(R.id.biblioteca_2_figure2, R.id.biblioteca_2_target2container);
+			put(R.id.biblioteca_2_figure3, R.id.biblioteca_2_target3container);
+			put(R.id.biblioteca_2_figure4, R.id.biblioteca_2_target4container);
+			put(R.id.biblioteca_2_figure5, R.id.biblioteca_2_target5container);
+			put(R.id.biblioteca_2_figure6, R.id.biblioteca_2_target6container);
+			put(R.id.biblioteca_2_figure7, R.id.biblioteca_2_target7container);
+			put(R.id.biblioteca_2_figure8, R.id.biblioteca_2_target8container);
+		}
+
+	}, new HashMap<Integer, Integer>() {
+		private static final long serialVersionUID = 1L;
+		{
 			put(R.id.biblioteca_2_figure1, R.id.biblioteca_2_target1);
 			put(R.id.biblioteca_2_figure2, R.id.biblioteca_2_target2);
 			put(R.id.biblioteca_2_figure3, R.id.biblioteca_2_target3);
@@ -285,7 +298,7 @@ public enum StandardDragNDropGameViewConfig implements DragNDropGameViewConfig {
 			put(R.id.biblioteca_2_figure8, R.id.biblioteca_2_target8);
 		}
 
-	}, null),
+	}),
 	biblioteca_1_3 (GameLevel.ONE, R.layout.layout_biblioteca_1_3, R.string.biblioteca_1_3_title, 60000l, -1,
 			Arrays.asList(R.id.biblioteca_1_3_figure1, R.id.biblioteca_1_3_figure2, R.id.biblioteca_1_3_figure3,
 							R.id.biblioteca_1_3_figure4, R.id.biblioteca_1_3_figure5, R.id.biblioteca_1_3_figure6,

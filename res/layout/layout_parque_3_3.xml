@@ -10,93 +10,78 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:orientation="vertical" >
-        
-        
-        
-        
-        
-        <RelativeLayout 
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
 
-    <ImageView
-        android:id="@+id/background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:src="@drawable/parque_3_3_cartelito" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
 
-    <TextView
-        style="@style/bigText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/background"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/parque_3_3_texto_cartelito_margin_bottom"
-        android:gravity="center"
-        android:text="@string/cubo" />
+            <ImageView
+                android:id="@+id/background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/parque_3_3_cartelito" />
 
-</RelativeLayout>
-
-        
-        
-        
+            <TextView
+                style="@style/bigText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/background"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/parque_3_3_texto_cartelito_margin_bottom"
+                android:gravity="center"
+                android:text="@string/cubo" />
+        </RelativeLayout>
     </LinearLayout>
-    
 
     <ImageView
         android:id="@+id/parque_3_3_bt_cilindro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/parque_3_3_bt_cilindro" 
-        android:layout_toLeftOf="@+id/container"
         android:layout_above="@+id/figures_container"
-        />
+        android:layout_toLeftOf="@+id/container"
+        android:src="@drawable/parque_3_3_bt_cilindro" />
+
     <ImageView
         android:id="@+id/parque_3_3_bt_esfera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/parque_3_3_bt_esfera"
-        android:layout_above="@+id/figures_container"  />
-    
-    <LinearLayout 
+        android:layout_above="@+id/figures_container"
+        android:src="@drawable/parque_3_3_bt_esfera" />
+
+    <LinearLayout
         android:id="@+id/figures_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
         android:layout_toLeftOf="@+id/container"
         android:gravity="center"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true">
-        
+        android:orientation="horizontal" >
+
         <ImageView
-        android:id="@+id/parque_3_3_bt_priramide"
-        android:layout_width="wrap_content"
-        android:layout_weight="1"
-        android:scaleType="fitCenter"
-        android:layout_height="wrap_content"
-        android:src="@drawable/parque_3_3_bt_piramide" />
+            android:id="@+id/parque_3_3_bt_priramide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/parque_3_3_bt_piramide" />
 
-    
+        <ImageView
+            android:id="@+id/parque_3_3_bt_prisma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/parque_3_3_bt_prisma" />
 
-    <ImageView
-        android:id="@+id/parque_3_3_bt_prisma"
-        android:layout_width="wrap_content"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:scaleType="fitCenter"
-        android:src="@drawable/parque_3_3_bt_prisma"/>
-
-    <ImageView
-        android:id="@+id/parque_3_3_bt_cubo"
-        android:layout_width="wrap_content"
-        android:scaleType="fitCenter"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:src="@drawable/parque_3_3_bt_cubo" />
-        
+        <ImageView
+            android:id="@+id/parque_3_3_bt_cubo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/parque_3_3_bt_cubo" />
     </LinearLayout>
-
-    
 
 </RelativeLayout>

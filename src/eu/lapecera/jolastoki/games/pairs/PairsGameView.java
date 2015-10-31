@@ -79,6 +79,4 @@ public class PairsGameView extends GameView {
 
 	}
 
-
-
 }

@@ -49,7 +49,7 @@
         android:background="@drawable/game_icon_background_green"
         android:padding="@dimen/game_icon_small_padding"
         android:scaleType="centerCrop"
-        android:src="@drawable/portada_ico_charca" />
+        android:src="@drawable/cabecera_juegos_ico_charca" />
 
     <eu.lapecera.jolastoki.widget.TypographyTextView
         style="@style/smallWhiteText"

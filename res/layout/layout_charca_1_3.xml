@@ -34,38 +34,38 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_rana" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_mariquita" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_rana" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_mariquita" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_rana" />
 
                 <ImageView
                     android:id="@+id/charca_3_target1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/charca_3_1_ficha_incognita" />
             </LinearLayout>
 
@@ -77,38 +77,38 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_nenufar" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_rana" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_rana" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_nenufar" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_rana" />
 
                 <ImageView
                     android:id="@+id/charca_3_target2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/charca_3_1_ficha_incognita" />
             </LinearLayout>
 
@@ -120,38 +120,38 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_mariposa" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_mariquita" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_nenufar" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_mariposa" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:src="@drawable/charca_3_1_ficha_mariquita" />
 
                 <ImageView
                     android:id="@+id/charca_3_target3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/charca_3_1_ficha_incognita" />
             </LinearLayout>
         </LinearLayout>
@@ -168,7 +168,7 @@
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
-                android:scaleType="fitStart"
+                android:scaleType="fitCenter"
                 android:src="@drawable/charca_3_1_ficha_nenufar" />
 
             <ImageView
@@ -176,7 +176,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:scaleType="fitStart"
+                android:scaleType="fitCenter"
                 android:src="@drawable/charca_3_1_ficha_mariposa" />
 
             <ImageView
@@ -184,7 +184,7 @@
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 android:layout_height="0dp"
-                android:scaleType="fitStart"
+                android:scaleType="fitCenter"
                 android:src="@drawable/charca_3_1_ficha_rana" />
 
             <ImageView
@@ -192,7 +192,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:scaleType="fitStart"
+                android:scaleType="fitCenter"
                 android:src="@drawable/charca_3_1_ficha_mariquita" />
         </LinearLayout>
     </LinearLayout>

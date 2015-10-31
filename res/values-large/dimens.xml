@@ -2,175 +2,175 @@
 
     <!-- Main activities -->
     
-    <dimen name="activity_header_height">75dp</dimen>
+    <dimen name="activity_header_height">60dp</dimen>
     
-    <dimen name="activity_ranking_score_container_margin_left">150dp</dimen>
-    <dimen name="activity_ranking_score_container_margin_right">150dp</dimen>
-    <dimen name="activity_ranking_score_container_margin_top">7dp</dimen>
-    <dimen name="activity_ranking_score_container_margin_bottom">7dp</dimen>
+    <dimen name="activity_ranking_score_container_margin_left">120dp</dimen>
+    <dimen name="activity_ranking_score_container_margin_right">120dp</dimen>
+    <dimen name="activity_ranking_score_container_margin_top">6dp</dimen>
+    <dimen name="activity_ranking_score_container_margin_bottom">6dp</dimen>
     
-    <dimen name="activity_ranking_score_list_padding_left">15dp</dimen>
-    <dimen name="activity_ranking_score_list_padding_right">15dp</dimen>
-    <dimen name="activity_ranking_score_list_padding_top">7dp</dimen>
-    <dimen name="activity_ranking_score_list_padding_bottom">7dp</dimen>
+    <dimen name="activity_ranking_score_list_padding_left">12dp</dimen>
+    <dimen name="activity_ranking_score_list_padding_right">12dp</dimen>
+    <dimen name="activity_ranking_score_list_padding_top">6dp</dimen>
+    <dimen name="activity_ranking_score_list_padding_bottom">6dp</dimen>
     
-    <dimen name="activity_ranking_score_list_divider_height">7dp</dimen>
-    <dimen name="activity_ranking_score_list_title_padding">7dp</dimen>
+    <dimen name="activity_ranking_score_list_divider_height">6dp</dimen>
+    <dimen name="activity_ranking_score_list_title_padding">6dp</dimen>
     
     
-    <dimen name="activity_game_score_and_time_width">180dp</dimen>
-    <dimen name="activity_game_title_margin_left">7dp</dimen>
+    <dimen name="activity_game_score_and_time_width">144dp</dimen>
+    <dimen name="activity_game_title_margin_left">6dp</dimen>
     
-    <dimen name="dialog_level_padding">30dp</dimen>
+    <dimen name="dialog_level_padding">24dp</dimen>
     
     <!-- Text styles -->
-    <dimen name="big_text_size">37sp</dimen>
-    <dimen name="normal_text_size">30sp</dimen>
-    <dimen name="small_text_size">27sp</dimen>
-    <dimen name="extra_small_text_size">17sp</dimen>
-    <dimen name="tiny_text_size">15sp</dimen>
-    <dimen name="header_title_text_size">18sp</dimen>
+    <dimen name="big_text_size">30sp</dimen>
+    <dimen name="normal_text_size">24sp</dimen>
+    <dimen name="small_text_size">22sp</dimen>
+    <dimen name="extra_small_text_size">14sp</dimen>
+    <dimen name="tiny_text_size">12sp</dimen>
+    <dimen name="header_title_text_size">14sp</dimen>
     
     <!-- General sizes -->
     
-    <dimen name="game_icon_small">120dp</dimen>
-    <dimen name="top_icon_margin">7dp</dimen>
+    <dimen name="game_icon_small">96dp</dimen>
+    <dimen name="top_icon_margin">6dp</dimen>
     
-    <dimen name="stroke_width">3dp</dimen>
-    <dimen name="corner_radius">7dp</dimen>
+    <dimen name="stroke_width">2dp</dimen>
+    <dimen name="corner_radius">6dp</dimen>
     
-    <dimen name="dialog_score_name_input_width">300dp</dimen>
-    <dimen name="dialog_score_name_input_margin">7dp</dimen>
-    <dimen name="dialog_score_button_margin">7dp</dimen>
-    <dimen name="dialog_score_padding">15dp</dimen>
-    <dimen name="dialog_score_star_top_margin">30dp</dimen>
+    <dimen name="dialog_score_name_input_width">240dp</dimen>
+    <dimen name="dialog_score_name_input_margin">6dp</dimen>
+    <dimen name="dialog_score_button_margin">6dp</dimen>
+    <dimen name="dialog_score_padding">12dp</dimen>
+    <dimen name="dialog_score_star_top_margin">24dp</dimen>
     
-    <dimen name="dialog_timeout_padding">30dp</dimen>
+    <dimen name="dialog_timeout_padding">24dp</dimen>
     
-    <dimen name="game_icon_small_padding">7dp</dimen>
+    <dimen name="game_icon_small_padding">6dp</dimen>
     
-    <dimen name="score_view_name_width">225dp</dimen>
-    <dimen name="score_view_number_width">45dp</dimen>
+    <dimen name="score_view_name_width">180dp</dimen>
+    <dimen name="score_view_number_width">36dp</dimen>
     
-    <dimen name="time_text_padding">7dp</dimen>
-    <dimen name="score_text_padding">7dp</dimen>
-    <dimen name="drawable_padding">7dp</dimen>
+    <dimen name="time_text_padding">6dp</dimen>
+    <dimen name="score_text_padding">6dp</dimen>
+    <dimen name="drawable_padding">6dp</dimen>
     
-    <dimen name="score_view_container_padding">15dp</dimen>
-    <dimen name="score_view_drawable_padding">15dp</dimen>
+    <dimen name="score_view_container_padding">12dp</dimen>
+    <dimen name="score_view_drawable_padding">12dp</dimen>
     
     <!-- Games layout -->
     
-    <dimen name="parque_x_1_cartel_margin">75dp</dimen>
-    <dimen name="parque_x_1_cartel_padding">30dp</dimen>
+    <dimen name="parque_x_1_cartel_margin">60dp</dimen>
+    <dimen name="parque_x_1_cartel_padding">24dp</dimen>
     
-    <dimen name="parque_3_3_texto_cartelito_margin_bottom">120dp</dimen>
+    <dimen name="parque_3_3_texto_cartelito_margin_bottom">96dp</dimen>
     
-    <dimen name="parque_x_2_question_container_margin_top">75dp</dimen>
-    <dimen name="parque_x_2_question_container_margin_right">30dp</dimen>
-    <dimen name="parque_x_2_question_container_margin_bottom">75dp</dimen>
-    <dimen name="parque_x_2_question_margin_top">110dp</dimen>
+    <dimen name="parque_x_2_question_container_margin_top">60dp</dimen>
+    <dimen name="parque_x_2_question_container_margin_right">24dp</dimen>
+    <dimen name="parque_x_2_question_container_margin_bottom">60dp</dimen>
+    <dimen name="parque_x_2_question_margin_top">88dp</dimen>
     
-    <dimen name="parque_x_2_target_padding">15dp</dimen>
+    <dimen name="parque_x_2_target_padding">12dp</dimen>
     
-    <dimen name="parque_x_2_button2_margin_right">30dp</dimen>
-    <dimen name="parque_x_2_button2_margin_top">120dp</dimen>
+    <dimen name="parque_x_2_button2_margin_right">24dp</dimen>
+    <dimen name="parque_x_2_button2_margin_top">96dp</dimen>
     
-    <dimen name="parque_x_2_button1_margin_right">75dp</dimen>
-    <dimen name="parque_x_2_button1_margin_top">75dp</dimen>
+    <dimen name="parque_x_2_button1_margin_right">60dp</dimen>
+    <dimen name="parque_x_2_button1_margin_top">60dp</dimen>
     
-    <dimen name="parque_x_2_button4_margin_bottom">75dp</dimen>
-    <dimen name="parque_x_2_button4_margin_right">50dp</dimen>
+    <dimen name="parque_x_2_button4_margin_bottom">60dp</dimen>
+    <dimen name="parque_x_2_button4_margin_right">40dp</dimen>
     
-    <dimen name="parque_x_2_button3_margin_bottom">225dp</dimen>
-    <dimen name="parque_x_2_button3_margin_right">45dp</dimen>
+    <dimen name="parque_x_2_button3_margin_bottom">180dp</dimen>
+    <dimen name="parque_x_2_button3_margin_right">36dp</dimen>
     
-    <dimen name="parque_x_2_signo_operacion_size">22dp</dimen>
-    <dimen name="parque_x_2_ralla_operacion_width">75dp</dimen>
-    <dimen name="parque_x_2_ralla_operacion_height">3dp</dimen>
+    <dimen name="parque_x_2_signo_operacion_size">18dp</dimen>
+    <dimen name="parque_x_2_ralla_operacion_width">60dp</dimen>
+    <dimen name="parque_x_2_ralla_operacion_height">2dp</dimen>
     
-    <dimen name="parque_1_3_box_container_margin">30dp</dimen>
-    <dimen name="parque_1_3_box_container_padding_top">30dp</dimen>
-    <dimen name="parque_1_3_box_container_padding_bottom">30dp</dimen>
-    <dimen name="parque_1_3_box_container_padding_right">60dp</dimen>
-    <dimen name="parque_1_3_box_container_padding_left">30dp</dimen>
+    <dimen name="parque_1_3_box_container_margin">24dp</dimen>
+    <dimen name="parque_1_3_box_container_padding_top">24dp</dimen>
+    <dimen name="parque_1_3_box_container_padding_bottom">24dp</dimen>
+    <dimen name="parque_1_3_box_container_padding_right">48dp</dimen>
+    <dimen name="parque_1_3_box_container_padding_left">24dp</dimen>
     
-    <dimen name="parque_2_3_margin">30dp</dimen>
+    <dimen name="parque_2_3_margin">24dp</dimen>
     
-    <dimen name="parque_3_3_piramide_margin_bottom">16dp</dimen>
-    <dimen name="parque_3_3_piramide_margin_left">69dp</dimen>
-    <dimen name="parque_3_3_prisma_margin_bottom">18dp</dimen>
-    <dimen name="parque_3_3_cubo_margin_bottom">15dp</dimen>
-    <dimen name="parque_3_3_cubo_margin_left">16dp</dimen>
-    <dimen name="parque_3_3_cilindro_margin_bottom">27dp</dimen>
+    <dimen name="parque_3_3_piramide_margin_bottom">13dp</dimen>
+    <dimen name="parque_3_3_piramide_margin_left">55dp</dimen>
+    <dimen name="parque_3_3_prisma_margin_bottom">14dp</dimen>
+    <dimen name="parque_3_3_cubo_margin_bottom">12dp</dimen>
+    <dimen name="parque_3_3_cubo_margin_left">13dp</dimen>
+    <dimen name="parque_3_3_cilindro_margin_bottom">22dp</dimen>
     
-    <dimen name="mercado_1_3_piezas_margin">15dp</dimen>
+    <dimen name="mercado_1_3_piezas_margin">12dp</dimen>
     
-    <dimen name="mercado_2_3_target1_margin_top">15dp</dimen>
-    <dimen name="mercado_2_3_target2_margin_left">15dp</dimen>
-    <dimen name="mercado_2_3_target3_margin_right">15dp</dimen>
-    <dimen name="mercado_2_3_piramide_margin_bottom">15dp</dimen>
-    <dimen name="mercado_2_3_piezas_margin">15dp</dimen>
+    <dimen name="mercado_2_3_target1_margin_top">12dp</dimen>
+    <dimen name="mercado_2_3_target2_margin_left">12dp</dimen>
+    <dimen name="mercado_2_3_target3_margin_right">12dp</dimen>
+    <dimen name="mercado_2_3_piramide_margin_bottom">12dp</dimen>
+    <dimen name="mercado_2_3_piezas_margin">12dp</dimen>
     
-    <dimen name="mercado_x_1_question_margin">30dp</dimen>
-    <dimen name="mercado_x_1_answer_margin">7dp</dimen>
+    <dimen name="mercado_x_1_question_margin">24dp</dimen>
+    <dimen name="mercado_x_1_answer_margin">6dp</dimen>
     
-    <dimen name="mercado_3_3_container_margin_bottom">75dp</dimen>
-    <dimen name="mercado_3_3_figure_container_margin_left">150dp</dimen>
-    <dimen name="mercado_3_3_figure_margin">15dp</dimen>
+    <dimen name="mercado_3_3_container_margin_bottom">60dp</dimen>
+    <dimen name="mercado_3_3_figure_container_margin_left">120dp</dimen>
+    <dimen name="mercado_3_3_figure_margin">12dp</dimen>
     
-    <dimen name="mercado_x_3_operation_container_margin">15dp</dimen>
-    <dimen name="mercado_x_3_operation_margin">15dp</dimen>
+    <dimen name="mercado_x_3_operation_container_margin">12dp</dimen>
+    <dimen name="mercado_x_3_operation_margin">12dp</dimen>
     
-    <dimen name="mercado_x_2_figure_container_margin">15dp</dimen>
-    <dimen name="mercado_x_2_figure_margin">7dp</dimen>
-    <dimen name="mercado_x_2_figure_padding">7dp</dimen>
+    <dimen name="mercado_x_2_figure_container_margin">12dp</dimen>
+    <dimen name="mercado_x_2_figure_margin">6dp</dimen>
+    <dimen name="mercado_x_2_figure_padding">6dp</dimen>
     
-    <dimen name="biblioteca_x_2_padding_cinta">45dp</dimen>
-    <dimen name="biblioteca_x_1y2_libro_margin">150dp</dimen>
-    <dimen name="biblioteca_x_1_libro_content_margin">30dp</dimen>
+    <dimen name="biblioteca_x_2_padding_cinta">36dp</dimen>
+    <dimen name="biblioteca_x_1y2_libro_margin">120dp</dimen>
+    <dimen name="biblioteca_x_1_libro_content_margin">24dp</dimen>
     
-    <dimen name="biblioteca_x_2_target_margin">15dp</dimen>
-    <dimen name="biblioteca_x_2_cinta_margin_bottom">15dp</dimen>
+    <dimen name="biblioteca_x_2_target_margin">12dp</dimen>
+    <dimen name="biblioteca_x_2_cinta_margin_bottom">12dp</dimen>
     
-    <dimen name="biblioteca_1_3_content_margin_bottom">45dp</dimen>
-    <dimen name="biblioteca_1_3_target_line_padding_top">7dp</dimen>
-    <dimen name="biblioteca_1_3_target_line_padding_left">30dp</dimen>
-    <dimen name="biblioteca_1_3_target_line_padding_right">30dp</dimen>
-    <dimen name="biblioteca_1_3_target_line_padding_bottom">7dp</dimen>
+    <dimen name="biblioteca_1_3_content_margin_bottom">36dp</dimen>
+    <dimen name="biblioteca_1_3_target_line_padding_top">6dp</dimen>
+    <dimen name="biblioteca_1_3_target_line_padding_left">24dp</dimen>
+    <dimen name="biblioteca_1_3_target_line_padding_right">24dp</dimen>
+    <dimen name="biblioteca_1_3_target_line_padding_bottom">6dp</dimen>
     
-    <dimen name="biblioteca_1_3_target_letter_padding_small">7dp</dimen>
-    <dimen name="biblioteca_1_3_target_letter_padding_big">15dp</dimen>
+    <dimen name="biblioteca_1_3_target_letter_padding_small">6dp</dimen>
+    <dimen name="biblioteca_1_3_target_letter_padding_big">12dp</dimen>
     
     
-    <dimen name="biblioteca_1_3_target_size">54dp</dimen>
-    <dimen name="biblioteca_1_3_ficha_size">72dp</dimen>
+    <dimen name="biblioteca_1_3_target_size">43dp</dimen>
+    <dimen name="biblioteca_1_3_ficha_size">58dp</dimen>
     
-    <dimen name="biblioteca_1_3_target_margin">5dp</dimen>
+    <dimen name="biblioteca_1_3_target_margin">4dp</dimen>
     
-    <dimen name="biblioteca_1_3_figures_margin">45dp</dimen>
+    <dimen name="biblioteca_1_3_figures_margin">36dp</dimen>
     
-    <dimen name="biblioteca_x_1_cinta_margin_bottom">22dp</dimen>
-    <dimen name="biblioteca_x_1_cinta_padding">67dp</dimen>
-    <dimen name="biblioteca_2_3_padding_caja">15dp</dimen>
-    <dimen name="biblioteca_2_3_element_height">54dp</dimen>
-    <dimen name="biblioteca_2_3_title_padding">7dp</dimen>
+    <dimen name="biblioteca_x_1_cinta_margin_bottom">18dp</dimen>
+    <dimen name="biblioteca_x_1_cinta_padding">54dp</dimen>
+    <dimen name="biblioteca_2_3_padding_caja">12dp</dimen>
+    <dimen name="biblioteca_2_3_element_height">43dp</dimen>
+    <dimen name="biblioteca_2_3_title_padding">6dp</dimen>
     
-    <dimen name="biblioteca_3_3_target_container_margin_bottom">22dp</dimen>
-    <dimen name="biblioteca_3_3_target_padding">7dp</dimen>
-    <dimen name="biblioteca_3_3_figure_padding">7dp</dimen>
-    <dimen name="biblioteca_3_3_figure_margin">7dp</dimen>
+    <dimen name="biblioteca_3_3_target_container_margin_bottom">18dp</dimen>
+    <dimen name="biblioteca_3_3_target_padding">6dp</dimen>
+    <dimen name="biblioteca_3_3_figure_padding">6dp</dimen>
+    <dimen name="biblioteca_3_3_figure_margin">6dp</dimen>
     
-    <dimen name="charca_x_1_figuras_margin">7dp</dimen>
-    <dimen name="charca_x_3_figures_margin_bottom">15dp</dimen>
-    <dimen name="charca_x_1_text_padding">12dp</dimen>
+    <dimen name="charca_x_1_figuras_margin">6dp</dimen>
+    <dimen name="charca_x_3_figures_margin_bottom">12dp</dimen>
+    <dimen name="charca_x_1_text_padding">10dp</dimen>
     
-    <dimen name="charca_x_2_figures_container_padding">15dp</dimen>
-    <dimen name="charca_x_2_figure_margin">7dp</dimen>
-    <dimen name="charca_x_2_figure_padding">5dp</dimen>
-    <dimen name="charca_x_2_target_container_padding">15dp</dimen>
-    <dimen name="charca_x_2_target_padding">5dp</dimen>
-    <dimen name="charca_x_2_target_margin">7dp</dimen>
+    <dimen name="charca_x_2_figures_container_padding">12dp</dimen>
+    <dimen name="charca_x_2_figure_margin">6dp</dimen>
+    <dimen name="charca_x_2_figure_padding">4dp</dimen>
+    <dimen name="charca_x_2_target_container_padding">12dp</dimen>
+    <dimen name="charca_x_2_target_padding">4dp</dimen>
+    <dimen name="charca_x_2_target_margin">6dp</dimen>
     
     
 </resources>

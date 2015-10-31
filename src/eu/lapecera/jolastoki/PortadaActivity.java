@@ -25,6 +25,10 @@ public class PortadaActivity extends Activity {
 		button.setOnClickListener(clickListener);
 
 	}
+
+	@Override
+	public void onBackPressed() {
+	}
 	
 	private AudibleOnClickListener clickListener = new AudibleOnClickListener(this, R.raw.seleccion) {
 		

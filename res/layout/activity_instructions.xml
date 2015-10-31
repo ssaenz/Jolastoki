@@ -15,9 +15,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/close_button"
         android:layout_marginLeft="@dimen/activity_instructions_margin_left"
-        android:layout_marginRight="@dimen/activity_instructions_margin_right"
-        android:layout_marginTop="@dimen/activity_header_height" >
+        android:layout_marginRight="@dimen/activity_instructions_margin_right" >
 
         <eu.lapecera.jolastoki.widget.TypographyTextView
             android:id="@+id/instructionsText"
@@ -25,7 +25,6 @@
 			android:textColor="@android:color/black"
             android:layout_width="match_parent"
             android:layout_height="@dimen/activity_header_height"
-            android:layout_marginTop="@dimen/activity_instructions_margin_top"
             android:gravity="left"
             android:text="@string/texto_instrucciones" />
     </ScrollView>
