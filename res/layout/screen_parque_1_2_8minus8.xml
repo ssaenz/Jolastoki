@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content">
 
     <View
         android:id="@+id/opSign"
@@ -35,8 +35,10 @@
 
     <View
         style="@style/bigText"
-        android:layout_width="@dimen/parque_x_2_ralla_operacion_width"
+        android:layout_width="wrap_content"
         android:layout_height="@dimen/parque_x_2_ralla_operacion_height"
+        android:layout_alignLeft="@+id/opSign"
+        android:layout_alignRight="@+id/sumBottom"
         android:layout_below="@id/sumBottom"
         android:layout_gravity="center"
         android:background="@android:color/black" />
