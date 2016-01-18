@@ -23,9 +23,9 @@ public class BaseActivity extends Activity {
 		super.onResume();
 		if (BaseActivity.finish) {
 			finish();
-			return;
+		} else {
+			MusicManager.start(this, R.raw.musica_fondo);
 		}
-		MusicManager.start(this, R.raw.musica_fondo);
 	}
 	
 	public static void setFinish (Boolean finish) {
